@@ -1,0 +1,28 @@
+# Site settings
+title: Niels Goet | Data Scientist
+email: ndgoet [at] gmail.com
+description: >- 
+    Welcome to my personal website. I currently work as a data scientist at Inspera AS, an EdTech company based in Oslo, Norway. I use this website to blog about quantitative methods and programming, and to host sample code and data.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: NielsGoet
+github_username:  ngoet
+linkedin_username: niels-goet
+
+# Build settings
+markdown: kramdown
+theme: minima
+include: ['_pages']
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

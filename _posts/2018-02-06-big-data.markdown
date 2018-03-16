@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "What Big Data Can Teach Political Scientists"
+date:   2018-02-06 16:45:49 +0100
+categories: Data
+---
+
+*This article was first published on the website of the [Oxford University Politics Blog](https://blog.politics.ox.ac.uk/big-data-can-teach-political-scientists/).*
+
+Big Data is now a buzzword in the political science field. Some might call this hype. Others see unlocking the power of "Big Data" as the most significant transformation in research this century.
+
+In the world of research, Big Data seems to be living up to its promise. And the results include a wave of new and inspiring projects.
+
+ 
+
+## What is big data?
+Big data is not simply research that uses a large set of observations. It might be thought of as re-imagining large-n inquiries, dealing with hundreds of thousands, and, in some cases, even millions of observations. Big Data means giant N.
+
+But it is more than a question of quantity. In their [well-known Ted Talk](https://www.ted.com/talks/what_we_learned_from_5_million_books?language=en), Erez Lieberman Aiden and Jean-Baptiste Michel helpfully distinguish between two axes of research: practical, and, for want of a better word "awesome. They suggest practicality is still the core of Big Data, which pushes the boundaries of what is technically feasible. Big Data analysis, as a field, urges advances in computing, methods, data availability, mathematics, etc… These advances allow us to push projects further.
+
+With "awesome", Aiden and Michel harness an Americanism with good cause: Big Data allows us to engage with big transformations over the longue durée. We can now investigate lengthy trends that political scientists are usually ill-equipped to map with traditional datasets.
+
+Moreover, this has affected the nature and nuance of possible research questions. Instead of focusing on what an individual politician says, we can assess millions of speeches over hundreds of years to show how political language changes over time, or how a specific kind of contentious issue develops. If applied properly, with millions of observations at our disposal, we can observe previously unseen patterns; analyse political behaviour at both the aggregate and grassroots levels; and capture previously unexplored phenomena.
+
+While Big data analysis pushes practitioners to the extremes on both the feasibility and the "awesome" axes, it does so with fewer barriers to entry. What was impossible two decades ago is practicable in a matter of minutes with little more than a laptop, free statistical software such as R, or knowledge of simple programming languages like Python.
+
+It is therefore not surprising that an increasing number of papers employ Big Data methods. This ranges from the use of House of Commons speeches to trace ministerial responsiveness (Eggers and Spirling 2014), to new measures of political ideology based on 100 million observations of financial contribution records (Bonica 2014).
+
+ 
+## The benefits of big data
+The future of exploratory science lies along the extremes of these two axes. Using Big Data, we can engage with some of the biggest questions in a variety of scientific disciplines, including the social sciences, humanities, and natural sciences.
+
+This fevered trend is driven by two exciting developments. First, the improved speed in capturing data, which currently doubles every year. And second, the "[rapidly advancing techniques of artificial intelligence, whether natural language processing, pattern recognition or machine learning](http://www.nytimes.com/2012/02/12/sunday-review/big-datas-impact-in-the-world.html?_r=0)".
+
+More specifically, Big Data advances political science research in three important ways. First, Big Data aids hypothesis generation. With the availability of masses of new data and our newfound ability to manipulate and investigate it quickly and cheaply, we can observe patterns that we have not observed before. From this improved ability to describe and explore data comes the possibility of generating new and interesting hypotheses. 
+
+Second, Big Data helps identify instrumental variables. When political scientists cannot measure the phenomenon of interest directly, they sometimes use a proxy (or "instrument") that is closely correlated with the variable of interest. According to Clark and Golder, "Big data can help to the extent that it makes previously unobservable variables observable, thereby reducing the need for an instrument, or by making new potential instruments available" (2015: p. 67).
+
+Third, Big Data allows us to scale research up and down more effectively. We can design experiments on a scale previously impossible in the social sciences thanks to "granular data" (Grimmer 2015), while expanding hand-coded material into larger datasets with machine learning. At the same time, with more data across a greater array of contexts, researchers can formulate and test hypotheses at a more detailed level.
+
+ 
+
+## Examples: What can we do with Big Data?
+Big Data analysis can be applied in many interesting ways. Below are just two examples.
+
+ 
+
+# Forecasting: Measuring political sentiment
+A growing number of political scientists rely on Twitter data to measure political preferences. Twitter is a massive data stream, with some 200 billion tweets per year.
+
+We can analyse this data quite cheaply with something called supervised and aggregated sentiment analysis (SASA). First, a large subset of the texts (in this case, tweets) are analysed by human coders and scored based on the sentiment they convey. Usually, coding distinguishes between positive and negative sentiments, but a more complex scheme can be used as well. Then, this data is fed into an algorithm that "learns" what is a positive and what is a negative text, and finally, that algorithm is applied to the whole dataset.
+
+How can political scientists use this information? If we can gauge how people feel about a particular phenomenon based on tweets, we can similarly use tweets to measure their sentiments toward political candidates. This is useful for forecasting election outcomes. In an earlier blog post on the [Oxford University Politics Blog](http://blog.politics.ox.ac.uk/forecasting-elections-with-social-media-yes-we-can-almost/), for example, Andrea Ceron, Luigi Curini, and Stefano M. Iacus discuss their use of SASA to analyse the 2012 Italian primary election.
+
+ 
+# Measuring political ideology
+Computational text analysis has recently been applied to large sets of speeches from parliaments to measure the ideological position of legislators (e.g. Lowe and Benoit, 2013; Schwarz et al., 2015). Traditionally, political scientists have relied on vote records in order to estimate ideal points. But in parliamentary systems, where party discipline is high and debate is relatively open, such methods are not particularly effective: voting is often strategic and reveals little in terms of ideology.
+
+Debates, on the other hand, can yield significant textual data than can be analysed and used to estimate ideological positions. The digitisation efforts of some parliaments (including the UK and the US legislatures) have made huge sets of speech data available to researchers, dating from the early nineteenth century. With existing algorithms, millions of speeches can be scaled in a matter of hours.
+
+Researchers use computer algorithms such as [Wordscores](http://www.tcd.ie/Political_Science/wordscores/) or [Wordfish](http://www.wordfish.org/) to code this mass of textual data. Both programs rely on relative word frequencies. The former is a so-called "supervised" method and requires an expert to code two reference texts (each at either extreme of the political spectrum). The algorithm subsequently scales speeches ("virgin texts") according to the similarity of word use compared to the reference texts.
+
+With Wordfish, which falls into the "unsupervised" category, the algorithm estimates an underlying latent dimension itself, and places speeches (or other texts) in this one-dimensional space. Here, the challenge of validating measures lies at the post-estimation stage, where researchers have to demonstrate that they are actually capturing a dimension of conflict.
+
+Despite the expected challenges of any new research regime, Big Data offers a promising new avenue for gauging political preferences in parliament—information that should benefit research on institutional change, decision-making and many other areas.
+
+ 
+## Harnessing the power of big data
+Big data is not immune to critique. One of the most important challenges with Big Data is, somewhat paradoxically, its scale. As the number of observations increases, so does the risk of false positives (type I errors). That’s why [Justin Grimmer, Assistant Professor at Princeton, calls for Big Data scientists to become *social scientists*](http://stanford.edu/~jgrimmer/bd_2.pdf). I could not agree more. Expertise is necessary to make sense of all the data: no computer algorithm can substitute for a deep understanding of the subject matter, nor can it replace sound causal inference.
+
+As political scientists, we need to think deeply about how to scale up our research and think critically about the questions we are asking, the hypotheses that we formulate, the causal claims we assert, and—generally—how we design our research.
+
+If we get it right, we can harness the power of millions, or even billions of observations. And just imagine what questions we may answer. "We’re really just getting under way," [says Gary King, the renowned Harvard statistician](http://www.nytimes.com/2012/02/12/sunday-review/big-datas-impact-in-the-world.html). "But the march of quantification, made possible by enormous new sources of data, will sweep through academia, business and government. There is no area that is going to be untouched."
+
+ 
+
+
+# References
+Bonica, Adam (2014). "Mapping the Ideological Marketplace". *American Journal of Political Science* 58 (2): pp. 367–386.
+
+Clark, William Roberts and Matt Golder (2015). "Big Data, Causal Inference, and Formal Theory: Contradictory Trends in Political Science?" *PS: Political Science & Politics* 48: pp. 65-70.
+
+Eggers, Andrew C. and Arthur Spirling (2014). "Ministerial Responsiveness in Westminster Systems: Insti- tutional Choices and House of Commons Debate, 1832-1915". *American Journal of Political Science* 58 (4): pp. 873–887.
+
+Grimmer, Justin (2015). "We Are All Social Scientists Now: How Big Data, Machine Learning, and Causal Inference Work Together." *PS: Political Science & Politics* 48: pp. 80-83.
+
+Lohr, Steve (11th February 2011). "The Age of Big Data." *The New York Times*. Available at: [http://www.nytimes.com/2012/02/12/sunday-review/big-datas-impact-in-the-world.html](http://www.nytimes.com/2012/02/12/sunday-review/big-datas-impact-in-the-world.html).
+
+Monroe, Burt L. (2011). "The Five Vs of Big Data Political Science Introduction to the Virtual Issue on Big Data in Political Science." *Political Analysis* 19: 66-86.
+
+Lowe, Will and Kenneth Benoit (2013). "Validating Estimates of Latent Traits from Textual Data Using Human Judgment as a Benchmark". *Political Analysis* 21 (3), pp. 298–313.
+
+Proksch, Sven-Oliver and Jonathan B. Slapin (2008). "A Scaling Model for Estimating Time-Series Party Positions from Texts". *American Journal of Political Science* 52 (3), pp. 705–722.
+
+Schwarz, Daniel, Denise Traber, and Kenneth Benoit (2015). "Estimating Intra-Party Preferences: Comparing Speeches to Votes". *Political Science Research and Methods* FirstView, pp. 1–18.
