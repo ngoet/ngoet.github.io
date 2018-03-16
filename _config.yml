@@ -12,7 +12,7 @@ linkedin_username: niels-goet
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: ffffff
 include: ['_pages']
 plugins:
   - jekyll-feed
