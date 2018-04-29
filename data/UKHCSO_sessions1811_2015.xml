@@ -1,2313 +1,2100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sessions>
    <session session_indicator="1">
+      <parliament>4th Parliament</parliament>
+      <parliament_ref>4</parliament_ref>
+      <prorogation>1811-07-24</prorogation>
+      
+      <session_ref>4.5</session_ref>
       <session_start_year>1811</session_start_year>
       <state_opening>1810-11-01 </state_opening>
-      <prorogation>1811-07-24</prorogation>
-      <parliament>4th Parliament</parliament>
-      <parliament_ref>4</parliament_ref>      
-      <session_ref>4.5</session_ref>
-      
-      
    </session>
    <session session_indicator="2">
+      <parliament>4th Parliament</parliament>
+      <parliament_ref>4</parliament_ref>
+      <prorogation>1812-07-30</prorogation>
+      
+      <session_ref>4.6</session_ref>
       <session_start_year>1812</session_start_year>
       <state_opening>1812-01-07 </state_opening>
-      <prorogation>1812-07-30</prorogation>
-      <parliament>4th Parliament</parliament>
-      <parliament_ref>4</parliament_ref>      
-      <session_ref>4.6</session_ref>
-      
-      
    </session>
    <session session_indicator="3">
+      <parliament>5th Parliament</parliament>
+      <parliament_ref>5</parliament_ref>
+      <prorogation>1813-07-22</prorogation>
+      
+      <session_ref>5.1</session_ref>
       <session_start_year>1813</session_start_year>
       <state_opening>1812-11-24 </state_opening>
-      <prorogation>1813-07-22</prorogation>
-      <parliament>5th Parliament</parliament>
-      <parliament_ref>5</parliament_ref>      
-      <session_ref>5.1</session_ref>
-      
-      
    </session>
    <session session_indicator="4">
+      <parliament>5th Parliament</parliament>
+      <parliament_ref>5</parliament_ref>
+      <prorogation>1814-07-30</prorogation>
+      
+      <session_ref>5.2</session_ref>
       <session_start_year>1814</session_start_year>
       <state_opening>1813-11-04 </state_opening>
-      <prorogation>1814-07-30</prorogation>
-      <parliament>5th Parliament</parliament>
-      <parliament_ref>5</parliament_ref>      
-      <session_ref>5.2</session_ref>
-      
-      
    </session>
    <session session_indicator="5">
+      <parliament>5th Parliament</parliament>
+      <parliament_ref>5</parliament_ref>
+      <prorogation>1815-07-12</prorogation>
+      
+      <session_ref>5.3</session_ref>
       <session_start_year>1815</session_start_year>
       <state_opening>1814-11-08 </state_opening>
-      <prorogation>1815-07-12</prorogation>
-      <parliament>5th Parliament</parliament>
-      <parliament_ref>5</parliament_ref>      
-      <session_ref>5.3</session_ref>
-      
-      
    </session>
    <session session_indicator="6">
+      <parliament>5th Parliament</parliament>
+      <parliament_ref>5</parliament_ref>
+      <prorogation>1816-07-02</prorogation>
+      
+      <session_ref>5.4</session_ref>
       <session_start_year>1816</session_start_year>
       <state_opening>1816-02-01</state_opening>
-      <prorogation>1816-07-02</prorogation>
-      <parliament>5th Parliament</parliament>
-      <parliament_ref>5</parliament_ref>      
-      <session_ref>5.4</session_ref>
-      
-      
    </session>
    <session session_indicator="7">
+      <parliament>5th Parliament</parliament>
+      <parliament_ref>5</parliament_ref>
+      <prorogation>1817-07-12</prorogation>
+      
+      <session_ref>5.5</session_ref>
       <session_start_year>1817</session_start_year>
       <state_opening>1817-01-28 </state_opening>
-      <prorogation>1817-07-12</prorogation>
-      <parliament>5th Parliament</parliament>
-      <parliament_ref>5</parliament_ref>      
-      <session_ref>5.5</session_ref>
-      
-      
    </session>
    <session session_indicator="8">
+      <parliament>5th Parliament</parliament>
+      <parliament_ref>5</parliament_ref>
+      <prorogation>1818-06-10</prorogation>
+      
+      <session_ref>5.6</session_ref>
       <session_start_year>1818</session_start_year>
       <state_opening>1818-01-27 </state_opening>
-      <prorogation>1818-06-10</prorogation>
-      <parliament>5th Parliament</parliament>
-      <parliament_ref>5</parliament_ref>      
-      <session_ref>5.6</session_ref>
-      
-      
    </session>
    <session session_indicator="9">
+      <parliament>6th Parliament</parliament>
+      <parliament_ref>6</parliament_ref>
+      <prorogation>1819-07-13</prorogation>
+      
+      <session_ref>6.1</session_ref>
       <session_start_year>1819</session_start_year>
       <state_opening>1819-01-14 </state_opening>
-      <prorogation>1819-07-13</prorogation>
-      <parliament>6th Parliament</parliament>
-      <parliament_ref>6</parliament_ref>      
-      <session_ref>6.1</session_ref>
-      
-      
    </session>
    <session session_indicator="10">
+      <parliament>6th Parliament</parliament>
+      <parliament_ref>6</parliament_ref>
+      <prorogation>1820-02-28</prorogation>
+      
+      <session_ref>6.2</session_ref>
       <session_start_year>1820</session_start_year>
       <state_opening>1819-11-23 </state_opening>
-      <prorogation>1820-02-28</prorogation>
-      <parliament>6th Parliament</parliament>
-      <parliament_ref>6</parliament_ref>      
-      <session_ref>6.2</session_ref>
-      
-      
    </session>
    <session session_indicator="11">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1820-11-23</prorogation>
+      
+      <session_ref>7.1</session_ref>
       <session_start_year>1820</session_start_year>
       <state_opening>1820-04-21 </state_opening>
-      <prorogation>1820-11-23</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.1</session_ref>
-      
-      
    </session>
    <session session_indicator="12">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1821-07-11</prorogation>
+      
+      <session_ref>7.2</session_ref>
       <session_start_year>1821</session_start_year>
       <state_opening>1821-01-23 </state_opening>
-      <prorogation>1821-07-11</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.2</session_ref>
-      
-      
    </session>
    <session session_indicator="13">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1822-08-06</prorogation>
+      
+      <session_ref>7.3</session_ref>
       <session_start_year>1822</session_start_year>
       <state_opening>1822-02-05 </state_opening>
-      <prorogation>1822-08-06</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.3</session_ref>
-      
-      
    </session>
    <session session_indicator="14">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1823-07-19</prorogation>
+      
+      <session_ref>7.4</session_ref>
       <session_start_year>1823</session_start_year>
       <state_opening>1823-02-04 </state_opening>
-      <prorogation>1823-07-19</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.4</session_ref>
-      
-      
    </session>
    <session session_indicator="15">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1824-06-25</prorogation>
+      
+      <session_ref>7.5</session_ref>
       <session_start_year>1824</session_start_year>
       <state_opening>1824-02-03 </state_opening>
-      <prorogation>1824-06-25</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.5</session_ref>
-      
-      
    </session>
    <session session_indicator="16">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1825-07-06</prorogation>
+      
+      <session_ref>7.6</session_ref>
       <session_start_year>1825</session_start_year>
       <state_opening>1825-02-03 </state_opening>
-      <prorogation>1825-07-06</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.6</session_ref>
-      
-      
    </session>
    <session session_indicator="17">
+      <parliament>7th Parliament</parliament>
+      <parliament_ref>7</parliament_ref>
+      <prorogation>1826-05-31</prorogation>
+      
+      <session_ref>7.7</session_ref>
       <session_start_year>1826</session_start_year>
       <state_opening>1826-02-02 </state_opening>
-      <prorogation>1826-05-31</prorogation>
-      <parliament>7th Parliament</parliament>
-      <parliament_ref>7</parliament_ref>      
-      <session_ref>7.7</session_ref>
-      
-      
    </session>
    <session session_indicator="18">
+      <parliament>8th Parliament</parliament>
+      <parliament_ref>8</parliament_ref>
+      <prorogation>1827-07-02</prorogation>
+      
+      <session_ref>8.1</session_ref>
       <session_start_year>1827</session_start_year>
       <state_opening>1826-11-14 </state_opening>
-      <prorogation>1827-07-02</prorogation>
-      <parliament>8th Parliament</parliament>
-      <parliament_ref>8</parliament_ref>      
-      <session_ref>8.1</session_ref>
-      
-      
    </session>
    <session session_indicator="19">
+      <parliament>8th Parliament</parliament>
+      <parliament_ref>8</parliament_ref>
+      <prorogation>1828-07-28</prorogation>
+      
+      <session_ref>8.2</session_ref>
       <session_start_year>1828</session_start_year>
       <state_opening>1828-01-29 </state_opening>
-      <prorogation>1828-07-28</prorogation>
-      <parliament>8th Parliament</parliament>
-      <parliament_ref>8</parliament_ref>      
-      <session_ref>8.2</session_ref>
-      
-      
    </session>
    <session session_indicator="20">
+      <parliament>8th Parliament</parliament>
+      <parliament_ref>8</parliament_ref>
+      <prorogation>1829-06-24</prorogation>
+      
+      <session_ref>8.3</session_ref>
       <session_start_year>1829</session_start_year>
       <state_opening>1829-02-05</state_opening>
-      <prorogation>1829-06-24</prorogation>
-      <parliament>8th Parliament</parliament>
-      <parliament_ref>8</parliament_ref>      
-      <session_ref>8.3</session_ref>
-      
-      
    </session>
    <session session_indicator="21">
-      <session_start_year>1830</session_start_year>
-      <state_opening>1830-10-26 </state_opening>
-      <prorogation>1830-12-24 </prorogation>
       <parliament>8th Parliament</parliament>
-      <parliament_ref>8</parliament_ref>      
+      <parliament_ref>8</parliament_ref>
+      <prorogation>1830-07-23</prorogation>
+      
       <session_ref>8.4</session_ref>
-      
-      
+      <session_start_year>1830</session_start_year>
+      <state_opening>1830-02-04</state_opening>
    </session>
    <session session_indicator="22">
-      <session_start_year>1831</session_start_year>
-      <state_opening>1831-02-03</state_opening>
-      <prorogation>1831-04-22</prorogation>
       <parliament>9th Parliament</parliament>
-      <parliament_ref>9</parliament_ref>      
+      <parliament_ref>9</parliament_ref>
+      <prorogation>1830-12-24 </prorogation>
+      
       <session_ref>9.1</session_ref>
-      
-      
+      <session_start_year>1830</session_start_year>
+      <state_opening>1830-10-26 </state_opening>
    </session>
    <session session_indicator="23">
+      <parliament>9th Parliament</parliament>
+      <parliament_ref>9</parliament_ref>
+      <prorogation>1831-04-22</prorogation>
+      
+      <session_ref>9.2</session_ref>
       <session_start_year>1831</session_start_year>
-      <state_opening>1831-06-14 </state_opening>
-      <prorogation>1831-10-20</prorogation>
-      <parliament>10th Parliament</parliament>
-      <parliament_ref>10</parliament_ref>      
-      <session_ref>10.1</session_ref>
-      
-      
+      <state_opening>1831-02-03</state_opening>
    </session>
    <session session_indicator="24">
-      <session_start_year>1831</session_start_year>
-      <state_opening>1831-12-06 </state_opening>
-      <prorogation>1831-12-18</prorogation>
       <parliament>10th Parliament</parliament>
-      <parliament_ref>10</parliament_ref>      
-      <session_ref>10.2</session_ref>
+      <parliament_ref>10</parliament_ref>
+      <prorogation>1831-10-20</prorogation>
       
-      
+      <session_ref>10.1</session_ref>
+      <session_start_year>1831</session_start_year>
+      <state_opening>1831-06-14 </state_opening>
    </session>
    <session session_indicator="25">
-      <session_start_year>1832</session_start_year>
-      <state_opening>1832-01-17</state_opening>
-      <prorogation>1832-08-16</prorogation>
       <parliament>10th Parliament</parliament>
-      <parliament_ref>10</parliament_ref>      
-      <session_ref>10.3</session_ref>
+      <parliament_ref>10</parliament_ref>
+      <prorogation>1831-12-18</prorogation>
       
-      
+      <session_ref>10.2</session_ref>
+      <session_start_year>1831</session_start_year>
+      <state_opening>1831-12-06 </state_opening>
    </session>
    <session session_indicator="26">
-      <session_start_year>1833</session_start_year>
-      <state_opening>1833-01-29 </state_opening>
-      <prorogation>1833-08-29</prorogation>
-      <parliament>11th Parliament</parliament>
-      <parliament_ref>11</parliament_ref>      
-      <session_ref>11.1</session_ref>
+      <parliament>10th Parliament</parliament>
+      <parliament_ref>10</parliament_ref>
+      <prorogation>1832-08-16</prorogation>
       
-      
+      <session_ref>10.3</session_ref>
+      <session_start_year>1832</session_start_year>
+      <state_opening>1832-01-17</state_opening>
    </session>
    <session session_indicator="27">
-      <session_start_year>1835</session_start_year>
-      <state_opening>1835-02-19 </state_opening>
-      <prorogation>1835-09-10</prorogation>
-      <parliament>12th Parliament</parliament>
-      <parliament_ref>12</parliament_ref>      
-      <session_ref>12.1</session_ref>
+      <parliament>11th Parliament</parliament>
+      <parliament_ref>11</parliament_ref>
+      <prorogation>1833-08-29</prorogation>
       
-      
+      <session_ref>11.1</session_ref>
+      <session_start_year>1833</session_start_year>
+      <state_opening>1833-01-29 </state_opening>
    </session>
    <session session_indicator="28">
-      <session_start_year>1836</session_start_year>
-      <state_opening>1836-02-04 </state_opening>
-      <prorogation>1836-08-20</prorogation>
-      <parliament>12th Parliament</parliament>
-      <parliament_ref>12</parliament_ref>      
-      <session_ref>12.2</session_ref>
+      <parliament>11th Parliament</parliament>
+      <parliament_ref>11</parliament_ref>
+      <prorogation>1834-08-15</prorogation>
       
-      
+      <session_ref>11.2</session_ref>
+      <session_start_year>1834</session_start_year>
+      <state_opening>1834-02-04</state_opening>
    </session>
    <session session_indicator="29">
-      <session_start_year>1837</session_start_year>
-      <state_opening>1837-01-31 </state_opening>
-      <prorogation>1837-07-17</prorogation>
       <parliament>12th Parliament</parliament>
-      <parliament_ref>12</parliament_ref>      
-      <session_ref>12.3</session_ref>
+      <parliament_ref>12</parliament_ref>
+      <prorogation>1835-09-10</prorogation>
       
-      
+      <session_ref>12.1</session_ref>
+      <session_start_year>1835</session_start_year>
+      <state_opening>1835-02-19 </state_opening>
    </session>
    <session session_indicator="30">
-      <session_start_year>1837</session_start_year>
-      <state_opening>1837-11-15 </state_opening>
-      <prorogation>1837-12-23</prorogation>
-      <parliament>13th Parliament</parliament>
-      <parliament_ref>13</parliament_ref>      
-      <session_ref>13.1</session_ref>
+      <parliament>12th Parliament</parliament>
+      <parliament_ref>12</parliament_ref>
+      <prorogation>1836-08-20</prorogation>
       
-      
+      <session_ref>12.2</session_ref>
+      <session_start_year>1836</session_start_year>
+      <state_opening>1836-02-04 </state_opening>
    </session>
    <session session_indicator="31">
-      <session_start_year>1838</session_start_year>
-      <state_opening>1838-01-16 </state_opening>
-      <prorogation>1838-08-16</prorogation>
-      <parliament>13th Parliament</parliament>
-      <parliament_ref>13</parliament_ref>      
-      <session_ref>13.2</session_ref>
+      <parliament>12th Parliament</parliament>
+      <parliament_ref>12</parliament_ref>
+      <prorogation>1837-07-17</prorogation>
       
-      
+      <session_ref>12.3</session_ref>
+      <session_start_year>1837</session_start_year>
+      <state_opening>1837-01-31 </state_opening>
    </session>
    <session session_indicator="32">
-      <session_start_year>1839</session_start_year>
-      <state_opening>1839-02-05 </state_opening>
-      <prorogation>1839-08-27</prorogation>
       <parliament>13th Parliament</parliament>
-      <parliament_ref>13</parliament_ref>      
-      <session_ref>13.3</session_ref>
+      <parliament_ref>13</parliament_ref>
+      <prorogation>1837-12-23</prorogation>
       
-      
+      <session_ref>13.1</session_ref>
+      <session_start_year>1837</session_start_year>
+      <state_opening>1837-11-15 </state_opening>
    </session>
    <session session_indicator="33">
-      <session_start_year>1840</session_start_year>
-      <state_opening>1840-01-16 </state_opening>
-      <prorogation>1840-08-11</prorogation>
       <parliament>13th Parliament</parliament>
-      <parliament_ref>13</parliament_ref>      
-      <session_ref>13.4</session_ref>
+      <parliament_ref>13</parliament_ref>
+      <prorogation>1838-08-16</prorogation>
       
-      
+      <session_ref>13.2</session_ref>
+      <session_start_year>1838</session_start_year>
+      <state_opening>1838-01-16 </state_opening>
    </session>
    <session session_indicator="34">
-      <session_start_year>1841</session_start_year>
-      <state_opening>1841-01-26 </state_opening>
-      <prorogation>1841-06-22</prorogation>
       <parliament>13th Parliament</parliament>
-      <parliament_ref>13</parliament_ref>      
-      <session_ref>13.5</session_ref>
+      <parliament_ref>13</parliament_ref>
+      <prorogation>1839-08-27</prorogation>
       
-      
+      <session_ref>13.3</session_ref>
+      <session_start_year>1839</session_start_year>
+      <state_opening>1839-02-05 </state_opening>
    </session>
    <session session_indicator="35">
-      <session_start_year>1841</session_start_year>
-      <state_opening>1841-08-19 </state_opening>
-      <prorogation>1841-10-07</prorogation>
-      <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.1</session_ref>
+      <parliament>13th Parliament</parliament>
+      <parliament_ref>13</parliament_ref>
+      <prorogation>1840-08-11</prorogation>
       
-      
+      <session_ref>13.4</session_ref>
+      <session_start_year>1840</session_start_year>
+      <state_opening>1840-01-16 </state_opening>
    </session>
    <session session_indicator="36">
-      <session_start_year>1842</session_start_year>
-      <state_opening>1842-02-03 </state_opening>
-      <prorogation>1842-08-12</prorogation>
-      <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.2</session_ref>
+      <parliament>13th Parliament</parliament>
+      <parliament_ref>13</parliament_ref>
+      <prorogation>1841-06-22</prorogation>
       
-      
+      <session_ref>13.5</session_ref>
+      <session_start_year>1841</session_start_year>
+      <state_opening>1841-01-26 </state_opening>
    </session>
    <session session_indicator="37">
-      <session_start_year>1843</session_start_year>
-      <state_opening>1843-02-02 </state_opening>
-      <prorogation>1843-08-24</prorogation>
       <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.3</session_ref>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1841-10-07</prorogation>
       
-      
+      <session_ref>14.1</session_ref>
+      <session_start_year>1841</session_start_year>
+      <state_opening>1841-08-19 </state_opening>
    </session>
    <session session_indicator="38">
-      <session_start_year>1844</session_start_year>
-      <state_opening>1844-02-01 </state_opening>
-      <prorogation>1844-09-05</prorogation>
       <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.4</session_ref>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1842-08-12</prorogation>
       
-      
+      <session_ref>14.2</session_ref>
+      <session_start_year>1842</session_start_year>
+      <state_opening>1842-02-03 </state_opening>
    </session>
    <session session_indicator="39">
-      <session_start_year>1845</session_start_year>
-      <state_opening>1845-02-04 </state_opening>
-      <prorogation>1845-08-09</prorogation>
       <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.5</session_ref>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1843-08-24</prorogation>
       
-      
+      <session_ref>14.3</session_ref>
+      <session_start_year>1843</session_start_year>
+      <state_opening>1843-02-02 </state_opening>
    </session>
    <session session_indicator="40">
-      <session_start_year>1846</session_start_year>
-      <state_opening>1846-01-22 </state_opening>
-      <prorogation>1846-08-28</prorogation>
       <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.6</session_ref>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1844-09-05</prorogation>
       
-      
+      <session_ref>14.4</session_ref>
+      <session_start_year>1844</session_start_year>
+      <state_opening>1844-02-01 </state_opening>
    </session>
    <session session_indicator="41">
-      <session_start_year>1847</session_start_year>
-      <state_opening>1847-01-19 </state_opening>
-      <prorogation>1847-07-23</prorogation>
       <parliament>14th Parliament</parliament>
-      <parliament_ref>14</parliament_ref>      
-      <session_ref>14.7</session_ref>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1845-08-09</prorogation>
       
-      
+      <session_ref>14.5</session_ref>
+      <session_start_year>1845</session_start_year>
+      <state_opening>1845-02-04 </state_opening>
    </session>
    <session session_indicator="42">
-      <session_start_year>1847</session_start_year>
-      <state_opening>1847-11-18 </state_opening>
-      <prorogation>1847-12-20</prorogation>
-      <parliament>15th Parliament</parliament>
-      <parliament_ref>15</parliament_ref>      
-      <session_ref>15.1</session_ref>
+      <parliament>14th Parliament</parliament>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1846-08-28</prorogation>
       
-      
+      <session_ref>14.6</session_ref>
+      <session_start_year>1846</session_start_year>
+      <state_opening>1846-01-22 </state_opening>
    </session>
    <session session_indicator="43">
-      <session_start_year>1848</session_start_year>
-      <state_opening>1848-02-03 </state_opening>
-      <prorogation>1848-09-05</prorogation>
-      <parliament>15th Parliament</parliament>
-      <parliament_ref>15</parliament_ref>      
-      <session_ref>15.2</session_ref>
+      <parliament>14th Parliament</parliament>
+      <parliament_ref>14</parliament_ref>
+      <prorogation>1847-07-23</prorogation>
       
-      
+      <session_ref>14.7</session_ref>
+      <session_start_year>1847</session_start_year>
+      <state_opening>1847-01-19 </state_opening>
    </session>
    <session session_indicator="44">
-      <session_start_year>1849</session_start_year>
-      <state_opening>1849-02-01 </state_opening>
-      <prorogation>1849-08-01</prorogation>
       <parliament>15th Parliament</parliament>
-      <parliament_ref>15</parliament_ref>      
-      <session_ref>15.3</session_ref>
+      <parliament_ref>15</parliament_ref>
+      <prorogation>1847-12-20</prorogation>
       
-      
+      <session_ref>15.1</session_ref>
+      <session_start_year>1847</session_start_year>
+      <state_opening>1847-11-18 </state_opening>
    </session>
    <session session_indicator="45">
-      <session_start_year>1850</session_start_year>
-      <state_opening>1850-01-31 </state_opening>
-      <prorogation>1850-08-15</prorogation>
       <parliament>15th Parliament</parliament>
-      <parliament_ref>15</parliament_ref>      
-      <session_ref>15.4</session_ref>
+      <parliament_ref>15</parliament_ref>
+      <prorogation>1848-09-05</prorogation>
       
-      
+      <session_ref>15.2</session_ref>
+      <session_start_year>1848</session_start_year>
+      <state_opening>1848-02-03 </state_opening>
    </session>
    <session session_indicator="46">
-      <session_start_year>1851</session_start_year>
-      <state_opening>1851-02-04 </state_opening>
-      <prorogation>1851-08-08</prorogation>
       <parliament>15th Parliament</parliament>
-      <parliament_ref>15</parliament_ref>      
-      <session_ref>15.5</session_ref>
+      <parliament_ref>15</parliament_ref>
+      <prorogation>1849-08-01</prorogation>
       
-      
+      <session_ref>15.3</session_ref>
+      <session_start_year>1849</session_start_year>
+      <state_opening>1849-02-01 </state_opening>
    </session>
    <session session_indicator="47">
-      <session_start_year>1852</session_start_year>
-      <state_opening>1852-02-03 </state_opening>
-      <prorogation>1852-07-01</prorogation>
       <parliament>15th Parliament</parliament>
-      <parliament_ref>15</parliament_ref>      
-      <session_ref>15.6</session_ref>
+      <parliament_ref>15</parliament_ref>
+      <prorogation>1850-08-15</prorogation>
       
-      
+      <session_ref>15.4</session_ref>
+      <session_start_year>1850</session_start_year>
+      <state_opening>1850-01-31 </state_opening>
    </session>
    <session session_indicator="48">
-      <session_start_year>1852</session_start_year>
-      <state_opening>1852-11-04 </state_opening>
-      <prorogation>1852-12-31</prorogation>
-      <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.1</session_ref>
+      <parliament>15th Parliament</parliament>
+      <parliament_ref>15</parliament_ref>
+      <prorogation>1851-08-08</prorogation>
       
-      
+      <session_ref>15.5</session_ref>
+      <session_start_year>1851</session_start_year>
+      <state_opening>1851-02-04 </state_opening>
    </session>
    <session session_indicator="49">
-      <session_start_year>1853</session_start_year>
-      <state_opening>1853-02-10 </state_opening>
-      <prorogation>1853-08-20</prorogation>
-      <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.2</session_ref>
+      <parliament>15th Parliament</parliament>
+      <parliament_ref>15</parliament_ref>
+      <prorogation>1852-07-01</prorogation>
       
-      
+      <session_ref>15.6</session_ref>
+      <session_start_year>1852</session_start_year>
+      <state_opening>1852-02-03 </state_opening>
    </session>
    <session session_indicator="50">
-      <session_start_year>1854</session_start_year>
-      <state_opening>1854-01-31 </state_opening>
-      <prorogation>1854-08-12</prorogation>
       <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.3</session_ref>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1852-12-31</prorogation>
       
-      
+      <session_ref>16.1</session_ref>
+      <session_start_year>1852</session_start_year>
+      <state_opening>1852-11-04 </state_opening>
    </session>
    <session session_indicator="51">
-      <session_start_year>1854</session_start_year>
-      <state_opening>1854-12-12 </state_opening>
-      <prorogation>1854-12-23</prorogation>
       <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.4</session_ref>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1853-08-20</prorogation>
       
-      
+      <session_ref>16.2</session_ref>
+      <session_start_year>1853</session_start_year>
+      <state_opening>1853-02-10 </state_opening>
    </session>
    <session session_indicator="52">
-      <session_start_year>1855</session_start_year>
-      <state_opening>1855-01-23 </state_opening>
-      <prorogation>1855-08-14</prorogation>
       <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.5</session_ref>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1854-08-12</prorogation>
       
-      
+      <session_ref>16.3</session_ref>
+      <session_start_year>1854</session_start_year>
+      <state_opening>1854-01-31 </state_opening>
    </session>
    <session session_indicator="53">
-      <session_start_year>1856</session_start_year>
-      <state_opening>1856-01-31 </state_opening>
-      <prorogation>1856-07-29</prorogation>
       <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.6</session_ref>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1854-12-23</prorogation>
       
-      
+      <session_ref>16.4</session_ref>
+      <session_start_year>1854</session_start_year>
+      <state_opening>1854-12-12 </state_opening>
    </session>
    <session session_indicator="54">
-      <session_start_year>1857</session_start_year>
-      <state_opening>1857-02-03 </state_opening>
-      <prorogation>1857-03-21</prorogation>
       <parliament>16th Parliament</parliament>
-      <parliament_ref>16</parliament_ref>      
-      <session_ref>16.7</session_ref>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1855-08-14</prorogation>
       
-      
+      <session_ref>16.5</session_ref>
+      <session_start_year>1855</session_start_year>
+      <state_opening>1855-01-23 </state_opening>
    </session>
    <session session_indicator="55">
-      <session_start_year>1857</session_start_year>
-      <state_opening>1857-04-20 </state_opening>
-      <prorogation>1857-08-28</prorogation>
-      <parliament>17th Parliament</parliament>
-      <parliament_ref>17</parliament_ref>      
-      <session_ref>17.1</session_ref>
+      <parliament>16th Parliament</parliament>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1856-07-29</prorogation>
       
-      
+      <session_ref>16.6</session_ref>
+      <session_start_year>1856</session_start_year>
+      <state_opening>1856-01-31 </state_opening>
    </session>
    <session session_indicator="56">
+      <parliament>16th Parliament</parliament>
+      <parliament_ref>16</parliament_ref>
+      <prorogation>1857-03-21</prorogation>
+      
+      <session_ref>16.7</session_ref>
       <session_start_year>1857</session_start_year>
-      <state_opening>1857-12-03</state_opening>
-      <prorogation>1857-12-12</prorogation>
-      <parliament>17th Parliament</parliament>
-      <parliament_ref>17</parliament_ref>      
-      <session_ref>17.2</session_ref>
-      
-      
+      <state_opening>1857-02-03 </state_opening>
    </session>
    <session session_indicator="57">
-      <session_start_year>1858</session_start_year>
-      <state_opening>1858-02-04 </state_opening>
-      <prorogation>1858-08-02</prorogation>
       <parliament>17th Parliament</parliament>
-      <parliament_ref>17</parliament_ref>      
-      <session_ref>17.3</session_ref>
+      <parliament_ref>17</parliament_ref>
+      <prorogation>1857-08-28</prorogation>
       
-      
+      <session_ref>17.1</session_ref>
+      <session_start_year>1857</session_start_year>
+      <state_opening>1857-04-20 </state_opening>
    </session>
    <session session_indicator="58">
-      <session_start_year>1859</session_start_year>
-      <state_opening>1859-02-03 </state_opening>
-      <prorogation>1859-04-19</prorogation>
       <parliament>17th Parliament</parliament>
-      <parliament_ref>17</parliament_ref>      
-      <session_ref>17.4</session_ref>
+      <parliament_ref>17</parliament_ref>
+      <prorogation>1857-12-12</prorogation>
       
-      
+      <session_ref>17.2</session_ref>
+      <session_start_year>1857</session_start_year>
+      <state_opening>1857-12-03</state_opening>
    </session>
    <session session_indicator="59">
-      <session_start_year>1859</session_start_year>
-      <state_opening>1859-05-31 </state_opening>
-      <prorogation>1859-08-13</prorogation>
-      <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.1</session_ref>
+      <parliament>17th Parliament</parliament>
+      <parliament_ref>17</parliament_ref>
+      <prorogation>1858-08-02</prorogation>
       
-      
+      <session_ref>17.3</session_ref>
+      <session_start_year>1858</session_start_year>
+      <state_opening>1858-02-04 </state_opening>
    </session>
    <session session_indicator="60">
-      <session_start_year>1860</session_start_year>
-      <state_opening>1860-01-24 </state_opening>
-      <prorogation>1860-08-28</prorogation>
-      <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.2</session_ref>
+      <parliament>17th Parliament</parliament>
+      <parliament_ref>17</parliament_ref>
+      <prorogation>1859-04-19</prorogation>
       
-      
+      <session_ref>17.4</session_ref>
+      <session_start_year>1859</session_start_year>
+      <state_opening>1859-02-03 </state_opening>
    </session>
    <session session_indicator="61">
-      <session_start_year>1861</session_start_year>
-      <state_opening>1861-02-05 </state_opening>
-      <prorogation>1861-08-06</prorogation>
       <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.3</session_ref>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1859-08-13</prorogation>
       
-      
+      <session_ref>18.1</session_ref>
+      <session_start_year>1859</session_start_year>
+      <state_opening>1859-05-31 </state_opening>
    </session>
    <session session_indicator="62">
-      <session_start_year>1862</session_start_year>
-      <state_opening>1862-02-06 </state_opening>
-      <prorogation>1862-08-07</prorogation>
       <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.4</session_ref>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1860-08-28</prorogation>
       
-      
+      <session_ref>18.2</session_ref>
+      <session_start_year>1860</session_start_year>
+      <state_opening>1860-01-24 </state_opening>
    </session>
    <session session_indicator="63">
-      <session_start_year>1863</session_start_year>
-      <state_opening>1863-02-05 </state_opening>
-      <prorogation>1863-07-28</prorogation>
       <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.5</session_ref>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1861-08-06</prorogation>
       
-      
+      <session_ref>18.3</session_ref>
+      <session_start_year>1861</session_start_year>
+      <state_opening>1861-02-05 </state_opening>
    </session>
    <session session_indicator="64">
-      <session_start_year>1864</session_start_year>
-      <state_opening>1864-02-04 </state_opening>
-      <prorogation>1864-07-29</prorogation>
       <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.6</session_ref>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1862-08-07</prorogation>
       
-      
+      <session_ref>18.4</session_ref>
+      <session_start_year>1862</session_start_year>
+      <state_opening>1862-02-06 </state_opening>
    </session>
    <session session_indicator="65">
-      <session_start_year>1865</session_start_year>
-      <state_opening>1865-02-07 </state_opening>
-      <prorogation>1865-07-06</prorogation>
       <parliament>18th Parliament</parliament>
-      <parliament_ref>18</parliament_ref>      
-      <session_ref>18.7</session_ref>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1863-07-28</prorogation>
       
-      
+      <session_ref>18.5</session_ref>
+      <session_start_year>1863</session_start_year>
+      <state_opening>1863-02-05 </state_opening>
    </session>
    <session session_indicator="66">
-      <session_start_year>1866</session_start_year>
-      <state_opening>1866-02-01 </state_opening>
-      <prorogation>1866-08-10</prorogation>
-      <parliament>19th Parliament</parliament>
-      <parliament_ref>19</parliament_ref>      
-      <session_ref>19.1</session_ref>
+      <parliament>18th Parliament</parliament>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1864-07-29</prorogation>
       
-      
+      <session_ref>18.6</session_ref>
+      <session_start_year>1864</session_start_year>
+      <state_opening>1864-02-04 </state_opening>
    </session>
    <session session_indicator="67">
-      <session_start_year>1867</session_start_year>
-      <state_opening>1867-02-05 </state_opening>
-      <prorogation>1867-08-21</prorogation>
-      <parliament>19th Parliament</parliament>
-      <parliament_ref>19</parliament_ref>      
-      <session_ref>19.2</session_ref>
+      <parliament>18th Parliament</parliament>
+      <parliament_ref>18</parliament_ref>
+      <prorogation>1865-07-06</prorogation>
       
-      
+      <session_ref>18.7</session_ref>
+      <session_start_year>1865</session_start_year>
+      <state_opening>1865-02-07 </state_opening>
    </session>
    <session session_indicator="68">
-      <session_start_year>1868</session_start_year>
-      <state_opening>1867-11-19</state_opening>
-      <prorogation>1867-12-07</prorogation>
       <parliament>19th Parliament</parliament>
-      <parliament_ref>19</parliament_ref>      
-      <session_ref>19.3</session_ref>
+      <parliament_ref>19</parliament_ref>
+      <prorogation>1866-08-10</prorogation>
       
-      
+      <session_ref>19.1</session_ref>
+      <session_start_year>1866</session_start_year>
+      <state_opening>1866-02-01 </state_opening>
    </session>
    <session session_indicator="69">
-      <session_start_year>1868</session_start_year>
-      <state_opening>1868-02-13 </state_opening>
-      <prorogation>1868-07-31</prorogation>
       <parliament>19th Parliament</parliament>
-      <parliament_ref>19</parliament_ref>      
-      <session_ref>19.4</session_ref>
+      <parliament_ref>19</parliament_ref>
+      <prorogation>1867-08-21</prorogation>
       
-      
+      <session_ref>19.2</session_ref>
+      <session_start_year>1867</session_start_year>
+      <state_opening>1867-02-05 </state_opening>
    </session>
    <session session_indicator="70">
+      <parliament>19th Parliament</parliament>
+      <parliament_ref>19</parliament_ref>
+      <prorogation>1867-12-07</prorogation>
+      
+      <session_ref>19.3</session_ref>
       <session_start_year>1868</session_start_year>
-      <state_opening>1868-12-10</state_opening>
-      <prorogation>1868-12-29</prorogation>
-      <parliament>20th Parliament</parliament>
-      <parliament_ref>20</parliament_ref>      
-      <session_ref>20.1</session_ref>
-      
-      
+      <state_opening>1867-11-19</state_opening>
    </session>
    <session session_indicator="71">
-      <session_start_year>1869</session_start_year>
-      <state_opening>1869-02-16 </state_opening>
-      <prorogation>1869-08-11</prorogation>
-      <parliament>20th Parliament</parliament>
-      <parliament_ref>20</parliament_ref>      
-      <session_ref>20.2</session_ref>
+      <parliament>19th Parliament</parliament>
+      <parliament_ref>19</parliament_ref>
+      <prorogation>1868-07-31</prorogation>
       
-      
+      <session_ref>19.4</session_ref>
+      <session_start_year>1868</session_start_year>
+      <state_opening>1868-02-13 </state_opening>
    </session>
    <session session_indicator="72">
-      <session_start_year>1870</session_start_year>
-      <state_opening>1870-02-08 </state_opening>
-      <prorogation>1870-08-10</prorogation>
       <parliament>20th Parliament</parliament>
-      <parliament_ref>20</parliament_ref>      
-      <session_ref>20.3</session_ref>
+      <parliament_ref>20</parliament_ref>
+      <prorogation>1868-12-29</prorogation>
       
-      
+      <session_ref>20.1</session_ref>
+      <session_start_year>1868</session_start_year>
+      <state_opening>1868-12-10</state_opening>
    </session>
    <session session_indicator="73">
-      <session_start_year>1871</session_start_year>
-      <state_opening>1871-02-09 </state_opening>
-      <prorogation>1871-08-21</prorogation>
       <parliament>20th Parliament</parliament>
-      <parliament_ref>20</parliament_ref>      
-      <session_ref>20.4</session_ref>
+      <parliament_ref>20</parliament_ref>
+      <prorogation>1869-08-11</prorogation>
       
-      
+      <session_ref>20.2</session_ref>
+      <session_start_year>1869</session_start_year>
+      <state_opening>1869-02-16 </state_opening>
    </session>
    <session session_indicator="74">
-      <session_start_year>1872</session_start_year>
-      <state_opening>1872-02-06 </state_opening>
-      <prorogation>1872-08-10</prorogation>
       <parliament>20th Parliament</parliament>
-      <parliament_ref>20</parliament_ref>      
-      <session_ref>20.5</session_ref>
+      <parliament_ref>20</parliament_ref>
+      <prorogation>1870-08-10</prorogation>
       
-      
+      <session_ref>20.3</session_ref>
+      <session_start_year>1870</session_start_year>
+      <state_opening>1870-02-08 </state_opening>
    </session>
    <session session_indicator="75">
-      <session_start_year>1873</session_start_year>
-      <state_opening>1873-02-06 </state_opening>
-      <prorogation>1873-08-05</prorogation>
       <parliament>20th Parliament</parliament>
-      <parliament_ref>20</parliament_ref>      
-      <session_ref>20.6</session_ref>
+      <parliament_ref>20</parliament_ref>
+      <prorogation>1871-08-21</prorogation>
       
-      
+      <session_ref>20.4</session_ref>
+      <session_start_year>1871</session_start_year>
+      <state_opening>1871-02-09 </state_opening>
    </session>
    <session session_indicator="76">
-      <session_start_year>1874</session_start_year>
-      <state_opening>1874-03-05 </state_opening>
-      <prorogation>1874-08-07</prorogation>
-      <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.1</session_ref>
+      <parliament>20th Parliament</parliament>
+      <parliament_ref>20</parliament_ref>
+      <prorogation>1872-08-10</prorogation>
       
-      
+      <session_ref>20.5</session_ref>
+      <session_start_year>1872</session_start_year>
+      <state_opening>1872-02-06 </state_opening>
    </session>
    <session session_indicator="77">
-      <session_start_year>1875</session_start_year>
-      <state_opening>1875-02-05 </state_opening>
-      <prorogation>1875-08-13</prorogation>
-      <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.2</session_ref>
+      <parliament>20th Parliament</parliament>
+      <parliament_ref>20</parliament_ref>
+      <prorogation>1873-08-05</prorogation>
       
-      
+      <session_ref>20.6</session_ref>
+      <session_start_year>1873</session_start_year>
+      <state_opening>1873-02-06 </state_opening>
    </session>
    <session session_indicator="78">
-      <session_start_year>1876</session_start_year>
-      <state_opening>1876-02-08 </state_opening>
-      <prorogation>1876-08-15</prorogation>
       <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.3</session_ref>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1874-08-07</prorogation>
       
-      
+      <session_ref>21.1</session_ref>
+      <session_start_year>1874</session_start_year>
+      <state_opening>1874-03-05 </state_opening>
    </session>
    <session session_indicator="79">
-      <session_start_year>1877</session_start_year>
-      <state_opening>1877-02-08 </state_opening>
-      <prorogation>1877-08-14</prorogation>
       <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.4</session_ref>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1875-08-13</prorogation>
       
-      
+      <session_ref>21.2</session_ref>
+      <session_start_year>1875</session_start_year>
+      <state_opening>1875-02-05 </state_opening>
    </session>
    <session session_indicator="80">
-      <session_start_year>1878</session_start_year>
-      <state_opening>1878-01-17 </state_opening>
-      <prorogation>1878-08-16</prorogation>
       <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.5</session_ref>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1876-08-15</prorogation>
       
-      
+      <session_ref>21.3</session_ref>
+      <session_start_year>1876</session_start_year>
+      <state_opening>1876-02-08 </state_opening>
    </session>
    <session session_indicator="81">
-      <session_start_year>1878</session_start_year>
-      <state_opening>1878-12-05 </state_opening>
-      <prorogation>1878-12-17</prorogation>
       <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.6</session_ref>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1877-08-14</prorogation>
       
-      
+      <session_ref>21.4</session_ref>
+      <session_start_year>1877</session_start_year>
+      <state_opening>1877-02-08 </state_opening>
    </session>
    <session session_indicator="82">
-      <session_start_year>1879</session_start_year>
-      <state_opening>1879-02-13 </state_opening>
-      <prorogation>1879-08-15</prorogation>
       <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.7</session_ref>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1878-08-16</prorogation>
       
-      
+      <session_ref>21.5</session_ref>
+      <session_start_year>1878</session_start_year>
+      <state_opening>1878-01-17 </state_opening>
    </session>
    <session session_indicator="83">
-      <session_start_year>1880</session_start_year>
-      <state_opening>1880-02-05 </state_opening>
-      <prorogation>1880-03-24</prorogation>
       <parliament>21st Parliament</parliament>
-      <parliament_ref>21</parliament_ref>      
-      <session_ref>21.8</session_ref>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1878-12-17</prorogation>
       
-      
+      <session_ref>21.6</session_ref>
+      <session_start_year>1878</session_start_year>
+      <state_opening>1878-12-05 </state_opening>
    </session>
    <session session_indicator="84">
-      <session_start_year>1880</session_start_year>
-      <state_opening>1880-04-29 </state_opening>
-      <prorogation>1880-09-07</prorogation>
-      <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.1</session_ref>
+      <parliament>21st Parliament</parliament>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1879-08-15</prorogation>
       
-      
+      <session_ref>21.7</session_ref>
+      <session_start_year>1879</session_start_year>
+      <state_opening>1879-02-13 </state_opening>
    </session>
    <session session_indicator="85">
-      <session_start_year>1881</session_start_year>
-      <state_opening>1881-01-06 </state_opening>
-      <prorogation>1881-08-27</prorogation>
-      <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.2</session_ref>
+      <parliament>21st Parliament</parliament>
+      <parliament_ref>21</parliament_ref>
+      <prorogation>1880-03-24</prorogation>
       
-      
+      <session_ref>21.8</session_ref>
+      <session_start_year>1880</session_start_year>
+      <state_opening>1880-02-05 </state_opening>
    </session>
    <session session_indicator="86">
-      <session_start_year>1882</session_start_year>
-      <state_opening>1882-02-07 </state_opening>
-      <prorogation>1882-08-18</prorogation>
       <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.3</session_ref>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1880-09-07</prorogation>
       
-      
+      <session_ref>22.1</session_ref>
+      <session_start_year>1880</session_start_year>
+      <state_opening>1880-04-29 </state_opening>
    </session>
    <session session_indicator="87">
-      <session_start_year>1882</session_start_year>
-      <state_opening>1882-10-24 </state_opening>
-      <prorogation>1882-12-02</prorogation>
       <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.4</session_ref>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1881-08-27</prorogation>
       
-      
+      <session_ref>22.2</session_ref>
+      <session_start_year>1881</session_start_year>
+      <state_opening>1881-01-06 </state_opening>
    </session>
    <session session_indicator="88">
-      <session_start_year>1883</session_start_year>
-      <state_opening>1883-02-15 </state_opening>
-      <prorogation>1883-08-25</prorogation>
       <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.5</session_ref>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1882-08-18</prorogation>
       
-      
+      <session_ref>22.3</session_ref>
+      <session_start_year>1882</session_start_year>
+      <state_opening>1882-02-07 </state_opening>
    </session>
    <session session_indicator="89">
-      <session_start_year>1884</session_start_year>
-      <state_opening>1884-02-05 </state_opening>
-      <prorogation>1884-08-14</prorogation>
       <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.6</session_ref>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1882-12-02</prorogation>
       
-      
+      <session_ref>22.4</session_ref>
+      <session_start_year>1882</session_start_year>
+      <state_opening>1882-10-24 </state_opening>
    </session>
    <session session_indicator="90">
-      <session_start_year>1884</session_start_year>
-      <state_opening>1884-10-23 </state_opening>
-      <prorogation>1884-12-06</prorogation>
       <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.7</session_ref>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1883-08-25</prorogation>
       
-      
+      <session_ref>22.5</session_ref>
+      <session_start_year>1883</session_start_year>
+      <state_opening>1883-02-15 </state_opening>
    </session>
    <session session_indicator="91">
-      <session_start_year>1885</session_start_year>
-      <state_opening>1885-02-19 </state_opening>
-      <prorogation>1885-08-14</prorogation>
       <parliament>22nd Parliament</parliament>
-      <parliament_ref>22</parliament_ref>      
-      <session_ref>22.8</session_ref>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1884-08-14</prorogation>
       
-      
+      <session_ref>22.6</session_ref>
+      <session_start_year>1884</session_start_year>
+      <state_opening>1884-02-05 </state_opening>
    </session>
    <session session_indicator="92">
-      <session_start_year>1886</session_start_year>
-      <state_opening>1886-01-28 </state_opening>
-      <prorogation>1886-06-25</prorogation>
-      <parliament>23rd Parliament</parliament>
-      <parliament_ref>23</parliament_ref>      
-      <session_ref>23.1</session_ref>
+      <parliament>22nd Parliament</parliament>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1884-12-06</prorogation>
       
-      
+      <session_ref>22.7</session_ref>
+      <session_start_year>1884</session_start_year>
+      <state_opening>1884-10-23 </state_opening>
    </session>
    <session session_indicator="93">
-      <session_start_year>1886</session_start_year>
-      <state_opening>1886-08-05 </state_opening>
-      <prorogation>1886-09-25</prorogation>
-      <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.1</session_ref>
+      <parliament>22nd Parliament</parliament>
+      <parliament_ref>22</parliament_ref>
+      <prorogation>1885-08-14</prorogation>
       
-      
+      <session_ref>22.8</session_ref>
+      <session_start_year>1885</session_start_year>
+      <state_opening>1885-02-19 </state_opening>
    </session>
    <session session_indicator="94">
-      <session_start_year>1887</session_start_year>
-      <state_opening>1887-01-27 </state_opening>
-      <prorogation>1887-09-16</prorogation>
-      <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.2</session_ref>
+      <parliament>23rd Parliament</parliament>
+      <parliament_ref>23</parliament_ref>
+      <prorogation>1886-06-25</prorogation>
       
-      
+      <session_ref>23.1</session_ref>
+      <session_start_year>1886</session_start_year>
+      <state_opening>1886-01-12 </state_opening>
    </session>
    <session session_indicator="95">
-      <session_start_year>1888</session_start_year>
-      <state_opening>1888-02-09 </state_opening>
-      <prorogation>1888-08-13</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.3</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1886-09-25</prorogation>
       
-      
+      <session_ref>24.1</session_ref>
+      <session_start_year>1886</session_start_year>
+      <state_opening>1886-08-05 </state_opening>
    </session>
    <session session_indicator="96">
-      <session_start_year>1888</session_start_year>
-      <state_opening>1888-11-06 </state_opening>
-      <prorogation>1888-12-24</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.4</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1887-09-16</prorogation>
       
-      
+      <session_ref>24.2</session_ref>
+      <session_start_year>1887</session_start_year>
+      <state_opening>1887-01-27 </state_opening>
    </session>
    <session session_indicator="97">
-      <session_start_year>1889</session_start_year>
-      <state_opening>1889-02-21 </state_opening>
-      <prorogation>1889-08-30</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.5</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1888-08-13</prorogation>
       
-      
+      <session_ref>24.3</session_ref>
+      <session_start_year>1888</session_start_year>
+      <state_opening>1888-02-09 </state_opening>
    </session>
    <session session_indicator="98">
-      <session_start_year>1890</session_start_year>
-      <state_opening>1890-02-11 </state_opening>
-      <prorogation>1890-08-18</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.6</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1888-12-24</prorogation>
       
-      
+      <session_ref>24.4</session_ref>
+      <session_start_year>1888</session_start_year>
+      <state_opening>1888-11-06 </state_opening>
    </session>
    <session session_indicator="99">
-      <session_start_year>1890</session_start_year>
-      <state_opening>1890-11-25</state_opening>
-      <prorogation>1890-12-09</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.7</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1889-08-30</prorogation>
       
-      
+      <session_ref>24.5</session_ref>
+      <session_start_year>1889</session_start_year>
+      <state_opening>1889-02-21 </state_opening>
    </session>
    <session session_indicator="100">
-      <session_start_year>1891</session_start_year>
-      <state_opening>1891-01-22 </state_opening>
-      <prorogation>1891-08-05</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.8</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1890-08-18</prorogation>
       
-      
+      <session_ref>24.6</session_ref>
+      <session_start_year>1890</session_start_year>
+      <state_opening>1890-02-11 </state_opening>
    </session>
    <session session_indicator="101">
-      <session_start_year>1892</session_start_year>
-      <state_opening>1892-02-09 </state_opening>
-      <prorogation>1892-06-28</prorogation>
       <parliament>24th Parliament</parliament>
-      <parliament_ref>24</parliament_ref>      
-      <session_ref>24.9</session_ref>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1890-12-09</prorogation>
       
-      
+      <session_ref>24.7</session_ref>
+      <session_start_year>1890</session_start_year>
+      <state_opening>1890-11-25</state_opening>
    </session>
    <session session_indicator="102">
-      <session_start_year>1892</session_start_year>
-      <state_opening>1892-08-04</state_opening>
-      <prorogation>1892-08-18</prorogation>
-      <parliament>25th Parliament</parliament>
-      <parliament_ref>25</parliament_ref>      
-      <session_ref>25.1</session_ref>
+      <parliament>24th Parliament</parliament>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1891-08-05</prorogation>
       
-      
+      <session_ref>24.8</session_ref>
+      <session_start_year>1891</session_start_year>
+      <state_opening>1891-01-22 </state_opening>
    </session>
    <session session_indicator="103">
-      <session_start_year>1894</session_start_year>
-      <state_opening>1893-01-31 </state_opening>
-      <prorogation>1894-03-05</prorogation>
-      <parliament>25th Parliament</parliament>
-      <parliament_ref>25</parliament_ref>      
-      <session_ref>25.2</session_ref>
+      <parliament>24th Parliament</parliament>
+      <parliament_ref>24</parliament_ref>
+      <prorogation>1892-06-28</prorogation>
       
-      
+      <session_ref>24.9</session_ref>
+      <session_start_year>1892</session_start_year>
+      <state_opening>1892-02-09 </state_opening>
    </session>
    <session session_indicator="104">
-      <session_start_year>1894</session_start_year>
-      <state_opening>1894-03-12 </state_opening>
-      <prorogation>1894-08-25</prorogation>
       <parliament>25th Parliament</parliament>
-      <parliament_ref>25</parliament_ref>      
-      <session_ref>25.3</session_ref>
+      <parliament_ref>25</parliament_ref>
+      <prorogation>1892-08-18</prorogation>
       
-      
+      <session_ref>25.1</session_ref>
+      <session_start_year>1892</session_start_year>
+      <state_opening>1892-08-04</state_opening>
    </session>
    <session session_indicator="105">
-      <session_start_year>1895</session_start_year>
-      <state_opening>1895-02-05 </state_opening>
-      <prorogation>1895-07-06</prorogation>
       <parliament>25th Parliament</parliament>
-      <parliament_ref>25</parliament_ref>      
-      <session_ref>25.4</session_ref>
+      <parliament_ref>25</parliament_ref>
+      <prorogation>1894-03-05</prorogation>
       
-      
+      <session_ref>25.2</session_ref>
+      <session_start_year>1894</session_start_year>
+      <state_opening>1893-01-31 </state_opening>
    </session>
    <session session_indicator="106">
-      <session_start_year>1895</session_start_year>
-      <state_opening>1895-08-12 </state_opening>
-      <prorogation>1895-09-05</prorogation>
-      <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.1</session_ref>
+      <parliament>25th Parliament</parliament>
+      <parliament_ref>25</parliament_ref>
+      <prorogation>1894-08-25</prorogation>
       
-      
+      <session_ref>25.3</session_ref>
+      <session_start_year>1894</session_start_year>
+      <state_opening>1894-03-12 </state_opening>
    </session>
    <session session_indicator="107">
+      <parliament>25th Parliament</parliament>
+      <parliament_ref>25</parliament_ref>
+      <prorogation>1895-07-06</prorogation>
+      
+      <session_ref>25.4</session_ref>
       <session_start_year>1895</session_start_year>
-      <state_opening>1896-02-11 </state_opening>
-      <prorogation>1896-08-14</prorogation>
-      <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.2</session_ref>
-      
-      
+      <state_opening>1895-02-05 </state_opening>
    </session>
    <session session_indicator="108">
-      <session_start_year>1897</session_start_year>
-      <state_opening>1897-01-19 </state_opening>
-      <prorogation>1897-08-06</prorogation>
       <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.3</session_ref>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1895-09-05</prorogation>
       
-      
+      <session_ref>26.1</session_ref>
+      <session_start_year>1895</session_start_year>
+      <state_opening>1895-08-12 </state_opening>
    </session>
    <session session_indicator="109">
-      <session_start_year>1898</session_start_year>
-      <state_opening>1898-02-08 </state_opening>
-      <prorogation>1898-08-12</prorogation>
       <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.4</session_ref>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1896-08-14</prorogation>
       
-      
+      <session_ref>26.2</session_ref>
+      <session_start_year>1895</session_start_year>
+      <state_opening>1896-02-11 </state_opening>
    </session>
    <session session_indicator="110">
-      <session_start_year>1899</session_start_year>
-      <state_opening>1899-02-07 </state_opening>
-      <prorogation>1899-08-09</prorogation>
       <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.5</session_ref>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1897-08-06</prorogation>
       
-      
+      <session_ref>26.3</session_ref>
+      <session_start_year>1897</session_start_year>
+      <state_opening>1897-01-19 </state_opening>
    </session>
    <session session_indicator="111">
-      <session_start_year>1899</session_start_year>
-      <state_opening>1899-10-17 </state_opening>
-      <prorogation>1899-10-27</prorogation>
       <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.6</session_ref>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1898-08-12</prorogation>
       
-      
+      <session_ref>26.4</session_ref>
+      <session_start_year>1898</session_start_year>
+      <state_opening>1898-02-08 </state_opening>
    </session>
    <session session_indicator="112">
-      <session_start_year>1900</session_start_year>
-      <state_opening>1900-01-30</state_opening>
-      <prorogation>1900-08-08</prorogation>
       <parliament>26th Parliament</parliament>
-      <parliament_ref>26</parliament_ref>      
-      <session_ref>26.7</session_ref>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1899-08-09</prorogation>
       
-      
+      <session_ref>26.5</session_ref>
+      <session_start_year>1899</session_start_year>
+      <state_opening>1899-02-07 </state_opening>
    </session>
    <session session_indicator="113">
-      <session_start_year>1900</session_start_year>
-      <state_opening>1900-12-03</state_opening>
-      <prorogation>1900-12-15</prorogation>
-      <parliament>27th Parliament</parliament>
-      <parliament_ref>27</parliament_ref>      
-      <session_ref>27.1</session_ref>
+      <parliament>26th Parliament</parliament>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1899-10-27</prorogation>
       
-      
+      <session_ref>26.6</session_ref>
+      <session_start_year>1899</session_start_year>
+      <state_opening>1899-10-17 </state_opening>
    </session>
    <session session_indicator="114">
-      <session_start_year>1901</session_start_year>
-      <state_opening>1901-01-23</state_opening>
-      <prorogation>1901-08-17</prorogation>
-      <parliament>27th Parliament</parliament>
-      <parliament_ref>27</parliament_ref>      
-      <session_ref>27.2</session_ref>
+      <parliament>26th Parliament</parliament>
+      <parliament_ref>26</parliament_ref>
+      <prorogation>1900-08-08</prorogation>
       
-      
+      <session_ref>26.7</session_ref>
+      <session_start_year>1900</session_start_year>
+      <state_opening>1900-01-30</state_opening>
    </session>
    <session session_indicator="115">
-      <session_start_year>1902</session_start_year>
-      <state_opening>1902-01-16</state_opening>
-      <prorogation>1902-12-18</prorogation>
       <parliament>27th Parliament</parliament>
-      <parliament_ref>27</parliament_ref>      
-      <session_ref>27.3</session_ref>
+      <parliament_ref>27</parliament_ref>
+      <prorogation>1900-12-15</prorogation>
       
-      
+      <session_ref>27.1</session_ref>
+      <session_start_year>1900</session_start_year>
+      <state_opening>1900-12-03</state_opening>
    </session>
    <session session_indicator="116">
-      <session_start_year>1903</session_start_year>
-      <state_opening>1903-02-17</state_opening>
-      <prorogation>1903-08-14</prorogation>
       <parliament>27th Parliament</parliament>
-      <parliament_ref>27</parliament_ref>      
-      <session_ref>27.4</session_ref>
+      <parliament_ref>27</parliament_ref>
+      <prorogation>1901-08-17</prorogation>
       
-      
+      <session_ref>27.2</session_ref>
+      <session_start_year>1901</session_start_year>
+      <state_opening>1901-01-23</state_opening>
    </session>
    <session session_indicator="117">
-      <session_start_year>1904</session_start_year>
-      <state_opening>1904-02-02</state_opening>
-      <prorogation>1904-08-15</prorogation>
       <parliament>27th Parliament</parliament>
-      <parliament_ref>27</parliament_ref>      
-      <session_ref>27.5</session_ref>
+      <parliament_ref>27</parliament_ref>
+      <prorogation>1902-12-18</prorogation>
       
-      
+      <session_ref>27.3</session_ref>
+      <session_start_year>1902</session_start_year>
+      <state_opening>1902-01-16</state_opening>
    </session>
    <session session_indicator="118">
-      <session_start_year>1905</session_start_year>
-      <state_opening>1905-02-14</state_opening>
-      <prorogation>1905-08-11</prorogation>
       <parliament>27th Parliament</parliament>
-      <parliament_ref>27</parliament_ref>      
-      <session_ref>27.6</session_ref>
+      <parliament_ref>27</parliament_ref>
+      <prorogation>1903-08-14</prorogation>
       
-      
+      <session_ref>27.4</session_ref>
+      <session_start_year>1903</session_start_year>
+      <state_opening>1903-02-17</state_opening>
    </session>
    <session session_indicator="119">
-      <session_start_year>1906</session_start_year>
-      <state_opening>1906-02-13</state_opening>
-      <prorogation>1906-12-21</prorogation>
-      <parliament>28th Parliament</parliament>
-      <parliament_ref>28</parliament_ref>      
-      <session_ref>28.1</session_ref>
+      <parliament>27th Parliament</parliament>
+      <parliament_ref>27</parliament_ref>
+      <prorogation>1904-08-15</prorogation>
       
-      
+      <session_ref>27.5</session_ref>
+      <session_start_year>1904</session_start_year>
+      <state_opening>1904-02-02</state_opening>
    </session>
    <session session_indicator="120">
-      <session_start_year>1907</session_start_year>
-      <state_opening>1907-02-12</state_opening>
-      <prorogation>1907-08-28</prorogation>
-      <parliament>28th Parliament</parliament>
-      <parliament_ref>28</parliament_ref>      
-      <session_ref>28.2</session_ref>
+      <parliament>27th Parliament</parliament>
+      <parliament_ref>27</parliament_ref>
+      <prorogation>1905-08-11</prorogation>
       
-      
+      <session_ref>27.6</session_ref>
+      <session_start_year>1905</session_start_year>
+      <state_opening>1905-02-14</state_opening>
    </session>
    <session session_indicator="121">
-      <session_start_year>1908</session_start_year>
-      <state_opening>1908-01-29</state_opening>
-      <prorogation>1908-12-21</prorogation>
       <parliament>28th Parliament</parliament>
-      <parliament_ref>28</parliament_ref>      
-      <session_ref>28.3</session_ref>
+      <parliament_ref>28</parliament_ref>
+      <prorogation>1906-12-21</prorogation>
       
-      
+      <session_ref>28.1</session_ref>
+      <session_start_year>1906</session_start_year>
+      <state_opening>1906-02-13</state_opening>
    </session>
    <session session_indicator="122">
-      <session_start_year>1909</session_start_year>
-      <state_opening>1909-02-16</state_opening>
-      <prorogation>1909-12-03</prorogation>
       <parliament>28th Parliament</parliament>
-      <parliament_ref>28</parliament_ref>      
-      <session_ref>28.4</session_ref>
+      <parliament_ref>28</parliament_ref>
+      <prorogation>1907-08-28</prorogation>
       
-      
+      <session_ref>28.2</session_ref>
+      <session_start_year>1907</session_start_year>
+      <state_opening>1907-02-12</state_opening>
    </session>
    <session session_indicator="123">
-      <session_start_year>1910</session_start_year>
-      <state_opening>1910-02-15</state_opening>
-      <prorogation>1910-11-28</prorogation>
-      <parliament>29th Parliament</parliament>
-      <parliament_ref>29</parliament_ref>      
-      <session_ref>29.1</session_ref>
+      <parliament>28th Parliament</parliament>
+      <parliament_ref>28</parliament_ref>
+      <prorogation>1908-12-21</prorogation>
       
-      
+      <session_ref>28.3</session_ref>
+      <session_start_year>1908</session_start_year>
+      <state_opening>1908-01-29</state_opening>
    </session>
    <session session_indicator="124">
-      <session_start_year>1911</session_start_year>
-      <state_opening>1911-01-31</state_opening>
-      <prorogation>1911-12-16</prorogation>
-      <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.1</session_ref>
+      <parliament>28th Parliament</parliament>
+      <parliament_ref>28</parliament_ref>
+      <prorogation>1909-12-03</prorogation>
       
-      
+      <session_ref>28.4</session_ref>
+      <session_start_year>1909</session_start_year>
+      <state_opening>1909-02-16</state_opening>
    </session>
    <session session_indicator="125">
-      <session_start_year>1912</session_start_year>
-      <state_opening>1912-02-14</state_opening>
-      <prorogation>1913-03-07</prorogation>
-      <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.2</session_ref>
+      <parliament>29th Parliament</parliament>
+      <parliament_ref>29</parliament_ref>
+      <prorogation>1910-11-28</prorogation>
       
-      
+      <session_ref>29.1</session_ref>
+      <session_start_year>1910</session_start_year>
+      <state_opening>1910-02-15</state_opening>
    </session>
    <session session_indicator="126">
-      <session_start_year>1913</session_start_year>
-      <state_opening>1913-03-10</state_opening>
-      <prorogation>1913-08-15</prorogation>
       <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.3</session_ref>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1911-12-16</prorogation>
       
-      
+      <session_ref>30.1</session_ref>
+      <session_start_year>1911</session_start_year>
+      <state_opening>1911-01-31</state_opening>
    </session>
    <session session_indicator="127">
-      <session_start_year>1914</session_start_year>
-      <state_opening>1914-02-10</state_opening>
-      <prorogation>1914-09-18</prorogation>
       <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.4</session_ref>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1913-03-07</prorogation>
       
-      
+      <session_ref>30.2</session_ref>
+      <session_start_year>1912</session_start_year>
+      <state_opening>1912-02-14</state_opening>
    </session>
    <session session_indicator="128">
-      <session_start_year>1914</session_start_year>
-      <state_opening>1914-11-11</state_opening>
-      <prorogation>1916-01-27</prorogation>
       <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.5</session_ref>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1913-08-15</prorogation>
       
-      
+      <session_ref>30.3</session_ref>
+      <session_start_year>1913</session_start_year>
+      <state_opening>1913-03-10</state_opening>
    </session>
    <session session_indicator="129">
-      <session_start_year>1916</session_start_year>
-      <state_opening>1916-02-15</state_opening>
-      <prorogation>1916-12-22</prorogation>
       <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.6</session_ref>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1914-09-18</prorogation>
       
-      
+      <session_ref>30.4</session_ref>
+      <session_start_year>1914</session_start_year>
+      <state_opening>1914-02-10</state_opening>
    </session>
    <session session_indicator="130">
-      <session_start_year>1917</session_start_year>
-      <state_opening>1917-02-07</state_opening>
-      <prorogation>1918-02-06</prorogation>
       <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.7</session_ref>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1916-01-27</prorogation>
       
-      
+      <session_ref>30.5</session_ref>
+      <session_start_year>1914</session_start_year>
+      <state_opening>1914-11-11</state_opening>
    </session>
    <session session_indicator="131">
-      <session_start_year>1918</session_start_year>
-      <state_opening>1918-02-12</state_opening>
-      <prorogation>1918-11-21</prorogation>
       <parliament>30th Parliament</parliament>
-      <parliament_ref>30</parliament_ref>      
-      <session_ref>30.8</session_ref>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1916-12-22</prorogation>
       
-      
+      <session_ref>30.6</session_ref>
+      <session_start_year>1916</session_start_year>
+      <state_opening>1916-02-15</state_opening>
    </session>
    <session session_indicator="132">
-      <session_start_year>1919</session_start_year>
-      <state_opening>1919-02-04</state_opening>
-      <prorogation>1919-12-23</prorogation>
-      <parliament>31st Parliament</parliament>
-      <parliament_ref>31</parliament_ref>      
-      <session_ref>31.1</session_ref>
+      <parliament>30th Parliament</parliament>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1918-02-06</prorogation>
       
-      
+      <session_ref>30.7</session_ref>
+      <session_start_year>1917</session_start_year>
+      <state_opening>1917-02-07</state_opening>
    </session>
    <session session_indicator="133">
-      <session_start_year>1920</session_start_year>
-      <state_opening>1920-02-10</state_opening>
-      <prorogation>1920-12-23</prorogation>
-      <parliament>31st Parliament</parliament>
-      <parliament_ref>31</parliament_ref>      
-      <session_ref>31.2</session_ref>
+      <parliament>30th Parliament</parliament>
+      <parliament_ref>30</parliament_ref>
+      <prorogation>1918-11-21</prorogation>
       
-      
+      <session_ref>30.8</session_ref>
+      <session_start_year>1918</session_start_year>
+      <state_opening>1918-02-12</state_opening>
    </session>
    <session session_indicator="134">
-      <session_start_year>1921</session_start_year>
-      <state_opening>1921-02-15</state_opening>
-      <prorogation>1921-11-10</prorogation>
       <parliament>31st Parliament</parliament>
-      <parliament_ref>31</parliament_ref>      
-      <session_ref>31.3</session_ref>
+      <parliament_ref>31</parliament_ref>
+      <prorogation>1919-12-23</prorogation>
       
-      
+      <session_ref>31.1</session_ref>
+      <session_start_year>1919</session_start_year>
+      <state_opening>1919-02-04</state_opening>
    </session>
    <session session_indicator="135">
-      <session_start_year>1921</session_start_year>
-      <state_opening>1921-12-14</state_opening>
-      <prorogation>1921-12-19</prorogation>
       <parliament>31st Parliament</parliament>
-      <parliament_ref>31</parliament_ref>      
-      <session_ref>31.4</session_ref>
+      <parliament_ref>31</parliament_ref>
+      <prorogation>1920-12-23</prorogation>
       
-      
+      <session_ref>31.2</session_ref>
+      <session_start_year>1920</session_start_year>
+      <state_opening>1920-02-10</state_opening>
    </session>
    <session session_indicator="136">
-      <session_start_year>1922</session_start_year>
-      <state_opening>1922-02-07</state_opening>
-      <prorogation>1922-08-04</prorogation>
       <parliament>31st Parliament</parliament>
-      <parliament_ref>31</parliament_ref>      
-      <session_ref>31.5</session_ref>
+      <parliament_ref>31</parliament_ref>
+      <prorogation>1921-11-10</prorogation>
       
-      
+      <session_ref>31.3</session_ref>
+      <session_start_year>1921</session_start_year>
+      <state_opening>1921-02-15</state_opening>
    </session>
    <session session_indicator="137">
-      <session_start_year>1922</session_start_year>
-      <state_opening>1922-11-20</state_opening>
-      <prorogation>1922-12-15</prorogation>
-      <parliament>32nd Parliament</parliament>
-      <parliament_ref>32</parliament_ref>      
-      <session_ref>32.1</session_ref>
+      <parliament>31st Parliament</parliament>
+      <parliament_ref>31</parliament_ref>
+      <prorogation>1921-12-19</prorogation>
       
-      
+      <session_ref>31.4</session_ref>
+      <session_start_year>1921</session_start_year>
+      <state_opening>1921-12-14</state_opening>
    </session>
    <session session_indicator="138">
-      <session_start_year>1923</session_start_year>
-      <state_opening>1923-02-13</state_opening>
-      <prorogation>1923-11-16</prorogation>
-      <parliament>32nd Parliament</parliament>
-      <parliament_ref>32</parliament_ref>      
-      <session_ref>32.2</session_ref>
+      <parliament>31st Parliament</parliament>
+      <parliament_ref>31</parliament_ref>
+      <prorogation>1922-08-04</prorogation>
       
-      
+      <session_ref>31.5</session_ref>
+      <session_start_year>1922</session_start_year>
+      <state_opening>1922-02-07</state_opening>
    </session>
    <session session_indicator="139">
-      <session_start_year>1924</session_start_year>
-      <state_opening>1924-01-08</state_opening>
-      <prorogation>1924-10-09</prorogation>
-      <parliament>33rd Parliament</parliament>
-      <parliament_ref>33</parliament_ref>      
-      <session_ref>33.1</session_ref>
+      <parliament>32nd Parliament</parliament>
+      <parliament_ref>32</parliament_ref>
+      <prorogation>1922-12-15</prorogation>
       
-      
+      <session_ref>32.1</session_ref>
+      <session_start_year>1922</session_start_year>
+      <state_opening>1922-11-20</state_opening>
    </session>
    <session session_indicator="140">
-      <session_start_year>1924</session_start_year>
-      <state_opening>1924-12-02</state_opening>
-      <prorogation>1925-12-22</prorogation>
-      <parliament>34th Parliament</parliament>
-      <parliament_ref>34</parliament_ref>      
-      <session_ref>34.1</session_ref>
+      <parliament>32nd Parliament</parliament>
+      <parliament_ref>32</parliament_ref>
+      <prorogation>1923-11-16</prorogation>
       
-      
+      <session_ref>32.2</session_ref>
+      <session_start_year>1923</session_start_year>
+      <state_opening>1923-02-13</state_opening>
    </session>
    <session session_indicator="141">
-      <session_start_year>1925</session_start_year>
-      <state_opening>1926-02-02</state_opening>
-      <prorogation>1926-12-15</prorogation>
-      <parliament>34th Parliament</parliament>
-      <parliament_ref>34</parliament_ref>      
-      <session_ref>34.2</session_ref>
+      <parliament>33rd Parliament</parliament>
+      <parliament_ref>33</parliament_ref>
+      <prorogation>1924-10-09</prorogation>
       
-      
+      <session_ref>33.1</session_ref>
+      <session_start_year>1924</session_start_year>
+      <state_opening>1924-01-08</state_opening>
    </session>
    <session session_indicator="142">
-      <session_start_year>1926</session_start_year>
-      <state_opening>1927-02-08</state_opening>
-      <prorogation>1927-12-22</prorogation>
       <parliament>34th Parliament</parliament>
-      <parliament_ref>34</parliament_ref>      
-      <session_ref>34.3</session_ref>
+      <parliament_ref>34</parliament_ref>
+      <prorogation>1925-12-22</prorogation>
       
-      
+      <session_ref>34.1</session_ref>
+      <session_start_year>1924</session_start_year>
+      <state_opening>1924-12-02</state_opening>
    </session>
    <session session_indicator="143">
-      <session_start_year>1927</session_start_year>
-      <state_opening>1928-02-07</state_opening>
-      <prorogation>1928-08-03</prorogation>
       <parliament>34th Parliament</parliament>
-      <parliament_ref>34</parliament_ref>      
-      <session_ref>34.4</session_ref>
+      <parliament_ref>34</parliament_ref>
+      <prorogation>1926-12-15</prorogation>
       
-      
+      <session_ref>34.2</session_ref>
+      <session_start_year>1925</session_start_year>
+      <state_opening>1926-02-02</state_opening>
    </session>
    <session session_indicator="144">
-      <session_start_year>1928</session_start_year>
-      <state_opening>1928-11-06</state_opening>
-      <prorogation>1929-05-10</prorogation>
       <parliament>34th Parliament</parliament>
-      <parliament_ref>34</parliament_ref>      
-      <session_ref>34.5</session_ref>
+      <parliament_ref>34</parliament_ref>
+      <prorogation>1927-12-22</prorogation>
       
-      
+      <session_ref>34.3</session_ref>
+      <session_start_year>1926</session_start_year>
+      <state_opening>1927-02-08</state_opening>
    </session>
    <session session_indicator="145">
-      <session_start_year>1929</session_start_year>
-      <state_opening>1929-06-25</state_opening>
-      <prorogation>1930-08-01</prorogation>
-      <parliament>35th Parliament</parliament>
-      <parliament_ref>35</parliament_ref>      
-      <session_ref>35.1</session_ref>
+      <parliament>34th Parliament</parliament>
+      <parliament_ref>34</parliament_ref>
+      <prorogation>1928-08-03</prorogation>
       
-      
+      <session_ref>34.4</session_ref>
+      <session_start_year>1927</session_start_year>
+      <state_opening>1928-02-07</state_opening>
    </session>
    <session session_indicator="146">
-      <session_start_year>1930</session_start_year>
-      <state_opening>1930-10-28</state_opening>
-      <prorogation>1931-10-07</prorogation>
-      <parliament>35th Parliament</parliament>
-      <parliament_ref>35</parliament_ref>      
-      <session_ref>35.2</session_ref>
+      <parliament>34th Parliament</parliament>
+      <parliament_ref>34</parliament_ref>
+      <prorogation>1929-05-10</prorogation>
       
-      
+      <session_ref>34.5</session_ref>
+      <session_start_year>1928</session_start_year>
+      <state_opening>1928-11-06</state_opening>
    </session>
    <session session_indicator="147">
-      <session_start_year>1931</session_start_year>
-      <state_opening>1931-11-03</state_opening>
-      <prorogation>1932-11-17</prorogation>
-      <parliament>36th Parliament</parliament>
-      <parliament_ref>36</parliament_ref>      
-      <session_ref>36.1</session_ref>
+      <parliament>35th Parliament</parliament>
+      <parliament_ref>35</parliament_ref>
+      <prorogation>1930-08-01</prorogation>
       
-      
+      <session_ref>35.1</session_ref>
+      <session_start_year>1929</session_start_year>
+      <state_opening>1929-06-25</state_opening>
    </session>
    <session session_indicator="148">
-      <session_start_year>1932</session_start_year>
-      <state_opening>1932-11-22</state_opening>
-      <prorogation>1933-11-17</prorogation>
-      <parliament>36th Parliament</parliament>
-      <parliament_ref>36</parliament_ref>      
-      <session_ref>36.2</session_ref>
+      <parliament>35th Parliament</parliament>
+      <parliament_ref>35</parliament_ref>
+      <prorogation>1931-10-07</prorogation>
       
-      
+      <session_ref>35.2</session_ref>
+      <session_start_year>1930</session_start_year>
+      <state_opening>1930-10-28</state_opening>
    </session>
    <session session_indicator="149">
-      <session_start_year>1933</session_start_year>
-      <state_opening>1933-11-21</state_opening>
-      <prorogation>1934-11-16</prorogation>
       <parliament>36th Parliament</parliament>
-      <parliament_ref>36</parliament_ref>      
-      <session_ref>36.3</session_ref>
+      <parliament_ref>36</parliament_ref>
+      <prorogation>1932-11-17</prorogation>
       
-      
+      <session_ref>36.1</session_ref>
+      <session_start_year>1931</session_start_year>
+      <state_opening>1931-11-03</state_opening>
    </session>
    <session session_indicator="150">
-      <session_start_year>1934</session_start_year>
-      <state_opening>1934-11-20</state_opening>
-      <prorogation>1935-10-25</prorogation>
       <parliament>36th Parliament</parliament>
-      <parliament_ref>36</parliament_ref>      
-      <session_ref>36.4</session_ref>
+      <parliament_ref>36</parliament_ref>
+      <prorogation>1933-11-17</prorogation>
       
-      
+      <session_ref>36.2</session_ref>
+      <session_start_year>1932</session_start_year>
+      <state_opening>1932-11-22</state_opening>
    </session>
    <session session_indicator="151">
-      <session_start_year>1935</session_start_year>
-      <state_opening>1935-11-26</state_opening>
-      <prorogation>1936-10-30</prorogation>
-      <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.1</session_ref>
+      <parliament>36th Parliament</parliament>
+      <parliament_ref>36</parliament_ref>
+      <prorogation>1934-11-16</prorogation>
       
-      
+      <session_ref>36.3</session_ref>
+      <session_start_year>1933</session_start_year>
+      <state_opening>1933-11-21</state_opening>
    </session>
    <session session_indicator="152">
-      <session_start_year>1936</session_start_year>
-      <state_opening>1936-11-03</state_opening>
-      <prorogation>1937-10-22</prorogation>
-      <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.2</session_ref>
+      <parliament>36th Parliament</parliament>
+      <parliament_ref>36</parliament_ref>
+      <prorogation>1935-10-25</prorogation>
       
-      
+      <session_ref>36.4</session_ref>
+      <session_start_year>1934</session_start_year>
+      <state_opening>1934-11-20</state_opening>
    </session>
    <session session_indicator="153">
-      <session_start_year>1937</session_start_year>
-      <state_opening>1937-10-26</state_opening>
-      <prorogation>1938-11-04</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.3</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1936-10-30</prorogation>
       
-      
+      <session_ref>37.1</session_ref>
+      <session_start_year>1935</session_start_year>
+      <state_opening>1935-11-26</state_opening>
    </session>
    <session session_indicator="154">
-      <session_start_year>1938</session_start_year>
-      <state_opening>1938-11-08</state_opening>
-      <prorogation>1939-11-23</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.4</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1937-10-22</prorogation>
       
-      
+      <session_ref>37.2</session_ref>
+      <session_start_year>1936</session_start_year>
+      <state_opening>1936-11-03</state_opening>
    </session>
    <session session_indicator="155">
-      <session_start_year>1939</session_start_year>
-      <state_opening>1939-11-28</state_opening>
-      <prorogation>1940-11-20</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.5</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1938-11-04</prorogation>
       
-      
+      <session_ref>37.3</session_ref>
+      <session_start_year>1937</session_start_year>
+      <state_opening>1937-10-26</state_opening>
    </session>
    <session session_indicator="156">
-      <session_start_year>1940</session_start_year>
-      <state_opening>1940-11-21</state_opening>
-      <prorogation>1941-11-11</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.6</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1939-11-23</prorogation>
       
-      
+      <session_ref>37.4</session_ref>
+      <session_start_year>1938</session_start_year>
+      <state_opening>1938-11-08</state_opening>
    </session>
    <session session_indicator="157">
-      <session_start_year>1941</session_start_year>
-      <state_opening>1941-11-12</state_opening>
-      <prorogation>1942-11-10</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.7</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1940-11-20</prorogation>
       
-      
+      <session_ref>37.5</session_ref>
+      <session_start_year>1939</session_start_year>
+      <state_opening>1939-11-28</state_opening>
    </session>
    <session session_indicator="158">
-      <session_start_year>1942</session_start_year>
-      <state_opening>1942-11-11</state_opening>
-      <prorogation>1943-11-23</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.8</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1941-11-11</prorogation>
       
-      
+      <session_ref>37.6</session_ref>
+      <session_start_year>1940</session_start_year>
+      <state_opening>1940-11-21</state_opening>
    </session>
    <session session_indicator="159">
-      <session_start_year>1943</session_start_year>
-      <state_opening>1943-11-24</state_opening>
-      <prorogation>1944-11-28</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.9</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1942-11-10</prorogation>
       
-      
+      <session_ref>37.7</session_ref>
+      <session_start_year>1941</session_start_year>
+      <state_opening>1941-11-12</state_opening>
    </session>
    <session session_indicator="160">
-      <session_start_year>1944</session_start_year>
-      <state_opening>1944-11-29</state_opening>
-      <prorogation>1945-06-15</prorogation>
       <parliament>37th Parliament</parliament>
-      <parliament_ref>37</parliament_ref>      
-      <session_ref>37.91</session_ref>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1943-11-23</prorogation>
       
-      
+      <session_ref>37.8</session_ref>
+      <session_start_year>1942</session_start_year>
+      <state_opening>1942-11-11</state_opening>
    </session>
    <session session_indicator="161">
-      <session_start_year>1945</session_start_year>
-      <state_opening>1945-08-01</state_opening>
-      <prorogation>1946-11-06</prorogation>
-      <parliament>38th Parliament</parliament>
-      <parliament_ref>38</parliament_ref>      
-      <session_ref>38.1</session_ref>
+      <parliament>37th Parliament</parliament>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1944-11-28</prorogation>
       
-      
+      <session_ref>37.9</session_ref>
+      <session_start_year>1943</session_start_year>
+      <state_opening>1943-11-24</state_opening>
    </session>
    <session session_indicator="162">
-      <session_start_year>1946</session_start_year>
-      <state_opening>1946-11-12</state_opening>
-      <prorogation>1947-10-20</prorogation>
-      <parliament>38th Parliament</parliament>
-      <parliament_ref>38</parliament_ref>      
-      <session_ref>38.2</session_ref>
+      <parliament>37th Parliament</parliament>
+      <parliament_ref>37</parliament_ref>
+      <prorogation>1945-06-15</prorogation>
       
-      
+      <session_ref>37.91</session_ref>
+      <session_start_year>1944</session_start_year>
+      <state_opening>1944-11-29</state_opening>
    </session>
    <session session_indicator="163">
-      <session_start_year>1947</session_start_year>
-      <state_opening>1947-10-21</state_opening>
-      <prorogation>1948-09-13</prorogation>
       <parliament>38th Parliament</parliament>
-      <parliament_ref>38</parliament_ref>      
-      <session_ref>38.3</session_ref>
+      <parliament_ref>38</parliament_ref>
+      <prorogation>1946-11-06</prorogation>
       
-      
+      <session_ref>38.1</session_ref>
+      <session_start_year>1945</session_start_year>
+      <state_opening>1945-08-01</state_opening>
    </session>
    <session session_indicator="164">
-      <session_start_year>1948</session_start_year>
-      <state_opening>1948-09-14</state_opening>
-      <prorogation>1948-10-25</prorogation>
       <parliament>38th Parliament</parliament>
-      <parliament_ref>38</parliament_ref>      
-      <session_ref>38.4</session_ref>
+      <parliament_ref>38</parliament_ref>
+      <prorogation>1947-10-20</prorogation>
       
-      
+      <session_ref>38.2</session_ref>
+      <session_start_year>1946</session_start_year>
+      <state_opening>1946-11-12</state_opening>
    </session>
    <session session_indicator="165">
-      <session_start_year>1949</session_start_year>
-      <state_opening>1948-10-26</state_opening>
-      <prorogation>1949-12-16</prorogation>
       <parliament>38th Parliament</parliament>
-      <parliament_ref>38</parliament_ref>      
-      <session_ref>38.5</session_ref>
+      <parliament_ref>38</parliament_ref>
+      <prorogation>1948-09-13</prorogation>
       
-      
+      <session_ref>38.3</session_ref>
+      <session_start_year>1947</session_start_year>
+      <state_opening>1947-10-21</state_opening>
    </session>
    <session session_indicator="166">
-      <session_start_year>1950</session_start_year>
-      <state_opening>1950-03-01</state_opening>
-      <prorogation>1950-10-26</prorogation>
-      <parliament>39th parliament</parliament>
-      <parliament_ref>39</parliament_ref>      
-      <session_ref>39.1</session_ref>
+      <parliament>38th Parliament</parliament>
+      <parliament_ref>38</parliament_ref>
+      <prorogation>1948-10-25</prorogation>
       
-      
+      <session_ref>38.4</session_ref>
+      <session_start_year>1948</session_start_year>
+      <state_opening>1948-09-14</state_opening>
    </session>
    <session session_indicator="167">
-      <session_start_year>1951</session_start_year>
-      <state_opening>1950-10-31</state_opening>
-      <prorogation>1951-10-04</prorogation>
-      <parliament>39th parliament</parliament>
-      <parliament_ref>39</parliament_ref>      
-      <session_ref>39.2</session_ref>
+      <parliament>38th Parliament</parliament>
+      <parliament_ref>38</parliament_ref>
+      <prorogation>1949-12-16</prorogation>
       
-      
+      <session_ref>38.5</session_ref>
+      <session_start_year>1949</session_start_year>
+      <state_opening>1948-10-26</state_opening>
    </session>
    <session session_indicator="168">
-      <session_start_year>1952</session_start_year>
-      <state_opening>1951-10-31</state_opening>
-      <prorogation>1952-10-30</prorogation>
-      <parliament>40th Parliament</parliament>
-      <parliament_ref>40</parliament_ref>      
-      <session_ref>40.1</session_ref>
+      <parliament>39th parliament</parliament>
+      <parliament_ref>39</parliament_ref>
+      <prorogation>1950-10-26</prorogation>
       
-      
+      <session_ref>39.1</session_ref>
+      <session_start_year>1950</session_start_year>
+      <state_opening>1950-03-01</state_opening>
    </session>
    <session session_indicator="169">
-      <session_start_year>1953</session_start_year>
-      <state_opening>1952-11-04</state_opening>
-      <prorogation>1953-10-29</prorogation>
-      <parliament>40th Parliament</parliament>
-      <parliament_ref>40</parliament_ref>      
-      <session_ref>40.2</session_ref>
+      <parliament>39th parliament</parliament>
+      <parliament_ref>39</parliament_ref>
+      <prorogation>1951-10-04</prorogation>
       
-      
+      <session_ref>39.2</session_ref>
+      <session_start_year>1951</session_start_year>
+      <state_opening>1950-10-31</state_opening>
    </session>
    <session session_indicator="170">
-      <session_start_year>1954</session_start_year>
-      <state_opening>1953-11-03</state_opening>
-      <prorogation>1954-11-25</prorogation>
       <parliament>40th Parliament</parliament>
-      <parliament_ref>40</parliament_ref>      
-      <session_ref>40.3</session_ref>
+      <parliament_ref>40</parliament_ref>
+      <prorogation>1952-10-30</prorogation>
       
-      
+      <session_ref>40.1</session_ref>
+      <session_start_year>1952</session_start_year>
+      <state_opening>1951-10-31</state_opening>
    </session>
    <session session_indicator="171">
-      <session_start_year>1955</session_start_year>
-      <state_opening>1954-11-30</state_opening>
-      <prorogation>1955-05-06</prorogation>
       <parliament>40th Parliament</parliament>
-      <parliament_ref>40</parliament_ref>      
-      <session_ref>40.4</session_ref>
+      <parliament_ref>40</parliament_ref>
+      <prorogation>1953-10-29</prorogation>
       
-      
+      <session_ref>40.2</session_ref>
+      <session_start_year>1953</session_start_year>
+      <state_opening>1952-11-04</state_opening>
    </session>
    <session session_indicator="172">
-      <session_start_year>1956</session_start_year>
-      <state_opening>1955-06-07</state_opening>
-      <prorogation>1956-11-05</prorogation>
-      <parliament>41st Parliament</parliament>
-      <parliament_ref>41</parliament_ref>      
-      <session_ref>41.1</session_ref>
+      <parliament>40th Parliament</parliament>
+      <parliament_ref>40</parliament_ref>
+      <prorogation>1954-11-25</prorogation>
       
-      
+      <session_ref>40.3</session_ref>
+      <session_start_year>1954</session_start_year>
+      <state_opening>1953-11-03</state_opening>
    </session>
    <session session_indicator="173">
-      <session_start_year>1957</session_start_year>
-      <state_opening>1956-11-06</state_opening>
-      <prorogation>1957-11-01</prorogation>
-      <parliament>41st Parliament</parliament>
-      <parliament_ref>41</parliament_ref>      
-      <session_ref>41.2</session_ref>
+      <parliament>40th Parliament</parliament>
+      <parliament_ref>40</parliament_ref>
+      <prorogation>1955-05-06</prorogation>
       
-      
+      <session_ref>40.4</session_ref>
+      <session_start_year>1955</session_start_year>
+      <state_opening>1954-11-30</state_opening>
    </session>
    <session session_indicator="174">
-      <session_start_year>1958</session_start_year>
-      <state_opening>1957-11-05</state_opening>
-      <prorogation>1958-10-23</prorogation>
       <parliament>41st Parliament</parliament>
-      <parliament_ref>41</parliament_ref>      
-      <session_ref>41.3</session_ref>
+      <parliament_ref>41</parliament_ref>
+      <prorogation>1956-11-05</prorogation>
       
-      
+      <session_ref>41.1</session_ref>
+      <session_start_year>1956</session_start_year>
+      <state_opening>1955-06-07</state_opening>
    </session>
    <session session_indicator="175">
-      <session_start_year>1959</session_start_year>
-      <state_opening>1958-10-28</state_opening>
-      <prorogation>1959-09-18</prorogation>
       <parliament>41st Parliament</parliament>
-      <parliament_ref>41</parliament_ref>      
-      <session_ref>41.4</session_ref>
+      <parliament_ref>41</parliament_ref>
+      <prorogation>1957-11-01</prorogation>
       
-      
+      <session_ref>41.2</session_ref>
+      <session_start_year>1957</session_start_year>
+      <state_opening>1956-11-06</state_opening>
    </session>
    <session session_indicator="176">
-      <session_start_year>1960</session_start_year>
-      <state_opening>1959-10-20</state_opening>
-      <prorogation>1960-10-27</prorogation>
-      <parliament>42nd Parliament</parliament>
-      <parliament_ref>42</parliament_ref>      
-      <session_ref>42.1</session_ref>
+      <parliament>41st Parliament</parliament>
+      <parliament_ref>41</parliament_ref>
+      <prorogation>1958-10-23</prorogation>
       
-      
+      <session_ref>41.3</session_ref>
+      <session_start_year>1958</session_start_year>
+      <state_opening>1957-11-05</state_opening>
    </session>
    <session session_indicator="177">
-      <session_start_year>1961</session_start_year>
-      <state_opening>1960-11-01</state_opening>
-      <prorogation>1961-10-24</prorogation>
-      <parliament>42nd Parliament</parliament>
-      <parliament_ref>42</parliament_ref>      
-      <session_ref>42.2</session_ref>
+      <parliament>41st Parliament</parliament>
+      <parliament_ref>41</parliament_ref>
+      <prorogation>1959-09-18</prorogation>
       
-      
+      <session_ref>41.4</session_ref>
+      <session_start_year>1959</session_start_year>
+      <state_opening>1958-10-28</state_opening>
    </session>
    <session session_indicator="178">
-      <session_start_year>1962</session_start_year>
-      <state_opening>1961-10-31</state_opening>
-      <prorogation>1962-10-25</prorogation>
       <parliament>42nd Parliament</parliament>
-      <parliament_ref>42</parliament_ref>      
-      <session_ref>42.3</session_ref>
+      <parliament_ref>42</parliament_ref>
+      <prorogation>1960-10-27</prorogation>
       
-      
+      <session_ref>42.1</session_ref>
+      <session_start_year>1960</session_start_year>
+      <state_opening>1959-10-20</state_opening>
    </session>
    <session session_indicator="179">
-      <session_start_year>1963</session_start_year>
-      <state_opening>1962-10-30</state_opening>
-      <prorogation>1963-11-08</prorogation>
       <parliament>42nd Parliament</parliament>
-      <parliament_ref>42</parliament_ref>      
-      <session_ref>42.4</session_ref>
+      <parliament_ref>42</parliament_ref>
+      <prorogation>1961-10-24</prorogation>
       
-      
+      <session_ref>42.2</session_ref>
+      <session_start_year>1961</session_start_year>
+      <state_opening>1960-11-01</state_opening>
    </session>
    <session session_indicator="180">
-      <session_start_year>1964</session_start_year>
-      <state_opening>1963-11-12</state_opening>
-      <prorogation>1964-09-25</prorogation>
       <parliament>42nd Parliament</parliament>
-      <parliament_ref>42</parliament_ref>      
-      <session_ref>42.5</session_ref>
+      <parliament_ref>42</parliament_ref>
+      <prorogation>1962-10-25</prorogation>
       
-      
+      <session_ref>42.3</session_ref>
+      <session_start_year>1962</session_start_year>
+      <state_opening>1961-10-31</state_opening>
    </session>
    <session session_indicator="181">
-      <session_start_year>1965</session_start_year>
-      <state_opening>1964-10-27</state_opening>
-      <prorogation>1965-11-08</prorogation>
-      <parliament>43rd Parliament</parliament>
-      <parliament_ref>43</parliament_ref>      
-      <session_ref>43.1</session_ref>
+      <parliament>42nd Parliament</parliament>
+      <parliament_ref>42</parliament_ref>
+      <prorogation>1963-11-08</prorogation>
       
-      
+      <session_ref>42.4</session_ref>
+      <session_start_year>1963</session_start_year>
+      <state_opening>1962-10-30</state_opening>
    </session>
    <session session_indicator="182">
-      <session_start_year>1966</session_start_year>
-      <state_opening>1965-11-09</state_opening>
-      <prorogation>1966-03-10</prorogation>
-      <parliament>43rd Parliament</parliament>
-      <parliament_ref>43</parliament_ref>      
-      <session_ref>43.2</session_ref>
+      <parliament>42nd Parliament</parliament>
+      <parliament_ref>42</parliament_ref>
+      <prorogation>1964-09-25</prorogation>
       
-      
+      <session_ref>42.5</session_ref>
+      <session_start_year>1964</session_start_year>
+      <state_opening>1963-11-12</state_opening>
    </session>
    <session session_indicator="183">
-      <session_start_year>1967</session_start_year>
-      <state_opening>1966-04-18</state_opening>
-      <prorogation>1967-10-27</prorogation>
-      <parliament>44th Parliament</parliament>
-      <parliament_ref>44</parliament_ref>      
-      <session_ref>44.1</session_ref>
+      <parliament>43rd Parliament</parliament>
+      <parliament_ref>43</parliament_ref>
+      <prorogation>1965-11-08</prorogation>
       
-      
+      <session_ref>43.1</session_ref>
+      <session_start_year>1965</session_start_year>
+      <state_opening>1964-10-27</state_opening>
    </session>
    <session session_indicator="184">
-      <session_start_year>1968</session_start_year>
-      <state_opening>1967-10-31</state_opening>
-      <prorogation>1968-10-25</prorogation>
-      <parliament>44th Parliament</parliament>
-      <parliament_ref>44</parliament_ref>      
-      <session_ref>44.2</session_ref>
+      <parliament>43rd Parliament</parliament>
+      <parliament_ref>43</parliament_ref>
+      <prorogation>1966-03-10</prorogation>
       
-      
+      <session_ref>43.2</session_ref>
+      <session_start_year>1966</session_start_year>
+      <state_opening>1965-11-09</state_opening>
    </session>
    <session session_indicator="185">
-      <session_start_year>1969</session_start_year>
-      <state_opening>1968-10-30</state_opening>
-      <prorogation>1969-10-22</prorogation>
       <parliament>44th Parliament</parliament>
-      <parliament_ref>44</parliament_ref>      
-      <session_ref>44.3</session_ref>
+      <parliament_ref>44</parliament_ref>
+      <prorogation>1967-10-27</prorogation>
       
-      
+      <session_ref>44.1</session_ref>
+      <session_start_year>1967</session_start_year>
+      <state_opening>1966-04-18</state_opening>
    </session>
    <session session_indicator="186">
-      <session_start_year>1970</session_start_year>
-      <state_opening>1969-10-28</state_opening>
-      <prorogation>1970-05-29</prorogation>
       <parliament>44th Parliament</parliament>
-      <parliament_ref>44</parliament_ref>      
-      <session_ref>44.4</session_ref>
+      <parliament_ref>44</parliament_ref>
+      <prorogation>1968-10-25</prorogation>
       
-      
+      <session_ref>44.2</session_ref>
+      <session_start_year>1968</session_start_year>
+      <state_opening>1967-10-31</state_opening>
    </session>
    <session session_indicator="187">
-      <session_start_year>1971</session_start_year>
-      <state_opening>1970-06-29</state_opening>
-      <prorogation>1971-10-28</prorogation>
-      <parliament>45th Parliament</parliament>
-      <parliament_ref>45</parliament_ref>      
-      <session_ref>45.1</session_ref>
+      <parliament>44th Parliament</parliament>
+      <parliament_ref>44</parliament_ref>
+      <prorogation>1969-10-22</prorogation>
       
-      
+      <session_ref>44.3</session_ref>
+      <session_start_year>1969</session_start_year>
+      <state_opening>1968-10-30</state_opening>
    </session>
    <session session_indicator="188">
-      <session_start_year>1972</session_start_year>
-      <state_opening>1971-11-02</state_opening>
-      <prorogation>1972-10-26</prorogation>
-      <parliament>45th Parliament</parliament>
-      <parliament_ref>45</parliament_ref>      
-      <session_ref>45.2</session_ref>
+      <parliament>44th Parliament</parliament>
+      <parliament_ref>44</parliament_ref>
+      <prorogation>1970-05-29</prorogation>
       
-      
+      <session_ref>44.4</session_ref>
+      <session_start_year>1970</session_start_year>
+      <state_opening>1969-10-28</state_opening>
    </session>
    <session session_indicator="189">
-      <session_start_year>1973</session_start_year>
-      <state_opening>1972-10-31</state_opening>
-      <prorogation>1973-10-25</prorogation>
       <parliament>45th Parliament</parliament>
-      <parliament_ref>45</parliament_ref>      
-      <session_ref>45.3</session_ref>
+      <parliament_ref>45</parliament_ref>
+      <prorogation>1971-10-28</prorogation>
       
-      
+      <session_ref>45.1</session_ref>
+      <session_start_year>1971</session_start_year>
+      <state_opening>1970-06-29</state_opening>
    </session>
    <session session_indicator="190">
-      <session_start_year>1974</session_start_year>
-      <state_opening>1973-10-30</state_opening>
-      <prorogation>1974-02-08</prorogation>
       <parliament>45th Parliament</parliament>
-      <parliament_ref>45</parliament_ref>      
-      <session_ref>45.4</session_ref>
+      <parliament_ref>45</parliament_ref>
+      <prorogation>1972-10-26</prorogation>
       
-      
+      <session_ref>45.2</session_ref>
+      <session_start_year>1972</session_start_year>
+      <state_opening>1971-11-02</state_opening>
    </session>
    <session session_indicator="191">
-      <session_start_year>1974</session_start_year>
-      <state_opening>1974-03-06</state_opening>
-      <prorogation>1974-09-20</prorogation>
-      <parliament>46th Parliament</parliament>
-      <parliament_ref>46</parliament_ref>      
-      <session_ref>46.1</session_ref>
+      <parliament>45th Parliament</parliament>
+      <parliament_ref>45</parliament_ref>
+      <prorogation>1973-10-25</prorogation>
       
-      
+      <session_ref>45.3</session_ref>
+      <session_start_year>1973</session_start_year>
+      <state_opening>1972-10-31</state_opening>
    </session>
    <session session_indicator="192">
-      <session_start_year>1975</session_start_year>
-      <state_opening>1974-10-22</state_opening>
-      <prorogation>1975-11-12</prorogation>
-      <parliament>47th Parliament</parliament>
-      <parliament_ref>47</parliament_ref>      
-      <session_ref>47.1</session_ref>
+      <parliament>45th Parliament</parliament>
+      <parliament_ref>45</parliament_ref>
+      <prorogation>1974-02-08</prorogation>
       
-      
+      <session_ref>45.4</session_ref>
+      <session_start_year>1974</session_start_year>
+      <state_opening>1973-10-30</state_opening>
    </session>
    <session session_indicator="193">
-      <session_start_year>1976</session_start_year>
-      <state_opening>1975-11-19</state_opening>
-      <prorogation>1976-11-22</prorogation>
-      <parliament>47th Parliament</parliament>
-      <parliament_ref>47</parliament_ref>      
-      <session_ref>47.2</session_ref>
+      <parliament>46th Parliament</parliament>
+      <parliament_ref>46</parliament_ref>
+      <prorogation>1974-09-20</prorogation>
       
-      
+      <session_ref>46.1</session_ref>
+      <session_start_year>1974</session_start_year>
+      <state_opening>1974-03-06</state_opening>
    </session>
    <session session_indicator="194">
-      <session_start_year>1977</session_start_year>
-      <state_opening>1976-11-24</state_opening>
-      <prorogation>1977-10-26</prorogation>
       <parliament>47th Parliament</parliament>
-      <parliament_ref>47</parliament_ref>      
-      <session_ref>47.3</session_ref>
+      <parliament_ref>47</parliament_ref>
+      <prorogation>1975-11-12</prorogation>
       
-      
+      <session_ref>47.1</session_ref>
+      <session_start_year>1975</session_start_year>
+      <state_opening>1974-10-22</state_opening>
    </session>
    <session session_indicator="195">
-      <session_start_year>1978</session_start_year>
-      <state_opening>1977-11-03</state_opening>
-      <prorogation>1978-10-24</prorogation>
       <parliament>47th Parliament</parliament>
-      <parliament_ref>47</parliament_ref>      
-      <session_ref>47.4</session_ref>
+      <parliament_ref>47</parliament_ref>
+      <prorogation>1976-11-22</prorogation>
       
-      
+      <session_ref>47.2</session_ref>
+      <session_start_year>1976</session_start_year>
+      <state_opening>1975-11-19</state_opening>
    </session>
    <session session_indicator="196">
-      <session_start_year>1979</session_start_year>
-      <state_opening>1978-10-31</state_opening>
-      <prorogation>1979-04-07</prorogation>
       <parliament>47th Parliament</parliament>
-      <parliament_ref>47</parliament_ref>      
-      <session_ref>47.5</session_ref>
+      <parliament_ref>47</parliament_ref>
+      <prorogation>1977-10-26</prorogation>
       
-      
+      <session_ref>47.3</session_ref>
+      <session_start_year>1977</session_start_year>
+      <state_opening>1976-11-24</state_opening>
    </session>
    <session session_indicator="197">
-      <session_start_year>1980</session_start_year>
-      <state_opening>1979-05-09</state_opening>
-      <prorogation>1980-11-13</prorogation>
-      <parliament>48th Parliament</parliament>
-      <parliament_ref>48</parliament_ref>      
-      <session_ref>48.1</session_ref>
+      <parliament>47th Parliament</parliament>
+      <parliament_ref>47</parliament_ref>
+      <prorogation>1978-10-24</prorogation>
       
-      
+      <session_ref>47.4</session_ref>
+      <session_start_year>1978</session_start_year>
+      <state_opening>1977-11-03</state_opening>
    </session>
    <session session_indicator="198">
-      <session_start_year>1981</session_start_year>
-      <state_opening>1980-11-20</state_opening>
-      <prorogation>1981-10-30</prorogation>
-      <parliament>48th Parliament</parliament>
-      <parliament_ref>48</parliament_ref>      
-      <session_ref>48.2</session_ref>
+      <parliament>47th Parliament</parliament>
+      <parliament_ref>47</parliament_ref>
+      <prorogation>1979-04-07</prorogation>
       
-      
+      <session_ref>47.5</session_ref>
+      <session_start_year>1979</session_start_year>
+      <state_opening>1978-10-31</state_opening>
    </session>
    <session session_indicator="199">
-      <session_start_year>1982</session_start_year>
-      <state_opening>1981-11-04</state_opening>
-      <prorogation>1982-10-28</prorogation>
       <parliament>48th Parliament</parliament>
-      <parliament_ref>48</parliament_ref>      
-      <session_ref>48.3</session_ref>
+      <parliament_ref>48</parliament_ref>
+      <prorogation>1980-11-13</prorogation>
       
-      
+      <session_ref>48.1</session_ref>
+      <session_start_year>1980</session_start_year>
+      <state_opening>1979-05-09</state_opening>
    </session>
    <session session_indicator="200">
-      <session_start_year>1983</session_start_year>
-      <state_opening>1982-11-03</state_opening>
-      <prorogation>1983-05-13</prorogation>
       <parliament>48th Parliament</parliament>
-      <parliament_ref>48</parliament_ref>      
-      <session_ref>48.4</session_ref>
+      <parliament_ref>48</parliament_ref>
+      <prorogation>1981-10-30</prorogation>
       
-      
+      <session_ref>48.2</session_ref>
+      <session_start_year>1981</session_start_year>
+      <state_opening>1980-11-20</state_opening>
    </session>
    <session session_indicator="201">
-      <session_start_year>1984</session_start_year>
-      <state_opening>1983-06-15</state_opening>
-      <prorogation>1984-10-31</prorogation>
-      <parliament>49th Parliament</parliament>
-      <parliament_ref>49</parliament_ref>      
-      <session_ref>49.1</session_ref>
+      <parliament>48th Parliament</parliament>
+      <parliament_ref>48</parliament_ref>
+      <prorogation>1982-10-28</prorogation>
       
-      
+      <session_ref>48.3</session_ref>
+      <session_start_year>1982</session_start_year>
+      <state_opening>1981-11-04</state_opening>
    </session>
    <session session_indicator="202">
-      <session_start_year>1985</session_start_year>
-      <state_opening>1984-11-06</state_opening>
-      <prorogation>1985-10-30</prorogation>
-      <parliament>49th Parliament</parliament>
-      <parliament_ref>49</parliament_ref>      
-      <session_ref>49.2</session_ref>
+      <parliament>48th Parliament</parliament>
+      <parliament_ref>48</parliament_ref>
+      <prorogation>1983-05-13</prorogation>
       
-      
+      <session_ref>48.4</session_ref>
+      <session_start_year>1983</session_start_year>
+      <state_opening>1982-11-03</state_opening>
    </session>
    <session session_indicator="203">
-      <session_start_year>1986</session_start_year>
-      <state_opening>1985-11-06</state_opening>
-      <prorogation>1986-11-07</prorogation>
       <parliament>49th Parliament</parliament>
-      <parliament_ref>49</parliament_ref>      
-      <session_ref>49.3</session_ref>
+      <parliament_ref>49</parliament_ref>
+      <prorogation>1984-10-31</prorogation>
       
-      
+      <session_ref>49.1</session_ref>
+      <session_start_year>1984</session_start_year>
+      <state_opening>1983-06-15</state_opening>
    </session>
    <session session_indicator="204">
-      <session_start_year>1987</session_start_year>
-      <state_opening>1986-11-12</state_opening>
-      <prorogation>1987-05-18</prorogation>
       <parliament>49th Parliament</parliament>
-      <parliament_ref>49</parliament_ref>      
-      <session_ref>49.4</session_ref>
+      <parliament_ref>49</parliament_ref>
+      <prorogation>1985-10-30</prorogation>
       
-      
+      <session_ref>49.2</session_ref>
+      <session_start_year>1985</session_start_year>
+      <state_opening>1984-11-06</state_opening>
    </session>
    <session session_indicator="205">
-      <session_start_year>1988</session_start_year>
-      <state_opening>1987-06-17</state_opening>
-      <prorogation>1988-11-15</prorogation>
-      <parliament>50th Parliament</parliament>
-      <parliament_ref>50</parliament_ref>      
-      <session_ref>50.1</session_ref>
+      <parliament>49th Parliament</parliament>
+      <parliament_ref>49</parliament_ref>
+      <prorogation>1986-11-07</prorogation>
       
-      
+      <session_ref>49.3</session_ref>
+      <session_start_year>1986</session_start_year>
+      <state_opening>1985-11-06</state_opening>
    </session>
    <session session_indicator="206">
-      <session_start_year>1989</session_start_year>
-      <state_opening>1988-11-22</state_opening>
-      <prorogation>1989-11-16</prorogation>
-      <parliament>50th Parliament</parliament>
-      <parliament_ref>50</parliament_ref>      
-      <session_ref>50.2</session_ref>
+      <parliament>49th Parliament</parliament>
+      <parliament_ref>49</parliament_ref>
+      <prorogation>1987-05-18</prorogation>
       
-      
+      <session_ref>49.4</session_ref>
+      <session_start_year>1987</session_start_year>
+      <state_opening>1986-11-12</state_opening>
    </session>
    <session session_indicator="207">
-      <session_start_year>1990</session_start_year>
-      <state_opening>1989-11-21</state_opening>
-      <prorogation>1990-11-01</prorogation>
       <parliament>50th Parliament</parliament>
-      <parliament_ref>50</parliament_ref>      
-      <session_ref>50.3</session_ref>
+      <parliament_ref>50</parliament_ref>
+      <prorogation>1988-11-15</prorogation>
       
-      
+      <session_ref>50.1</session_ref>
+      <session_start_year>1988</session_start_year>
+      <state_opening>1987-06-17</state_opening>
    </session>
    <session session_indicator="208">
-      <session_start_year>1991</session_start_year>
-      <state_opening>1990-11-07</state_opening>
-      <prorogation>1991-10-22</prorogation>
       <parliament>50th Parliament</parliament>
-      <parliament_ref>50</parliament_ref>      
-      <session_ref>50.4</session_ref>
+      <parliament_ref>50</parliament_ref>
+      <prorogation>1989-11-16</prorogation>
       
-      
+      <session_ref>50.2</session_ref>
+      <session_start_year>1989</session_start_year>
+      <state_opening>1988-11-22</state_opening>
    </session>
    <session session_indicator="209">
-      <session_start_year>1992</session_start_year>
-      <state_opening>1991-10-31</state_opening>
-      <prorogation>1992-03-16</prorogation>
       <parliament>50th Parliament</parliament>
-      <parliament_ref>50</parliament_ref>      
-      <session_ref>50.5</session_ref>
+      <parliament_ref>50</parliament_ref>
+      <prorogation>1990-11-01</prorogation>
       
-      
+      <session_ref>50.3</session_ref>
+      <session_start_year>1990</session_start_year>
+      <state_opening>1989-11-21</state_opening>
    </session>
    <session session_indicator="210">
-      <session_start_year>1993</session_start_year>
-      <state_opening>1992-05-06</state_opening>
-      <prorogation>1993-11-05</prorogation>
-      <parliament>51st Parliament</parliament>
-      <parliament_ref>51</parliament_ref>      
-      <session_ref>51.1</session_ref>
+      <parliament>50th Parliament</parliament>
+      <parliament_ref>50</parliament_ref>
+      <prorogation>1991-10-22</prorogation>
       
-      
+      <session_ref>50.4</session_ref>
+      <session_start_year>1991</session_start_year>
+      <state_opening>1990-11-07</state_opening>
    </session>
    <session session_indicator="211">
-      <session_start_year>1994</session_start_year>
-      <state_opening>1993-11-18</state_opening>
-      <prorogation>1994-11-03</prorogation>
-      <parliament>51st Parliament</parliament>
-      <parliament_ref>51</parliament_ref>      
-      <session_ref>51.2</session_ref>
+      <parliament>50th Parliament</parliament>
+      <parliament_ref>50</parliament_ref>
+      <prorogation>1992-03-16</prorogation>
       
-      
+      <session_ref>50.5</session_ref>
+      <session_start_year>1992</session_start_year>
+      <state_opening>1991-10-31</state_opening>
    </session>
    <session session_indicator="212">
-      <session_start_year>1995</session_start_year>
-      <state_opening>1994-11-16</state_opening>
-      <prorogation>1995-11-08</prorogation>
       <parliament>51st Parliament</parliament>
-      <parliament_ref>51</parliament_ref>      
-      <session_ref>51.3</session_ref>
+      <parliament_ref>51</parliament_ref>
+      <prorogation>1993-11-05</prorogation>
       
-      
+      <session_ref>51.1</session_ref>
+      <session_start_year>1993</session_start_year>
+      <state_opening>1992-05-06</state_opening>
    </session>
    <session session_indicator="213">
-      <session_start_year>1996</session_start_year>
-      <state_opening>1995-11-15</state_opening>
-      <prorogation>1996-10-17</prorogation>
       <parliament>51st Parliament</parliament>
-      <parliament_ref>51</parliament_ref>      
-      <session_ref>51.4</session_ref>
+      <parliament_ref>51</parliament_ref>
+      <prorogation>1994-11-03</prorogation>
       
-      
+      <session_ref>51.2</session_ref>
+      <session_start_year>1994</session_start_year>
+      <state_opening>1993-11-18</state_opening>
    </session>
    <session session_indicator="214">
-      <session_start_year>1997</session_start_year>
-      <state_opening>1996-10-23</state_opening>
-      <prorogation>1997-03-21</prorogation>
       <parliament>51st Parliament</parliament>
-      <parliament_ref>51</parliament_ref>      
-      <session_ref>51.5</session_ref>
+      <parliament_ref>51</parliament_ref>
+      <prorogation>1995-11-08</prorogation>
       
-      
+      <session_ref>51.3</session_ref>
+      <session_start_year>1995</session_start_year>
+      <state_opening>1994-11-16</state_opening>
    </session>
    <session session_indicator="215">
-      <session_start_year>1998</session_start_year>
-      <state_opening>1997-05-07</state_opening>
-      <prorogation>1998-11-19</prorogation>
-      <parliament>52nd Parliament</parliament>
-      <parliament_ref>52</parliament_ref>      
-      <session_ref>52.1</session_ref>
+      <parliament>51st Parliament</parliament>
+      <parliament_ref>51</parliament_ref>
+      <prorogation>1996-10-17</prorogation>
       
-      
+      <session_ref>51.4</session_ref>
+      <session_start_year>1996</session_start_year>
+      <state_opening>1995-11-15</state_opening>
    </session>
    <session session_indicator="216">
-      <session_start_year>1999</session_start_year>
-      <state_opening>1998-11-24</state_opening>
-      <prorogation>1999-11-11</prorogation>
-      <parliament>52nd Parliament</parliament>
-      <parliament_ref>52</parliament_ref>      
-      <session_ref>52.2</session_ref>
+      <parliament>51st Parliament</parliament>
+      <parliament_ref>51</parliament_ref>
+      <prorogation>1997-03-21</prorogation>
       
-      
+      <session_ref>51.5</session_ref>
+      <session_start_year>1997</session_start_year>
+      <state_opening>1996-10-23</state_opening>
    </session>
    <session session_indicator="217">
-      <session_start_year>2000</session_start_year>
-      <state_opening>1999-11-24</state_opening>
-      <prorogation>2000-11-30</prorogation>
       <parliament>52nd Parliament</parliament>
-      <parliament_ref>52</parliament_ref>      
-      <session_ref>52.3</session_ref>
+      <parliament_ref>52</parliament_ref>
+      <prorogation>1998-11-19</prorogation>
       
-      
+      <session_ref>52.1</session_ref>
+      <session_start_year>1998</session_start_year>
+      <state_opening>1997-05-07</state_opening>
    </session>
    <session session_indicator="218">
-      <session_start_year>2001</session_start_year>
-      <state_opening>2000-12-06</state_opening>
-      <prorogation>2001-05-03</prorogation>
       <parliament>52nd Parliament</parliament>
-      <parliament_ref>52</parliament_ref>      
-      <session_ref>52.4</session_ref>
+      <parliament_ref>52</parliament_ref>
+      <prorogation>1999-11-11</prorogation>
       
-      
+      <session_ref>52.2</session_ref>
+      <session_start_year>1999</session_start_year>
+      <state_opening>1998-11-24</state_opening>
    </session>
    <session session_indicator="219">
-      <session_start_year>2002</session_start_year>
-      <state_opening>2001-06-20</state_opening>
-      <prorogation>2002-11-07</prorogation>
-      <parliament>53rd Parliament</parliament>
-      <parliament_ref>53</parliament_ref>      
-      <session_ref>53.1</session_ref>
+      <parliament>52nd Parliament</parliament>
+      <parliament_ref>52</parliament_ref>
+      <prorogation>2000-11-30</prorogation>
       
-      
+      <session_ref>52.3</session_ref>
+      <session_start_year>2000</session_start_year>
+      <state_opening>1999-11-24</state_opening>
    </session>
    <session session_indicator="220">
-      <session_start_year>2003</session_start_year>
-      <state_opening>2002-11-13</state_opening>
-      <prorogation>2003-11-20</prorogation>
-      <parliament>53rd Parliament</parliament>
-      <parliament_ref>53</parliament_ref>      
-      <session_ref>53.2</session_ref>
+      <parliament>52nd Parliament</parliament>
+      <parliament_ref>52</parliament_ref>
+      <prorogation>2001-05-03</prorogation>
       
-      
+      <session_ref>52.4</session_ref>
+      <session_start_year>2001</session_start_year>
+      <state_opening>2000-12-06</state_opening>
    </session>
    <session session_indicator="221">
-      <session_start_year>2004</session_start_year>
-      <state_opening>2003-11-26</state_opening>
-      <prorogation>2004-11-18</prorogation>
       <parliament>53rd Parliament</parliament>
-      <parliament_ref>53</parliament_ref>      
-      <session_ref>53.3</session_ref>
+      <parliament_ref>53</parliament_ref>
+      <prorogation>2002-11-07</prorogation>
       
-      
+      <session_ref>53.1</session_ref>
+      <session_start_year>2002</session_start_year>
+      <state_opening>2001-06-20</state_opening>
    </session>
    <session session_indicator="222">
-      <session_start_year>2005</session_start_year>
-      <state_opening>2004-11-23</state_opening>
-      <prorogation>2005-04-07</prorogation>
       <parliament>53rd Parliament</parliament>
-      <parliament_ref>53</parliament_ref>      
-      <session_ref>53.4</session_ref>
+      <parliament_ref>53</parliament_ref>
+      <prorogation>2003-11-20</prorogation>
       
-      
+      <session_ref>53.2</session_ref>
+      <session_start_year>2003</session_start_year>
+      <state_opening>2002-11-13</state_opening>
    </session>
    <session session_indicator="223">
-      <session_start_year>2006</session_start_year>
-      <state_opening>2005-05-17</state_opening>
-      <prorogation>2006-11-08</prorogation>
-      <parliament>54th Parliament</parliament>
-      <parliament_ref>54</parliament_ref>      
-      <session_ref>54.1</session_ref>
+      <parliament>53rd Parliament</parliament>
+      <parliament_ref>53</parliament_ref>
+      <prorogation>2004-11-18</prorogation>
       
-      
+      <session_ref>53.3</session_ref>
+      <session_start_year>2004</session_start_year>
+      <state_opening>2003-11-26</state_opening>
    </session>
    <session session_indicator="224">
-      <session_start_year>2007</session_start_year>
-      <state_opening>2006-11-15</state_opening>
-      <prorogation>2007-10-30</prorogation>
-      <parliament>54th Parliament</parliament>
-      <parliament_ref>54</parliament_ref>      
-      <session_ref>54.2</session_ref>
+      <parliament>53rd Parliament</parliament>
+      <parliament_ref>53</parliament_ref>
+      <prorogation>2005-04-07</prorogation>
       
-      
+      <session_ref>53.4</session_ref>
+      <session_start_year>2005</session_start_year>
+      <state_opening>2004-11-23</state_opening>
    </session>
    <session session_indicator="225">
-      <session_start_year>2008</session_start_year>
-      <state_opening>2007-11-06</state_opening>
-      <prorogation>2008-11-26</prorogation>
       <parliament>54th Parliament</parliament>
-      <parliament_ref>54</parliament_ref>      
-      <session_ref>54.3</session_ref>
+      <parliament_ref>54</parliament_ref>
+      <prorogation>2006-11-08</prorogation>
       
-      
+      <session_ref>54.1</session_ref>
+      <session_start_year>2006</session_start_year>
+      <state_opening>2005-05-17</state_opening>
    </session>
    <session session_indicator="226">
-      <session_start_year>2009</session_start_year>
-      <state_opening>2008-12-03</state_opening>
-      <prorogation>2009-11-12</prorogation>
       <parliament>54th Parliament</parliament>
-      <parliament_ref>54</parliament_ref>      
-      <session_ref>54.4</session_ref>
+      <parliament_ref>54</parliament_ref>
+      <prorogation>2007-10-30</prorogation>
       
-      
+      <session_ref>54.2</session_ref>
+      <session_start_year>2007</session_start_year>
+      <state_opening>2006-11-15</state_opening>
    </session>
    <session session_indicator="227">
-      <session_start_year>2010</session_start_year>
-      <state_opening>2009-11-18</state_opening>
-      <prorogation>2010-04-08</prorogation>
       <parliament>54th Parliament</parliament>
-      <parliament_ref>54</parliament_ref>      
-      <session_ref>54.5</session_ref>
+      <parliament_ref>54</parliament_ref>
+      <prorogation>2008-11-26</prorogation>
       
-      
+      <session_ref>54.3</session_ref>
+      <session_start_year>2008</session_start_year>
+      <state_opening>2007-11-06</state_opening>
    </session>
    <session session_indicator="228">
-      <session_start_year>2012</session_start_year>
-      <state_opening>2010-05-25</state_opening>
-      <prorogation>2012-05-01</prorogation>
-      <parliament>55th Parliament</parliament>
-      <parliament_ref>55</parliament_ref>      
-      <session_ref>55.1</session_ref>
+      <parliament>54th Parliament</parliament>
+      <parliament_ref>54</parliament_ref>
+      <prorogation>2009-11-12</prorogation>
       
-      
+      <session_ref>54.4</session_ref>
+      <session_start_year>2009</session_start_year>
+      <state_opening>2008-12-03</state_opening>
    </session>
    <session session_indicator="229">
-      <session_start_year>2013</session_start_year>
-      <state_opening>2012-05-09</state_opening>
-      <prorogation>2013-04-25</prorogation>
-      <parliament>55th Parliament</parliament>
-      <parliament_ref>55</parliament_ref>      
-      <session_ref>55.2</session_ref>
+      <parliament>54th Parliament</parliament>
+      <parliament_ref>54</parliament_ref>
+      <prorogation>2010-04-08</prorogation>
       
-      
+      <session_ref>54.5</session_ref>
+      <session_start_year>2010</session_start_year>
+      <state_opening>2009-11-18</state_opening>
    </session>
    <session session_indicator="230">
-      <session_start_year>2014</session_start_year>
-      <state_opening>2013-05-08</state_opening>
-      <prorogation>2014-05-14</prorogation>
       <parliament>55th Parliament</parliament>
-      <parliament_ref>55</parliament_ref>      
-      <session_ref>55.3</session_ref>
+      <parliament_ref>55</parliament_ref>
+      <prorogation>2012-05-01</prorogation>
       
-      
+      <session_ref>55.1</session_ref>
+      <session_start_year>2012</session_start_year>
+      <state_opening>2010-05-25</state_opening>
    </session>
    <session session_indicator="231">
+      <parliament>55th Parliament</parliament>
+      <parliament_ref>55</parliament_ref>
+      <prorogation>2013-04-25</prorogation>
+      
+      <session_ref>55.2</session_ref>
+      <session_start_year>2013</session_start_year>
+      <state_opening>2012-05-09</state_opening>
+   </session>
+   <session session_indicator="232">
+      <parliament>55th Parliament</parliament>
+      <parliament_ref>55</parliament_ref>
+      <prorogation>2014-05-14</prorogation>
+      
+      <session_ref>55.3</session_ref>
+      <session_start_year>2014</session_start_year>
+      <state_opening>2013-05-08</state_opening>
+   </session>
+   <session session_indicator="233">
+      <parliament>55th Parliament</parliament>
+      <parliament_ref>55</parliament_ref>
+      <prorogation>2015-03-26</prorogation>
+      
+      <session_ref>55.4</session_ref>
       <session_start_year>2015</session_start_year>
       <state_opening>2014-06-04</state_opening>
-      <prorogation>2015-03-26</prorogation>
-      <parliament>55th Parliament</parliament>
-      <parliament_ref>55</parliament_ref>      
-      <session_ref>55.4</session_ref>
-      
-      
    </session>
 </sessions>
