@@ -22,10 +22,10 @@ permalink: /publications/
 
 
 # Conference Papers & Presentations
-* MPSA 2016 (Chicago).
-* APSA 2016 (Philadelphia).
-* APSA 2017 (San Francisco).
 * [4th Conference of the ECPR Standing Group on Parliaments](http://standinggroups.ecpr.eu/parliaments/?page_id=499), 29 June – 1st July 2017 University of Basel.
+* APSA 2017 (San Francisco).
+* APSA 2016 (Philadelphia).
+* MPSA 2016 (Chicago).
 
 # Media (selected)
 * "[Estimating the Effect of Feature Selection in Computational Text Analysis](https://blog.politics.ox.ac.uk/estimating-effect-feature-selection-computational-text-analysis/)." (26th April 2017). *Oxford University Politics Blog.*
