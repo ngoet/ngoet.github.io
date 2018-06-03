@@ -6,7 +6,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
 var color = d3.scale.category20();
 
 var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .05);
+    .rangeRoundBands([0, width], .5);
 
 var y = d3.scale.linear()
     .range([height, 0]);
@@ -65,7 +65,7 @@ d3.json("js/polarisationUKHCSO.json", function(error, data) {
       .call(xAxis)
       .selectAll("text")
     .attr("y", 0)
-    .attr("x", 9)
+    .attr("x", 6)
     .attr("dy", ".35em")
     .attr("transform", "rotate(90)")
     .style("text-anchor", "start");
@@ -131,7 +131,7 @@ d3.json("js/polarisationUKHCSO.json", function(error, data) {
         .map(function(d) { return d.Year; }))
         .copy();
 
-    
+
 
     svg.selectAll(".bar")
         .sort(function(a, b) { return x0(a.Year) - x0(b.Year); });
