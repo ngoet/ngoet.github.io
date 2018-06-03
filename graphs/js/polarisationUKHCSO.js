@@ -1,5 +1,5 @@
 // set the dimensions of the canvas
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+var margin = {top: 20, right: 20, bottom: 40, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -52,12 +52,6 @@ d3.json("js/polarisationUKHCSO.json", function(error, data) {
         return d.Polarisation;
     })).nice();
 
-  
-  // scale the range of the data
-  // x.domain(data.map(function(d) { return d.Year; }));
-  // y.domain([0, d3.max(data, function(d) { return d.Polarisation; })]);
- 
-        
 
   svg.append("g")
       .attr("class", "x axis")
@@ -66,6 +60,7 @@ d3.json("js/polarisationUKHCSO.json", function(error, data) {
       .selectAll("text")
     .attr("y", 0)
     .attr("x", 6)
+    .style("font-size","5px")
     .attr("dy", ".35em")
     .attr("transform", "rotate(90)")
     .style("text-anchor", "start");
@@ -108,11 +103,7 @@ d3.json("js/polarisationUKHCSO.json", function(error, data) {
       .attr("width", x.rangeBand())
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
-      // .attr("y", function(d) { return y(d.Polarisation); })
-      // .attr("height", function(d) { return height - y(d.Polarisation); });
 
-
-  
 
 //sorting values
   d3.select("input").on("change", change);
