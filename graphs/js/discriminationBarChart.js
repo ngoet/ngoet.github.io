@@ -16,6 +16,7 @@ var x = d3.scale.ordinal()
 var y = d3.scale.linear()
     .range([height, 0]);
 
+
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
