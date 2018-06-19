@@ -36,7 +36,7 @@ svg.call(tip);
 
 
 // load the data
-d3.json("sampleData.json", function(error, data) {
+d3.json("js/sampleData.json", function(error, data) {
     data.forEach(function(d) {
         d.Question = d.Question;
         d.Difficulty = +d.Difficulty;
