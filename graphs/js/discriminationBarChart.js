@@ -1,5 +1,5 @@
 // set the dimensions of the canvas
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
+var margin = {top: 50, right: 20, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -8,6 +8,7 @@ var svg = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .05);
@@ -24,6 +25,7 @@ var tip = d3.tip()
 
 
 svg.call(tip);
+
 
 
 // load the data
