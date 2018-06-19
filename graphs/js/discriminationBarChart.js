@@ -9,6 +9,12 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .05);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
