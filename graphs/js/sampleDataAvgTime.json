@@ -1,0 +1,43 @@
+[
+{
+	"Question": "1",
+	"avgTime": 140
+},
+{
+	"Question" : "2",
+	"avgTime": 40
+},
+{
+	"Question" : "3",
+	"avgTime": 273
+},
+{
+	"Question" : "4",
+	"avgTime": 87
+},
+{
+	"Question" : "5",
+	"avgTime": 332
+},
+{
+	"Question" : "6",
+	"avgTime": 48
+},
+{
+	"Question" : "7",
+	"avgTime": 57
+},
+{
+	"Question" : "8",
+	"avgTime": 217
+},
+{
+	"Question" : "9",
+	"avgTime": 101
+},
+{
+	"Question" : "10",
+	"avgTime": 213
+}
+
+]

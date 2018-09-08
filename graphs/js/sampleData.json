@@ -1,0 +1,17 @@
+[
+{
+	"Question": "1",
+	"Difficulty": 0.7,
+	"Discrimination": 1.25
+},
+{
+	"Question" : "2",
+	"Difficulty": 1.7,
+	"Discrimination": 0.2
+},
+{
+	"Question" : "3",
+	"Difficulty": 1.25,
+	"Discrimination": 0.88
+}
+]

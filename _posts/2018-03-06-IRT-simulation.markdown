@@ -142,5 +142,5 @@ And there you go: a custom function for creating your very own item bank. To use
 ## Notes
 <a name="myfootnote1">1</a>. I.e. the ability of a question to distinguish between highly- and poorly-performing learners.
 
-<a name="myfootnote2">2</a>. The 2PL model only includes discrimination and difficulty parameters, whereas the 3PL also incudes a parameter to account for guessing.
+<a name="myfootnote2">2</a>. The 2PL model only includes discrimination and difficulty parameters, whereas the 3PL also includes a parameter to account for guessing.
 
