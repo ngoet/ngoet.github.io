@@ -14,14 +14,15 @@ permalink: /publications/
 
 # Under review
 
-* Goet, Niels. "The Politics of Procedural Choice: Standing Orders Reform in the UK House of Commons 1811-2015".
+* Goet, Niels. "The Politics of Procedural Choice: Standing Orders Reform in the UK House of Commons 1811-2015."
 
-* Goet, Niels. "Measuring Polarisation with Text Analysis: Evidence from the UK House of Commons, 1811-2015.
+* Goet, Niels. "Measuring Polarisation with Text Analysis: Evidence from the UK House of Commons, 1811-2015."
 
 * Goet, Niels and [Ezequiel González-Ocantos](https://www.politics.ox.ac.uk/academic-staff/ezequiel-gonzalez-ocantos.html). "The Impact of International Law on Constitutional Court Rulings: Evidence from Colombia, 1992-2015." 
 
 
 # Conference Papers & Presentations
+* [Comparative Institutions and Regimes Seminar, Unversity of Oslo](http://www.sv.uio.no/isv/english/research/groups/comparative-institutions-and-regimes/index.html), 8th June 2018.
 * [4th Conference of the ECPR Standing Group on Parliaments](http://standinggroups.ecpr.eu/parliaments/?page_id=499), 29 June – 1st July 2017 University of Basel.
 * APSA 2017 (San Francisco).
 * APSA 2016 (Philadelphia).
