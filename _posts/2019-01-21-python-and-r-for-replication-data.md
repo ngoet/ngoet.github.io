@@ -5,7 +5,7 @@ date:   2019-01-21 11:27:49 +0100
 categories: programming
 ---
 
-When submitting replication data for an academic paper, more complex statistical analyses often require the use of scripts in different programming languages. For example, I often run machine learning and data processing applications in Python, while I estimate statistical models in R. To allow other researchers to replicate your analyses quickly and easily, you can excecute all scripts through one wrapper function in R. In this post, I show the steps of writing a simple function that takes the full path to an R or Python script, executes it, and writes information about the script execution to a log file. The full code for this post is [available here](https://gist.github.com/ngoet/c61435adf8997815b60394f637c4e740).
+When submitting replication data for an academic paper, more complex statistical analyses often require the use of scripts in different programming languages. For example, I often run machine learning and data processing applications in Python, while I estimate statistical models in R. To allow other researchers to replicate your analyses quickly and easily, you can execute all scripts through one wrapper function in R. In this post, I show the steps of writing a simple function that takes the full path to an R or Python script, executes it, and writes information about the script execution to a log file. The full code for this post is [available here](https://gist.github.com/ngoet/c61435adf8997815b60394f637c4e740).
 
 ## Setting up a log file
 First, with any replication exercise it is good practice to keep a log file to keep track of which scripts have been executed, and what files and/or figures have been generated. A log-file is easily set up in R using the code below.
