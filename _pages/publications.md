@@ -6,7 +6,7 @@ permalink: /publications/
 
 # Working papers
  
-* Goet, Niels, [Tom Fleming](https://www.nuffield.ox.ac.uk/people/profiles/thomas-fleming/), and [Radoslaw Zubek](https://radoslawzubek.com/). "Standing Orders Reform in the UK House of Commons, 1811-2015: A New Dataset". 
+* Goet, Niels, [Tom Fleming](https://www.nuffield.ox.ac.uk/people/profiles/thomas-fleming/), and [Radoslaw Zubek](https://radoslawzubek.com/). "Procedural Change in the UK House of Commons, 1811-2015". 
 
 * Frech, Elena, Niels Goet, and Simon Hug. ["Shirking and Slacking in Parliament"](http://www.unige.ch/ses/spo/static/simonhug/sasip.html). 
 
