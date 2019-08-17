@@ -1,6 +1,8 @@
-
-title: pvvcal documentation
+---
+layout: page
+title: pccval documentation
 permalink: /pccval_documentation/
+---
 
 * [pcc_validation](/pcc_validation/pcc_validation.html)
 * [reporting](/reporting/reporting.html)
