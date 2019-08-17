@@ -1,0 +1,1612 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>data_ingestion.data_utils API documentation</title>
+    <meta name="description" content="data_ingestion.data_utils
+~~~~~~~~~~~~~
+Class of functions to process tmp.
+
+:copyright: © 2019 Niels..." />
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+  
+  <style type="text/css">
+  
+* {
+  box-sizing: border-box;
+}
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-size: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+  </style>
+
+  <style type="text/css">
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+  body {
+    background: #fff;
+    font-family: "Source Sans Pro", "Helvetica Neueue", Helvetica, sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  #content {
+    width: 70%;
+    max-width: 850px;
+    float: left;
+    padding: 30px 60px;
+    border-left: 1px solid #ddd;
+  }
+  #sidebar {
+    width: 25%;
+    float: left;
+    padding: 30px;
+    overflow: hidden;
+  }
+  #nav {
+    font-size: 130%;
+    margin: 0 0 15px 0;
+  }
+
+  #top {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+  #footer {
+    font-size: .75em;
+    padding: 5px 30px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+  }
+    #footer p {
+      margin: 0 0 0 30px;
+      display: inline-block;
+    }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin: 0 0 .50em 0;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin: 1em 0 .50em 0;
+  }
+
+  h3 {
+    margin: 25px 0 10px 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 105%;
+  }
+
+  a {
+    color: #058;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+  }
+
+  a:hover {
+    color: #e08524;
+    transition: color .3s ease-in-out;
+  }
+
+  pre, code, .mono, .name {
+    font-family: "Ubuntu Mono", "Cousine", "DejaVu Sans Mono", monospace;
+  }
+
+  .title .name {
+    font-weight: bold;
+  }
+  .section-title {
+    margin-top: 2em;
+  }
+  .ident {
+    color: #900;
+  }
+
+  code {
+    background: #f9f9f9;
+  } 
+
+  pre {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 0 #f3f3f3;
+    margin: 0 30px;
+    padding: 15px 30px;
+  }
+
+  .codehilite {
+    margin: 0 30px 10px 30px;
+  }
+
+    .codehilite pre {
+      margin: 0;
+    }
+    .codehilite .err { background: #ff3300; color: #fff !important; } 
+
+  table#module-list {
+    font-size: 110%;
+  }
+
+    table#module-list tr td:first-child {
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    table#module-list td {
+      vertical-align: top;
+      padding-bottom: 8px;
+    }
+
+      table#module-list td p {
+        margin: 0 0 7px 0;
+      }
+
+  .def {
+    display: table;
+  }
+
+    .def p {
+      display: table-cell;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .def p:first-child {
+      white-space: nowrap;
+    }
+
+    .def p:last-child {
+      width: 100%;
+    }
+
+
+  #index {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+    ul#index .class_name {
+      /* font-size: 110%; */
+      font-weight: bold;
+    }
+    #index ul {
+      margin: 0;
+    }
+
+  .item {
+    margin: 0 0 15px 0;
+  }
+
+    .item .class {
+      margin: 0 0 25px 30px;
+    }
+
+      .item .class ul.class_list {
+        margin: 0 0 20px 0;
+      }
+
+    .item .name {
+      background: #fafafa;
+      margin: 0;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      min-width: 40%;
+    }
+      .item .name:hover {
+        background: #f6f6f6;
+      }
+
+    .item .empty_desc {
+      margin: 0 0 5px 0;
+      padding: 0;
+    }
+
+    .item .inheritance {
+      margin: 3px 0 0 30px;
+    }
+
+    .item .inherited {
+      color: #666;
+    }
+
+    .item .desc {
+      padding: 0 8px;
+      margin: 0;
+    }
+
+      .item .desc p {
+        margin: 0 0 10px 0;
+      }
+
+    .source_cont {
+      margin: 0;
+      padding: 0;
+    }
+
+    .source_link a {
+      background: #ffc300;
+      font-weight: 400;
+      font-size: .75em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 1px 1px 0 #f4b700;
+      
+      padding: 3px 8px;
+      border-radius: 2px;
+      transition: background .3s ease-in-out;
+    }
+      .source_link a:hover {
+        background: #FF7200;
+        text-shadow: none;
+        transition: background .3s ease-in-out;
+      }
+
+    .source {
+      display: none;
+      max-height: 600px;
+      overflow-y: scroll;
+      margin-bottom: 15px;
+    }
+
+      .source .codehilite {
+        margin: 0;
+      }
+
+  .desc h1, .desc h2, .desc h3 {
+    font-size: 100% !important;
+  }
+  .clear {
+    clear: both;
+  }
+
+  @media all and (max-width: 950px) {
+    #sidebar {
+      width: 35%;
+    }
+    #content {
+      width: 65%;
+    }
+  }
+  @media all and (max-width: 650px) {
+    #top {
+      display: none;
+    }
+    #sidebar {
+      float: none;
+      width: auto;
+    }
+    #content {
+      float: none;
+      width: auto;
+      padding: 30px;
+    }
+
+    #index ul {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    #index ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+    #footer {
+      text-align: left;
+    }
+    #footer p {
+      display: block;
+      margin: inherit;
+    }
+  }
+
+  /*****************************/
+
+  </style>
+
+
+  <style type="text/css">
+  
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+  </style>
+
+  <script type="text/javascript">
+  function toggle(id, $link) {
+    $node = document.getElementById(id);
+    if (!$node)
+    return;
+    if (!$node.style.display || $node.style.display == 'none') {
+    $node.style.display = 'block';
+    $link.innerHTML = 'Hide source &nequiv;';
+    } else {
+    $node.style.display = 'none';
+    $link.innerHTML = 'Show source &equiv;';
+    }
+  }
+  </script>
+</head>
+<body>
+<a href="#" id="top">Top</a>
+
+<div id="container">
+    
+  
+  <div id="sidebar">
+    <h1>Index</h1>
+    <ul id="index">
+
+    <li class="set"><h3><a href="#header-functions">Functions</a></h3>
+      
+  <ul>
+    <li class="mono"><a href="#data_ingestion.data_utils.gen_csv_files">gen_csv_files</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.gen_folders">gen_folders</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.gen_time">gen_time</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.generate_output_folders">generate_output_folders</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.get_class_attributes">get_class_attributes</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.import_class">import_class</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.parse_date">parse_date</a></li>
+    <li class="mono"><a href="#data_ingestion.data_utils.read_in_df">read_in_df</a></li>
+  </ul>
+
+    </li>
+
+
+    </ul>
+  </div>
+
+    <article id="content">
+      
+  
+
+  
+
+
+  <header id="section-intro">
+  <h1 class="title"><span class="name">data_ingestion.data_utils</span> module</h1>
+  <p>data_ingestion.data_utils
+~~~~~~~~~~~~~
+Class of functions to process tmp.</p>
+<p>:copyright: © 2019 Niels Goet @ PCC-project</p>
+  
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils" class="source">
+    <pre><code>#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+    data_ingestion.data_utils
+    ~~~~~~~~~~~~~
+    Class of functions to process tmp.
+
+    :copyright: © 2019 Niels Goet @ PCC-project
+"""
+
+import datetime
+import glob
+import importlib
+import os
+import shutil
+
+import time
+from typing import ClassVar
+from typing import List
+
+import pandas as pd
+
+from data_ingestion import constants as c
+
+
+def gen_folders(file_path: str) -> str:
+    """
+    Function to generate folders for the output of the validation tests.
+
+    :return str outfolder_path: The path to the folder where the output of the
+    validation tests is stored.
+    """
+    outfolder_path = os.path.join(file_path, 'outfolder')
+
+    gen_option = ''
+    if not os.path.exists(outfolder_path):
+        os.mkdir(outfolder_path)
+        print(('Folder {} created. Validation reports will be stored here.'
+               ).format(outfolder_path))
+
+    tmp_file_path = os.path.join(outfolder_path, 'tmp')
+    if not os.path.exists(tmp_file_path):
+        os.mkdir(tmp_file_path)
+
+    else:
+        os.chdir(os.path.join(outfolder_path, 'tmp'))
+        csv_files = glob.glob('*.csv')
+        if csv_files != []:
+            csv_message = ('Folder {} already exists, containing the following csv files: {}'
+                           ).format(outfolder_path, '\n* '.join(csv_files))
+        else:
+            csv_message = ('Folder {} already exists, but does not contain any files'
+                           ).format(outfolder_path)
+
+        gen_option = input(('{}\nDo you want to generate new csv files from PCC.xlsm? '
+                            '(enter "Y" and hit enter to generate new files; to proceed '
+                            'with the existing files simply hit enter.'
+                            ).format(csv_message))
+    if gen_option == 'Y':
+        shutil.rmtree(outfolder_path)
+        os.mkdir(outfolder_path)
+    else:
+        pass
+
+    return gen_option, outfolder_path
+
+def read_in_df(tab_name: str, path: str) -> pd.DataFrame:
+    """
+    Read in dataframe (df)
+
+    Function to read in a tab from the PCC xls file for further analysis.
+
+    Example use: read_in_df('../PCC.xlsm', 'ELEN')
+
+    :param str path: Path to the csv file
+    :param str tab_name: Name of the tab to be read in
+    :return: pd.DataFrame tab_xls: The tab with relevant tmp
+    """
+    file_xls = pd.ExcelFile(path)
+
+    tab_xls = pd.read_excel(file_xls, tab_name)
+
+    return tab_xls
+
+def gen_csv_files(path: str, outfolder: str) -> str:
+    """
+    Read in dataframe (df)
+
+    Function to read in a tab from the PCC xls file for further analysis.
+
+    Example use: read_in_df('../PCC.xlsm', 'ELEN')
+
+    :param str path: Path to the csv file
+    :return: pd.DataFrame tab_xls: The tab with relevant tmp
+    :return: str folder_path: The path to the folder where the csv files
+    for the PCC tmp frames are stored
+    """
+    # TODO change call on 'PCC' such that it can be used with any file
+    folder_path = os.path.join(outfolder, 'tmp')
+    print('Generating separate csv files for all PCC tmp frames '
+          'at {}'.format(folder_path))
+
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    file_xls = pd.ExcelFile(path)
+    sheet_names = file_xls.sheet_names
+
+    for sheet in sheet_names:
+        if sheet in get_class_attributes(c.DFN):
+            tab_xls = pd.read_excel(file_xls, sheet, header=0)
+            tab_xls.to_csv(
+                            os.path.join(folder_path, (sheet + '.csv')),
+                            header=True,
+                            sep=','
+                            )
+            print('CSV file for {} tmp frame generated'.format(sheet))
+    return folder_path
+
+def generate_output_folders():
+    """
+    Generate output folders.
+
+    Function that generates folders (infolder and outputfolder).
+    """
+    valid_file = False
+    while valid_file == False:
+        file_path = input(
+            'Please enter the full path to your the folder where you have '
+            'stored your PCC.xlsm file: ')
+        if os.path.exists(file_path):
+            valid_file = True
+        else:
+            print('The path "{}" is not a valid path. Please '
+                  'enter a valid, full path to the folder where you have '
+                  'stored the PCC .xlsm file.'.format(file_path))
+
+    os.chdir(file_path)
+    raw_csv_file = glob.glob('*.xlsm')
+    assert len(raw_csv_file) is not 0, ('Critical error: No PCC.xlsm file '
+                                        'present in folder {}.'
+                                        ).format(file_path)
+    raw_csv_file = raw_csv_file[0]
+
+    output_file_constant = raw_csv_file.split('.xlsm')[0] + '_analysis'
+
+    gen_option, outfolder = gen_folders(file_path.replace(raw_csv_file, ''))
+
+    return gen_option, file_path, output_file_constant, outfolder, raw_csv_file
+
+def parse_date(text: str):
+    """
+    Parse date
+
+    Function to convert a str date following the format '%Y' or '%d%b%Y' to
+    datetime.date() format.
+
+    :param str text: The text to be parsed into a date.
+    :return datetime.date() date: Date object.
+    """
+    for fmt in ('%Y', '%d%b%Y'):
+        try:
+            date = datetime.datetime.strptime(text, fmt).date()
+            return date
+        except ValueError:
+            pass
+    raise ValueError('Date format not valid.')
+
+def get_class_attributes(obj) -> List[str]:
+    """
+    Function to obtain the values of all attributes of a class.
+
+    :param ClassVar obj: A tmp ingestion constants class
+    :return: List[str] class_vals: A list containing the values of all
+    attributes associated with the class.
+    """
+    class_objects = [attr for attr in dir(obj) if not
+    callable(getattr(obj, attr)) and not attr.startswith('__')]
+
+    class_vals = [getattr(obj, i) for i in class_objects]
+
+    return class_vals
+
+def gen_time() -> str:
+    """
+    Function to generate timestamp in string format (used for logging
+    purposes)
+    :return str current_time: Current time (format: '%Y-%m-%d %H:%M:%S')
+    """
+    current_time = datetime.datetime.fromtimestamp(time.time()
+                                                   ).strftime('%Y-%m-%d %H:%M:%S')
+    return current_time
+
+def import_class(class_name: str,
+                 data_path: str,
+                 reporting_instance,
+                 module_name: str='pcc_validation'):
+    """
+    Function to import a class by class name and module name
+
+    :param str class_name: The name of the class.
+    :param str module_name: The name of the module.
+    :return Class instance: The class instance associated with the class and
+    module name.
+    """
+    module = importlib.import_module(module_name +
+                                     '.{}_validate'.format(
+                                                            class_name.lower()
+                                                        )
+                                     )
+    class_ = getattr(module, (class_name + 'Validate'))
+    instance = class_(data_path, reporting_instance)
+    return instance
+</code></pre>
+  </div>
+
+  </header>
+
+  <section id="section-items">
+
+    <h2 class="section-title" id="header-functions">Functions</h2>
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.gen_csv_files">
+    <p>def <span class="ident">gen_csv_files</span>(</p><p>path, outfolder)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Read in dataframe (df)</p>
+<p>Function to read in a tab from the PCC xls file for further analysis.</p>
+<p>Example use: read_in_df('../PCC.xlsm', 'ELEN')</p>
+<p>:param str path: Path to the csv file
+:return: pd.DataFrame tab_xls: The tab with relevant tmp
+:return: str folder_path: The path to the folder where the csv files
+for the PCC tmp frames are stored</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.gen_csv_files', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.gen_csv_files" class="source">
+    <pre><code>def gen_csv_files(path: str, outfolder: str) -> str:
+    """
+    Read in dataframe (df)
+
+    Function to read in a tab from the PCC xls file for further analysis.
+
+    Example use: read_in_df('../PCC.xlsm', 'ELEN')
+
+    :param str path: Path to the csv file
+    :return: pd.DataFrame tab_xls: The tab with relevant tmp
+    :return: str folder_path: The path to the folder where the csv files
+    for the PCC tmp frames are stored
+    """
+    # TODO change call on 'PCC' such that it can be used with any file
+    folder_path = os.path.join(outfolder, 'tmp')
+    print('Generating separate csv files for all PCC tmp frames '
+          'at {}'.format(folder_path))
+
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    file_xls = pd.ExcelFile(path)
+    sheet_names = file_xls.sheet_names
+
+    for sheet in sheet_names:
+        if sheet in get_class_attributes(c.DFN):
+            tab_xls = pd.read_excel(file_xls, sheet, header=0)
+            tab_xls.to_csv(
+                            os.path.join(folder_path, (sheet + '.csv')),
+                            header=True,
+                            sep=','
+                            )
+            print('CSV file for {} tmp frame generated'.format(sheet))
+    return folder_path
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.gen_folders">
+    <p>def <span class="ident">gen_folders</span>(</p><p>file_path)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Function to generate folders for the output of the validation tests.</p>
+<p>:return str outfolder_path: The path to the folder where the output of the
+validation tests is stored.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.gen_folders', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.gen_folders" class="source">
+    <pre><code>def gen_folders(file_path: str) -> str:
+    """
+    Function to generate folders for the output of the validation tests.
+
+    :return str outfolder_path: The path to the folder where the output of the
+    validation tests is stored.
+    """
+    outfolder_path = os.path.join(file_path, 'outfolder')
+
+    gen_option = ''
+    if not os.path.exists(outfolder_path):
+        os.mkdir(outfolder_path)
+        print(('Folder {} created. Validation reports will be stored here.'
+               ).format(outfolder_path))
+
+    tmp_file_path = os.path.join(outfolder_path, 'tmp')
+    if not os.path.exists(tmp_file_path):
+        os.mkdir(tmp_file_path)
+
+    else:
+        os.chdir(os.path.join(outfolder_path, 'tmp'))
+        csv_files = glob.glob('*.csv')
+        if csv_files != []:
+            csv_message = ('Folder {} already exists, containing the following csv files: {}'
+                           ).format(outfolder_path, '\n* '.join(csv_files))
+        else:
+            csv_message = ('Folder {} already exists, but does not contain any files'
+                           ).format(outfolder_path)
+
+        gen_option = input(('{}\nDo you want to generate new csv files from PCC.xlsm? '
+                            '(enter "Y" and hit enter to generate new files; to proceed '
+                            'with the existing files simply hit enter.'
+                            ).format(csv_message))
+    if gen_option == 'Y':
+        shutil.rmtree(outfolder_path)
+        os.mkdir(outfolder_path)
+    else:
+        pass
+
+    return gen_option, outfolder_path
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.gen_time">
+    <p>def <span class="ident">gen_time</span>(</p><p>)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Function to generate timestamp in string format (used for logging
+purposes)
+:return str current_time: Current time (format: '%Y-%m-%d %H:%M:%S')</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.gen_time', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.gen_time" class="source">
+    <pre><code>def gen_time() -> str:
+    """
+    Function to generate timestamp in string format (used for logging
+    purposes)
+    :return str current_time: Current time (format: '%Y-%m-%d %H:%M:%S')
+    """
+    current_time = datetime.datetime.fromtimestamp(time.time()
+                                                   ).strftime('%Y-%m-%d %H:%M:%S')
+    return current_time
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.generate_output_folders">
+    <p>def <span class="ident">generate_output_folders</span>(</p><p>)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Generate output folders.</p>
+<p>Function that generates folders (infolder and outputfolder).</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.generate_output_folders', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.generate_output_folders" class="source">
+    <pre><code>def generate_output_folders():
+    """
+    Generate output folders.
+
+    Function that generates folders (infolder and outputfolder).
+    """
+    valid_file = False
+    while valid_file == False:
+        file_path = input(
+            'Please enter the full path to your the folder where you have '
+            'stored your PCC.xlsm file: ')
+        if os.path.exists(file_path):
+            valid_file = True
+        else:
+            print('The path "{}" is not a valid path. Please '
+                  'enter a valid, full path to the folder where you have '
+                  'stored the PCC .xlsm file.'.format(file_path))
+
+    os.chdir(file_path)
+    raw_csv_file = glob.glob('*.xlsm')
+    assert len(raw_csv_file) is not 0, ('Critical error: No PCC.xlsm file '
+                                        'present in folder {}.'
+                                        ).format(file_path)
+    raw_csv_file = raw_csv_file[0]
+
+    output_file_constant = raw_csv_file.split('.xlsm')[0] + '_analysis'
+
+    gen_option, outfolder = gen_folders(file_path.replace(raw_csv_file, ''))
+
+    return gen_option, file_path, output_file_constant, outfolder, raw_csv_file
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.get_class_attributes">
+    <p>def <span class="ident">get_class_attributes</span>(</p><p>obj)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Function to obtain the values of all attributes of a class.</p>
+<p>:param ClassVar obj: A tmp ingestion constants class
+:return: List[str] class_vals: A list containing the values of all
+attributes associated with the class.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.get_class_attributes', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.get_class_attributes" class="source">
+    <pre><code>def get_class_attributes(obj) -> List[str]:
+    """
+    Function to obtain the values of all attributes of a class.
+
+    :param ClassVar obj: A tmp ingestion constants class
+    :return: List[str] class_vals: A list containing the values of all
+    attributes associated with the class.
+    """
+    class_objects = [attr for attr in dir(obj) if not
+    callable(getattr(obj, attr)) and not attr.startswith('__')]
+
+    class_vals = [getattr(obj, i) for i in class_objects]
+
+    return class_vals
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.import_class">
+    <p>def <span class="ident">import_class</span>(</p><p>class_name, data_path, reporting_instance, module_name=&#39;pcc_validation&#39;)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Function to import a class by class name and module name</p>
+<p>:param str class_name: The name of the class.
+:param str module_name: The name of the module.
+:return Class instance: The class instance associated with the class and
+module name.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.import_class', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.import_class" class="source">
+    <pre><code>def import_class(class_name: str,
+                 data_path: str,
+                 reporting_instance,
+                 module_name: str='pcc_validation'):
+    """
+    Function to import a class by class name and module name
+
+    :param str class_name: The name of the class.
+    :param str module_name: The name of the module.
+    :return Class instance: The class instance associated with the class and
+    module name.
+    """
+    module = importlib.import_module(module_name +
+                                     '.{}_validate'.format(
+                                                            class_name.lower()
+                                                        )
+                                     )
+    class_ = getattr(module, (class_name + 'Validate'))
+    instance = class_(data_path, reporting_instance)
+    return instance
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.parse_date">
+    <p>def <span class="ident">parse_date</span>(</p><p>text)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Parse date</p>
+<p>Function to convert a str date following the format '%Y' or '%d%b%Y' to
+datetime.date() format.</p>
+<p>:param str text: The text to be parsed into a date.
+:return datetime.date() date: Date object.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.parse_date', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.parse_date" class="source">
+    <pre><code>def parse_date(text: str):
+    """
+    Parse date
+
+    Function to convert a str date following the format '%Y' or '%d%b%Y' to
+    datetime.date() format.
+
+    :param str text: The text to be parsed into a date.
+    :return datetime.date() date: Date object.
+    """
+    for fmt in ('%Y', '%d%b%Y'):
+        try:
+            date = datetime.datetime.strptime(text, fmt).date()
+            return date
+        except ValueError:
+            pass
+    raise ValueError('Date format not valid.')
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="data_ingestion.data_utils.read_in_df">
+    <p>def <span class="ident">read_in_df</span>(</p><p>tab_name, path)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Read in dataframe (df)</p>
+<p>Function to read in a tab from the PCC xls file for further analysis.</p>
+<p>Example use: read_in_df('../PCC.xlsm', 'ELEN')</p>
+<p>:param str path: Path to the csv file
+:param str tab_name: Name of the tab to be read in
+:return: pd.DataFrame tab_xls: The tab with relevant tmp</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.data_utils.read_in_df', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.data_utils.read_in_df" class="source">
+    <pre><code>def read_in_df(tab_name: str, path: str) -> pd.DataFrame:
+    """
+    Read in dataframe (df)
+
+    Function to read in a tab from the PCC xls file for further analysis.
+
+    Example use: read_in_df('../PCC.xlsm', 'ELEN')
+
+    :param str path: Path to the csv file
+    :param str tab_name: Name of the tab to be read in
+    :return: pd.DataFrame tab_xls: The tab with relevant tmp
+    """
+    file_xls = pd.ExcelFile(path)
+
+    tab_xls = pd.read_excel(file_xls, tab_name)
+
+    return tab_xls
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+
+
+  </section>
+
+    </article>
+  <div class="clear"> </div>
+  <footer id="footer">
+    <p>
+      Documentation generated by
+      <a href="https://github.com/BurntSushi/pdoc">pdoc 0.3.2</a>
+    </p>
+
+    <p>pdoc is in the public domain with the
+      <a href="http://unlicense.org">UNLICENSE</a></p>
+
+    <p>Design by <a href="http://nadh.in">Kailash Nadh</a></p>
+  </footer>
+</div>
+</body>
+</html>

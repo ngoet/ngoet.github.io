@@ -1,0 +1,2445 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>pcc_validation.validation_utils API documentation</title>
+    <meta name="description" content="tests.unit_test_utils
+~~~~~~~~~~~~~
+Class of functions for unit tests
+
+:copyright: © 2019 Niels Goet..." />
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+  
+  <style type="text/css">
+  
+* {
+  box-sizing: border-box;
+}
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-size: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+  </style>
+
+  <style type="text/css">
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+  body {
+    background: #fff;
+    font-family: "Source Sans Pro", "Helvetica Neueue", Helvetica, sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  #content {
+    width: 70%;
+    max-width: 850px;
+    float: left;
+    padding: 30px 60px;
+    border-left: 1px solid #ddd;
+  }
+  #sidebar {
+    width: 25%;
+    float: left;
+    padding: 30px;
+    overflow: hidden;
+  }
+  #nav {
+    font-size: 130%;
+    margin: 0 0 15px 0;
+  }
+
+  #top {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+  #footer {
+    font-size: .75em;
+    padding: 5px 30px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+  }
+    #footer p {
+      margin: 0 0 0 30px;
+      display: inline-block;
+    }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin: 0 0 .50em 0;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin: 1em 0 .50em 0;
+  }
+
+  h3 {
+    margin: 25px 0 10px 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 105%;
+  }
+
+  a {
+    color: #058;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+  }
+
+  a:hover {
+    color: #e08524;
+    transition: color .3s ease-in-out;
+  }
+
+  pre, code, .mono, .name {
+    font-family: "Ubuntu Mono", "Cousine", "DejaVu Sans Mono", monospace;
+  }
+
+  .title .name {
+    font-weight: bold;
+  }
+  .section-title {
+    margin-top: 2em;
+  }
+  .ident {
+    color: #900;
+  }
+
+  code {
+    background: #f9f9f9;
+  } 
+
+  pre {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 0 #f3f3f3;
+    margin: 0 30px;
+    padding: 15px 30px;
+  }
+
+  .codehilite {
+    margin: 0 30px 10px 30px;
+  }
+
+    .codehilite pre {
+      margin: 0;
+    }
+    .codehilite .err { background: #ff3300; color: #fff !important; } 
+
+  table#module-list {
+    font-size: 110%;
+  }
+
+    table#module-list tr td:first-child {
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    table#module-list td {
+      vertical-align: top;
+      padding-bottom: 8px;
+    }
+
+      table#module-list td p {
+        margin: 0 0 7px 0;
+      }
+
+  .def {
+    display: table;
+  }
+
+    .def p {
+      display: table-cell;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .def p:first-child {
+      white-space: nowrap;
+    }
+
+    .def p:last-child {
+      width: 100%;
+    }
+
+
+  #index {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+    ul#index .class_name {
+      /* font-size: 110%; */
+      font-weight: bold;
+    }
+    #index ul {
+      margin: 0;
+    }
+
+  .item {
+    margin: 0 0 15px 0;
+  }
+
+    .item .class {
+      margin: 0 0 25px 30px;
+    }
+
+      .item .class ul.class_list {
+        margin: 0 0 20px 0;
+      }
+
+    .item .name {
+      background: #fafafa;
+      margin: 0;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      min-width: 40%;
+    }
+      .item .name:hover {
+        background: #f6f6f6;
+      }
+
+    .item .empty_desc {
+      margin: 0 0 5px 0;
+      padding: 0;
+    }
+
+    .item .inheritance {
+      margin: 3px 0 0 30px;
+    }
+
+    .item .inherited {
+      color: #666;
+    }
+
+    .item .desc {
+      padding: 0 8px;
+      margin: 0;
+    }
+
+      .item .desc p {
+        margin: 0 0 10px 0;
+      }
+
+    .source_cont {
+      margin: 0;
+      padding: 0;
+    }
+
+    .source_link a {
+      background: #ffc300;
+      font-weight: 400;
+      font-size: .75em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 1px 1px 0 #f4b700;
+      
+      padding: 3px 8px;
+      border-radius: 2px;
+      transition: background .3s ease-in-out;
+    }
+      .source_link a:hover {
+        background: #FF7200;
+        text-shadow: none;
+        transition: background .3s ease-in-out;
+      }
+
+    .source {
+      display: none;
+      max-height: 600px;
+      overflow-y: scroll;
+      margin-bottom: 15px;
+    }
+
+      .source .codehilite {
+        margin: 0;
+      }
+
+  .desc h1, .desc h2, .desc h3 {
+    font-size: 100% !important;
+  }
+  .clear {
+    clear: both;
+  }
+
+  @media all and (max-width: 950px) {
+    #sidebar {
+      width: 35%;
+    }
+    #content {
+      width: 65%;
+    }
+  }
+  @media all and (max-width: 650px) {
+    #top {
+      display: none;
+    }
+    #sidebar {
+      float: none;
+      width: auto;
+    }
+    #content {
+      float: none;
+      width: auto;
+      padding: 30px;
+    }
+
+    #index ul {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    #index ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+    #footer {
+      text-align: left;
+    }
+    #footer p {
+      display: block;
+      margin: inherit;
+    }
+  }
+
+  /*****************************/
+
+  </style>
+
+
+  <style type="text/css">
+  
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+  </style>
+
+  <script type="text/javascript">
+  function toggle(id, $link) {
+    $node = document.getElementById(id);
+    if (!$node)
+    return;
+    if (!$node.style.display || $node.style.display == 'none') {
+    $node.style.display = 'block';
+    $link.innerHTML = 'Hide source &nequiv;';
+    } else {
+    $node.style.display = 'none';
+    $link.innerHTML = 'Show source &equiv;';
+    }
+  }
+  </script>
+</head>
+<body>
+<a href="#" id="top">Top</a>
+
+<div id="container">
+    
+  
+  <div id="sidebar">
+    <h1>Index</h1>
+    <ul id="index">
+
+    <li class="set"><h3><a href="#header-functions">Functions</a></h3>
+      
+  <ul>
+    <li class="mono"><a href="#pcc_validation.validation_utils.add_module_header">add_module_header</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.check_consecutive">check_consecutive</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.check_dates">check_dates</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.check_primary_keys">check_primary_keys</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.check_secondary_ids">check_secondary_ids</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.membership_length">membership_length</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.replace_vertical_bar">replace_vertical_bar</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.tfidf_cos">tfidf_cos</a></li>
+    <li class="mono"><a href="#pcc_validation.validation_utils.validate_parl_membership">validate_parl_membership</a></li>
+  </ul>
+
+    </li>
+
+
+    </ul>
+  </div>
+
+    <article id="content">
+      
+  
+
+  
+
+
+  <header id="section-intro">
+  <h1 class="title"><span class="name">pcc_validation.validation_utils</span> module</h1>
+  <p>tests.unit_test_utils
+~~~~~~~~~~~~~
+Class of functions for unit tests</p>
+<p>:copyright: © 2019 Niels Goet @ PCC Project</p>
+  
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils" class="source">
+    <pre><code>#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+    tests.unit_test_utils
+    ~~~~~~~~~~~~~
+    Class of functions for unit tests
+
+    :copyright: © 2019 Niels Goet @ PCC Project
+"""
+import collections
+import datetime
+import os
+from typing import List
+
+import pandas as pd
+import sys
+
+from data_ingestion import constants as c
+from reporting import visualization_utils
+from reporting.reporting_utils import Reporting, ReportingItem
+from ml_models import anomaly_detector
+import pyprind
+import progressbar as pb
+import numpy as np
+
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
+
+
+def check_consecutive(ids: List[str]):
+    """
+    Checks whether values are consecutive.
+
+    Is used for validation checks as the eg_period variable, to ensure that
+    we have a complete set of values.
+
+    :param List[str] ids: A list of ids
+    """
+    ids = [int(i) for i in ids]
+    n = len(ids)
+    sequence = [ids[i:(i + n)] for i in range(len(ids)) if
+                len(ids[i:(i + n)]) == n]
+    consecutive = sorted(ids) == sequence[0]
+    increases = list(
+        map(lambda x, y: x - y, ids[1:len(ids)], ids[0:len(ids) - 1]))
+    increasing_by_one = all([i == 1 for i in increases])
+
+    # We want this to evaluate to true if neither condition is met, so
+    # we can use it to subset the pd.DataFrame
+    result = not(consecutive and increasing_by_one)
+    return result
+
+
+def check_primary_keys(df: pd.DataFrame,
+                       reporting_instance: Reporting,
+                       reporting_item: ReportingItem,
+                       primary_id_col: str = None,
+                       extra_text: str = None):
+    """
+    Checks whether the primary keys are unique.
+
+    :param pd.DataFrame df: The PCC data frame that contains date variables
+    :param str primary_id_col: The constant for the primary id column
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str extra_text: An additional (optional) explanatory message to
+    be included in the .md report
+    """
+    # Primary ID is always stored in the first column, unless specified 
+    # otherwise; taking index=1 since index 0 is taken up by row numbers
+    if primary_id_col is None:
+        primary_id_col = list(df.columns)[1]
+
+    primary_ids = df[primary_id_col].values
+    duplicates = [item for item, count in
+                  collections.Counter(primary_ids).items() if count > 1]
+
+    reporting_item.entry_md_text += reporting_instance.add_header(level=3,
+                                                                  header_text=check_primary_keys.__name__ + ' ({})'.format(
+                                                                      primary_id_col))
+
+    if extra_text is not None:
+        reporting_item.entry_md_text += extra_text
+
+    if len(duplicates) > 0:
+        reporting_item.entry_md_text += c.REP.PRIMARY_KEY_ERROR.format(
+            len(duplicates))
+
+        for i in duplicates:
+            reporting_item.entry_md_text += ('\n* {}'.format(i))
+
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    reporting_item.error_dict.update({check_primary_keys.__name__: len(duplicates)})
+
+    reporting_item.n_errors += len(duplicates)
+
+
+def check_dates(df: pd.DataFrame,
+                primary_id_col: str,
+                date_columns: List[str],
+                reporting_instance: Reporting,
+                reporting_item: ReportingItem,
+                extra_text: str = None):
+    """
+    Checks whether date entries follow the required format (%d%b%Y).
+
+    :param pd.DataFrame df: The PCC data frame that contains date variables
+    :param str primary_id_col: The constant for the primary id column
+    :param List[str] date_columns: The constants for the columns containing
+    dates
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str extra_text: An additional (optional) explanatory message to
+    be included in the .md report
+    """
+    faulty_dates = []
+    primary_ids = []
+    for col in date_columns:
+        for date, primary_id in zip(df[col].values,
+                                    df[primary_id_col].values):
+            try:
+                date_temp = date.split('[[')
+                if len(date_temp) == 1:
+                    datetime.datetime.strptime(date_temp[0], '%d%b%Y')
+                elif len(date_temp) == 2:
+                    if date_temp[1] == 'rcen]]':
+                        datetime.datetime.strptime(date_temp[0], '%d%b%Y')
+                    else:
+                        faulty_dates.append({primary_id: date})
+            except:
+                faulty_dates.append(date)
+                primary_ids.append(primary_id)
+                pass
+
+    reporting_item.entry_md_text += reporting_instance.add_header(level=3,
+                                                                  header_text=(
+                                                                      check_dates.__name__)
+                                                                  )
+    if extra_text is not None:
+        reporting_item.entry_md_text += extra_text
+
+    if len(faulty_dates) > 0:
+        faulty_dates_df = pd.DataFrame({primary_id_col: primary_ids,
+                                        'dates': faulty_dates})
+        reporting_item.entry_md_text += c.REP.DATE_FORMATS.format(len(faulty_dates_df.index))
+        reporting_item.entry_md_text += reporting_instance.add_table(pd.DataFrame(faulty_dates_df))
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    reporting_item.error_dict.update({check_dates.__name__: len(faulty_dates)})
+
+    reporting_item.n_errors += len(faulty_dates)
+
+
+def check_secondary_ids(main_df: pd.DataFrame, secondary_df: pd.DataFrame,
+                        secondary_key_col: str, primary_key_col: str,
+                        main_df_name: str, secondary_df_name: str,
+                        reporting_instance: Reporting,
+                        reporting_item: ReportingItem,
+                        extra_text: str = None):
+    """
+    Checks whether the secondary ids used in the df are present as primary
+    ids for the primary df associated with these ids.
+
+    :param pd.DataFrame main_df: The data frame containing the secondary keys
+    that are subjected to the test
+    :param pd.DataFrame secondary_df: THe data frame in which the secondary
+    keys of main_df are employed a primary ids
+    :param str secondary_key_col: The constant associated with the
+    secondary ids
+    :param str primary_key_col: The constant associated with the primary ids
+    :param str main_df_name: The name of the main data frame (e.g. ELEN, MEME)
+    :param secondary_df_name: The name of the secondary data frame (e.g.
+    ELEN, MEME)
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str extra_text: An additional (optional) explanatory message to
+    be included in the .md report
+    """
+    secondary_keys_from_secondary_df = [i for sublist in secondary_df[secondary_key_col].str.split(';', expand=False).values for i in sublist]
+
+    # Apply mapping (in some cases, key names change, e.g. party_id vs party_ids)
+    if secondary_df_name in c.KEY_MAPPINGS.PRIMARY_KEYS.keys():
+        mapping = c.KEY_MAPPINGS.PRIMARY_KEYS[secondary_key_col]
+        if secondary_key_col in mapping.keys():
+            secondary_key_col = mapping[secondary_key_col]
+
+    wrong_ids = set(main_df[secondary_key_col]) - set(secondary_keys_from_secondary_df)
+
+    primary_keys = []
+    for i in wrong_ids:
+        primary_keys.append(main_df[main_df[secondary_key_col] == i][
+                                primary_key_col].values.tolist())
+
+    wrong_ids_df = pd.DataFrame(
+                                    {
+                                        primary_key_col: primary_keys,
+                                        secondary_key_col: list(wrong_ids)
+                                    },
+                                index=range(len(primary_keys))
+                                )
+
+    reporting_item.entry_md_text += reporting_instance.add_header(level=3,
+                                                                  header_text=(
+                                                                              check_secondary_ids.__name__ +
+                                                                              ' ({})'.format(
+                                                                                  secondary_key_col))
+                                                                  )
+
+    if extra_text is not None:
+        reporting_item.entry_md_text += extra_text
+
+    if len(wrong_ids) > 0:
+        reporting_item.entry_md_text += (
+            c.REP.SECONDARY_KEY_ERROR.format(
+                len(primary_keys),
+                secondary_key_col,
+                main_df_name,
+                secondary_df_name,
+            )
+        )
+        reporting_item.entry_md_text += '\n'
+        reporting_item.entry_md_text += reporting_instance.add_table(wrong_ids_df)
+
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    #
+    reporting_item.error_dict.update({check_secondary_ids.__name__: len(wrong_ids)})
+    reporting_item.n_errors += len(wrong_ids)
+
+
+def membership_length(df: pd.DataFrame,
+                      var_name: str,
+                      primary_id: str,
+                      reporting_instance: Reporting,
+                      reporting_item: ReportingItem,
+                      separation_id: str,
+                      outlier_threshold: float = 0.99,
+                      rareness: float = 0.01
+                      ):
+    """
+    Checks the length of membership of MPs in days. Suspicious values are
+    reported in the .md validation report.
+
+    Suspicious values are defined as values that are in the ith or 1-ith
+    percentile, where i is defined by :param float outlier_threshold:, AND
+    which only represent p proportion of all uniquely occurring tenure values
+    in the dataset (where p is defined by :param float rareness:).
+
+    All results are analysed and suspicious values are defined at the level
+    specified by :param str separation_id:
+
+    :param pd.DataFrame df: The data frame containing the membership data
+    :param str var_name: The name to be used for the variable representing
+    the length of MPs' tenure in days
+    :param str primary_id: The primary ID (needs to be specified to ensure
+    it is retained in the summary report that is written out to the
+    validation report
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str separation_id: The id on which the dataframes need to be
+    divided
+    :param float outlier_threshold: The threshold for outliers, representing
+    the upper percentile (both outlier_threshold and 1-outlier_threshold
+    are taken to identify outlying values). Needs to be a float value
+    between 0 and 1. Defaults to 0.99
+    :param float rareness: Value for how rare an individual tenure value
+    (e.g. 5 days, 5000 days) needs to be across the dataset for it to be
+    included as an error. The condition is applied in
+    conjunction with outlier_threshold
+    """
+    assert outlier_threshold < 1 and outlier_threshold > 0, \
+        ('{} is an invalid parameter for calculating a percentile. '
+         'Please specify a float value between 0 and 1.'
+         ).format(outlier_threshold)
+
+    dfs = [rows for _, rows in df.groupby(separation_id)]
+
+    suspicious_entries = []
+    message = 'Running membership length checks at level {}.'.format(primary_id)
+    pb_bar = pyprind.ProgBar(len(dfs), stream=sys.stdout, title=message)
+
+    for idx in range(len(dfs)):
+        df = dfs[idx]
+
+        df.loc[:, var_name] = (
+            [
+                abs(datetime.datetime.strptime(i1, '%d%b%Y') -
+                    datetime.datetime.strptime(i2, '%d%b%Y')).days for i1, i2
+                in
+                zip(df[c.MEME.MEMEP_STARTDATE].values,
+                    df[c.MEME.MEMEP_ENDDATE].values)
+            ]
+        )
+
+        # Sum by primary id
+        if separation_id == c.MEME.PERS_ID:
+            df = df[[primary_id, separation_id, var_name]
+            ].groupby([primary_id, separation_id]
+                      ).sum().reset_index()
+
+        # Identify outliers (99th vs 1st percentile, and only occurring
+        # in x cases)
+        occurrences = df[var_name].value_counts(
+            normalize=True).reset_index().rename(columns={var_name: 'n'})
+
+        df = pd.merge(df, occurrences, left_on=var_name, right_on='index')
+
+        thresholds = df[var_name].quantile(
+                                [outlier_threshold, 1 - outlier_threshold],
+                                interpolation='midpoint'
+                                )
+
+        condition = (((df[var_name] >= thresholds.values[0]) | (
+                    df[var_name] <= thresholds.values[1])) & (
+                                 df['n'] <= rareness))
+
+        unlikely_vals_df = df[condition][
+            [separation_id, primary_id, var_name]].drop_duplicates()
+
+        suspicious_entries.append(unlikely_vals_df)
+
+        pb_bar.update()
+
+    suspicious_entries_df = pd.concat(suspicious_entries)
+
+    # Escape character for vertical bar to ensure
+    suspicious_entries_df.loc[:,primary_id] = replace_vertical_bar(suspicious_entries_df, primary_id)
+
+    # Add explanatory text
+    reporting_item.entry_md_text += (
+        '\n The following {} suspicious entries were identified at '
+        'the {} level: \n'.format(len(suspicious_entries_df.index), primary_id))
+
+    # Add table
+    reporting_item.entry_md_text += reporting_instance.add_table(suspicious_entries_df)
+
+    reporting_item.error_dict.update({membership_length.__name__: len(suspicious_entries_df.index)})
+
+    reporting_item.n_errors += len(suspicious_entries_df.index)
+
+
+def validate_parl_membership(data_path: str,
+                             reporting_item: ReportingItem):
+    """
+    Runs tests to validate the number of members in each assembly. The
+    following tests are performed:
+    *  Checks the length of membership of MPs in days. Suspicious values are
+    defined as values that are in the $i^{th}$ or $1-i^{th}$ percentile,
+    with $i$ set to $0.99$, and a parameter $p$, which is the proportion of
+    all uniquely occurring tenure values in the dataset (where the default
+    value for $p$ is $0.01$). The test is evaluated at two levels: at
+    the member episode level (number of days per episode), and at the total
+    tenure level (i.e. total days in office).
+    * For every day and for every legislative assembly in the dataset reports
+    the number of members that on that day have a seat in the assembly.
+    hese numbers are reported as line graphs.
+
+    :param str data_path: The path where the .csv versions of the PCC data
+    frames are located
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    """
+
+    # MEME - memep_id, pers_id, memep_startdate, memep_enddate
+    meme_df = pd.read_csv(os.path.join(data_path, c.DFN.MEME + '.csv'),
+                          header=0,
+                          usecols=[
+                                    c.MEME.MEMEP_ID,
+                                    c.MEME.PERS_ID,
+                                    c.MEME.MEMEP_STARTDATE,
+                                    c.MEME.MEMEP_ENDDATE
+                                ]
+                          )
+
+    # PARE - parliament_id, pers_id, member_ofthisparliament_atsomepoint
+    pare_df = pd.read_csv(os.path.join(data_path, c.DFN.PARE + '.csv'),
+                          header=0,
+                          usecols=[
+                                    c.PARE.PARLIAMENT_ID,
+                                    c.PARE.PERS_ID,
+                                    c.PARE.MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT
+                                ]
+                          )
+
+    # PARL - parliament_id, leg_period_start, leg_period_end
+    parl_df = pd.read_csv(os.path.join(data_path, c.DFN.PARL + '.csv'),
+                          header=0,
+                          usecols=[
+                                    c.PARL.PARLIAMENT_ID,
+                                    c.PARL.LEG_PERIOD_START,
+                                    c.PARL.LEG_PERIOD_START
+                                ]
+                          )
+
+    # Get all parl_ids from PARE, and collapse so we have an array of
+    # pers_ids for each parl_df
+    condition = pare_df[c.PARE.MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT] == 'yes'
+    pare_df = pare_df[condition]
+
+    # Merge such that we have the leg_period_start and leg_period_end
+    # from PARL and the memep_enddate and memep_startdate from PARE
+    meme_pare_df = pd.merge(pare_df, meme_df, on=c.MEME.PERS_ID)
+    parl_meme_pare_df = pd.merge(meme_pare_df, parl_df, on=c.PARL.PARLIAMENT_ID)
+
+    # Add split id
+    parl_meme_pare_df.loc[:, 'parl'] = [''.join(i for i in s if not i.isdigit())[:-1]
+     for s in parl_meme_pare_df[c.PARE.PARLIAMENT_ID].values]
+
+    # Analyse membership per day
+    dfs = [rows for _, rows in parl_meme_pare_df.groupby('parl')]
+
+    # TODO: Multi-threading
+    membership_data = {}
+    for df in dfs:
+        start_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].min(), '%d%b%Y')
+        end_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].max(), '%d%b%Y')
+
+        delta = end_date - start_date
+
+        date_stamps = [start_date + datetime.timedelta(days=i) for i in range(delta.days + 1)]
+
+        # Convert dates
+        df.loc[:, c.MEME.MEMEP_STARTDATE] = [datetime.datetime.strptime(i, '%d%b%Y') for i in df[c.MEME.MEMEP_STARTDATE].values]
+        df.loc[:, c.MEME.MEMEP_ENDDATE] = [datetime.datetime.strptime(i, '%d%b%Y') for i in df[c.MEME.MEMEP_ENDDATE].values]
+
+        n_members = []
+        dates = []
+        parl = df['parl'].unique()[0]
+        total = len(date_stamps)
+        pb_bar = pyprind.ProgBar(total, stream=sys.stdout,
+                                 title='Analysing day-by-day membership for parliament {}'.format(parl))
+
+        for date_idx in range(len(date_stamps)):
+
+            date = date_stamps[date_idx]
+            mask = (date >= df[c.MEME.MEMEP_STARTDATE]) & (date <= df[c.MEME.MEMEP_ENDDATE])
+            n = len(df.loc[mask].index)
+            dates.append(date)
+            n_members.append(n)
+            pb_bar.update()
+
+        membership_data[parl] = [{'dates': dates}, {'n_members': n_members}]
+
+    for key, dat in membership_data.items():
+        visualization_utils.gen_line_graph(
+                                            path=data_path,
+                                            fig_name='membership_{}'.format(key),
+                                            y_vals=dat[1]['n_members'],
+                                            x_vals=dat[0]['dates'],
+                                            y_lab='Membership',
+                                            x_lab='Date',
+                                            plt_title='Historical membership {}'.format(key),
+                                            reporting_item=reporting_item
+                                           )
+
+
+def tfidf_cos(df: pd.DataFrame, var_names: List[str],
+              primary_key: str,
+              reporting_item: ReportingItem,
+              reporting_instance: Reporting,
+              perc: float = 0.999):
+    """
+    Applies the TFIDF-COS method, i.e. take the average cosine distance
+    between each value and the entire corpus of variable values as a
+    measure of "outlierness"
+
+    :param pd.DataFrame df: A data frame containing the variable values that
+    need to be analysed
+    :param List[str] var_names: The names of the variables that will be
+    analysed
+    :param str primary_key: The primary ID (needs to be specified to ensure
+    it is retained in the summary report that is written out to the
+    validation report
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param float perc: The percentile that we take as the cutoff for
+    identifying anomalies (default = 0.999)
+    """
+
+    dfs = []
+    for var_name in var_names:
+        # Take unique non-na values only
+        tmp_df = df.dropna(subset=[var_name]).drop_duplicates(subset=var_name)
+        print('Running TFIDF-COS analysis for variable {}.'.format(var_name))
+
+        results_df = anomaly_detector.execute_tfidf_cos_multi_threaded_job(tmp_df, var_name, primary_key)
+        tmp_df = pd.merge(tmp_df, results_df, on=primary_key)
+
+        threshold = tmp_df['tfidf_cos_val'].quantile(perc, interpolation='midpoint')
+        errors_df = tmp_df[tmp_df['tfidf_cos_val'] > threshold]
+
+        print(('{} analysis completed for {}; {} errors identified.'
+               ).format(tfidf_cos.__name__, var_name, len(errors_df)))
+
+        if len(errors_df.index):
+            reshaped_df = errors_df[[var_name, 'tfidf_cos_val']]
+
+            # Add primary key
+            reshaped_df.loc[:, 'primary_key'] = errors_df[primary_key]
+
+            reshaped_df = reshaped_df[['primary_key', var_name, 'tfidf_cos_val']]
+
+            reshaped_df.loc[:, 'variable'] = [var_name for i in range(len(reshaped_df.index))]
+
+            reshaped_df.rename(columns={
+                                        'primary_key': 'primary key',
+                                        'variable': 'affected variable value name',
+                                        var_name: 'affected value',
+                                        'tfidf_cos_val': 'anomaly score',
+                                        },
+                                inplace=True)
+
+            reshaped_df.loc[:, 'primary key'] = replace_vertical_bar(reshaped_df, 'primary key')
+            reshaped_df.loc[:, 'affected value'] = replace_vertical_bar(reshaped_df, 'affected value')
+
+            dfs.append(reshaped_df)
+
+    error_dfs = pd.concat(dfs)
+
+    # Add explanatory text
+    reporting_item.entry_md_text += (
+        '\n The following variables were analysed with tfidf-cos anomaly detection: \n')
+
+    for x in var_names:
+        reporting_item.entry_md_text += '* {}\n'.format(x)
+
+    if len(error_dfs.index) > 0:
+        reporting_item.entry_md_text += (
+            '\n The following {} suspicious entries were identified: \n'.format(len(error_dfs.index)))
+
+        # Add table
+        reporting_item.entry_md_text += reporting_instance.add_table(
+            error_dfs)
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    reporting_item.error_dict.update({tfidf_cos.__name__: len(error_dfs.index)})
+    reporting_item.n_errors += len(error_dfs.index)
+
+
+def add_module_header(mod_name: str,
+                      reporting_instance: Reporting,
+                      reporting_item: ReportingItem):
+    """
+    Adds the name of the module in which the function is called to the .md
+    file (used to add the data frame headers to the .md report)
+
+    :param str mod_name: The name of the module
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    """
+    title = '{} - Validation Tests Report'.format(mod_name)
+    reporting_item.entry_md_text += reporting_instance.add_header(
+        header_text=title, level=2)
+
+
+def replace_vertical_bar(df: pd.DataFrame, var_name: str):
+    """
+    Replaces the vertical bar in variable values to make them compatible
+    with md table formatting.
+
+    :param pd.DataFrame df: The data frame in which values need to be cleaned
+    :param str var_name: The variable identifying the column where vertical
+    bars are present
+    :return: List[str]: Variable values with vertical bar replaced by
+    appropriate html code
+    """
+    var = df[var_name].str.replace('|', '<code>&#124;</code>')
+
+    return var
+</code></pre>
+  </div>
+
+  </header>
+
+  <section id="section-items">
+
+    <h2 class="section-title" id="header-functions">Functions</h2>
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.add_module_header">
+    <p>def <span class="ident">add_module_header</span>(</p><p>mod_name, reporting_instance, reporting_item)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Adds the name of the module in which the function is called to the .md
+file (used to add the data frame headers to the .md report)</p>
+<p>:param str mod_name: The name of the module
+:param Reporting reporting_instance: The reporting instance associated
+with the validation class
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.add_module_header', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.add_module_header" class="source">
+    <pre><code>def add_module_header(mod_name: str,
+                      reporting_instance: Reporting,
+                      reporting_item: ReportingItem):
+    """
+    Adds the name of the module in which the function is called to the .md
+    file (used to add the data frame headers to the .md report)
+
+    :param str mod_name: The name of the module
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    """
+    title = '{} - Validation Tests Report'.format(mod_name)
+    reporting_item.entry_md_text += reporting_instance.add_header(
+        header_text=title, level=2)
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.check_consecutive">
+    <p>def <span class="ident">check_consecutive</span>(</p><p>ids)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Checks whether values are consecutive.</p>
+<p>Is used for validation checks as the eg_period variable, to ensure that
+we have a complete set of values.</p>
+<p>:param List[str] ids: A list of ids</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.check_consecutive', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.check_consecutive" class="source">
+    <pre><code>def check_consecutive(ids: List[str]):
+    """
+    Checks whether values are consecutive.
+
+    Is used for validation checks as the eg_period variable, to ensure that
+    we have a complete set of values.
+
+    :param List[str] ids: A list of ids
+    """
+    ids = [int(i) for i in ids]
+    n = len(ids)
+    sequence = [ids[i:(i + n)] for i in range(len(ids)) if
+                len(ids[i:(i + n)]) == n]
+    consecutive = sorted(ids) == sequence[0]
+    increases = list(
+        map(lambda x, y: x - y, ids[1:len(ids)], ids[0:len(ids) - 1]))
+    increasing_by_one = all([i == 1 for i in increases])
+
+    # We want this to evaluate to true if neither condition is met, so
+    # we can use it to subset the pd.DataFrame
+    result = not(consecutive and increasing_by_one)
+    return result
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.check_dates">
+    <p>def <span class="ident">check_dates</span>(</p><p>df, primary_id_col, date_columns, reporting_instance, reporting_item, extra_text=None)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Checks whether date entries follow the required format (%d%b%Y).</p>
+<p>:param pd.DataFrame df: The PCC data frame that contains date variables
+:param str primary_id_col: The constant for the primary id column
+:param List[str] date_columns: The constants for the columns containing
+dates
+:param Reporting reporting_instance: The reporting instance associated
+with the validation class
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class
+:param str extra_text: An additional (optional) explanatory message to
+be included in the .md report</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.check_dates', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.check_dates" class="source">
+    <pre><code>def check_dates(df: pd.DataFrame,
+                primary_id_col: str,
+                date_columns: List[str],
+                reporting_instance: Reporting,
+                reporting_item: ReportingItem,
+                extra_text: str = None):
+    """
+    Checks whether date entries follow the required format (%d%b%Y).
+
+    :param pd.DataFrame df: The PCC data frame that contains date variables
+    :param str primary_id_col: The constant for the primary id column
+    :param List[str] date_columns: The constants for the columns containing
+    dates
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str extra_text: An additional (optional) explanatory message to
+    be included in the .md report
+    """
+    faulty_dates = []
+    primary_ids = []
+    for col in date_columns:
+        for date, primary_id in zip(df[col].values,
+                                    df[primary_id_col].values):
+            try:
+                date_temp = date.split('[[')
+                if len(date_temp) == 1:
+                    datetime.datetime.strptime(date_temp[0], '%d%b%Y')
+                elif len(date_temp) == 2:
+                    if date_temp[1] == 'rcen]]':
+                        datetime.datetime.strptime(date_temp[0], '%d%b%Y')
+                    else:
+                        faulty_dates.append({primary_id: date})
+            except:
+                faulty_dates.append(date)
+                primary_ids.append(primary_id)
+                pass
+
+    reporting_item.entry_md_text += reporting_instance.add_header(level=3,
+                                                                  header_text=(
+                                                                      check_dates.__name__)
+                                                                  )
+    if extra_text is not None:
+        reporting_item.entry_md_text += extra_text
+
+    if len(faulty_dates) > 0:
+        faulty_dates_df = pd.DataFrame({primary_id_col: primary_ids,
+                                        'dates': faulty_dates})
+        reporting_item.entry_md_text += c.REP.DATE_FORMATS.format(len(faulty_dates_df.index))
+        reporting_item.entry_md_text += reporting_instance.add_table(pd.DataFrame(faulty_dates_df))
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    reporting_item.error_dict.update({check_dates.__name__: len(faulty_dates)})
+
+    reporting_item.n_errors += len(faulty_dates)
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.check_primary_keys">
+    <p>def <span class="ident">check_primary_keys</span>(</p><p>df, reporting_instance, reporting_item, primary_id_col=None, extra_text=None)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Checks whether the primary keys are unique.</p>
+<p>:param pd.DataFrame df: The PCC data frame that contains date variables
+:param str primary_id_col: The constant for the primary id column
+:param Reporting reporting_instance: The reporting instance associated
+with the validation class
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class
+:param str extra_text: An additional (optional) explanatory message to
+be included in the .md report</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.check_primary_keys', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.check_primary_keys" class="source">
+    <pre><code>def check_primary_keys(df: pd.DataFrame,
+                       reporting_instance: Reporting,
+                       reporting_item: ReportingItem,
+                       primary_id_col: str = None,
+                       extra_text: str = None):
+    """
+    Checks whether the primary keys are unique.
+
+    :param pd.DataFrame df: The PCC data frame that contains date variables
+    :param str primary_id_col: The constant for the primary id column
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str extra_text: An additional (optional) explanatory message to
+    be included in the .md report
+    """
+    # Primary ID is always stored in the first column, unless specified 
+    # otherwise; taking index=1 since index 0 is taken up by row numbers
+    if primary_id_col is None:
+        primary_id_col = list(df.columns)[1]
+
+    primary_ids = df[primary_id_col].values
+    duplicates = [item for item, count in
+                  collections.Counter(primary_ids).items() if count > 1]
+
+    reporting_item.entry_md_text += reporting_instance.add_header(level=3,
+                                                                  header_text=check_primary_keys.__name__ + ' ({})'.format(
+                                                                      primary_id_col))
+
+    if extra_text is not None:
+        reporting_item.entry_md_text += extra_text
+
+    if len(duplicates) > 0:
+        reporting_item.entry_md_text += c.REP.PRIMARY_KEY_ERROR.format(
+            len(duplicates))
+
+        for i in duplicates:
+            reporting_item.entry_md_text += ('\n* {}'.format(i))
+
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    reporting_item.error_dict.update({check_primary_keys.__name__: len(duplicates)})
+
+    reporting_item.n_errors += len(duplicates)
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.check_secondary_ids">
+    <p>def <span class="ident">check_secondary_ids</span>(</p><p>main_df, secondary_df, secondary_key_col, primary_key_col, main_df_name, secondary_df_name, reporting_instance, reporting_item, extra_text=None)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Checks whether the secondary ids used in the df are present as primary
+ids for the primary df associated with these ids.</p>
+<p>:param pd.DataFrame main_df: The data frame containing the secondary keys
+that are subjected to the test
+:param pd.DataFrame secondary_df: THe data frame in which the secondary
+keys of main_df are employed a primary ids
+:param str secondary_key_col: The constant associated with the
+secondary ids
+:param str primary_key_col: The constant associated with the primary ids
+:param str main_df_name: The name of the main data frame (e.g. ELEN, MEME)
+:param secondary_df_name: The name of the secondary data frame (e.g.
+ELEN, MEME)
+:param Reporting reporting_instance: The reporting instance associated
+with the validation class
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class
+:param str extra_text: An additional (optional) explanatory message to
+be included in the .md report</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.check_secondary_ids', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.check_secondary_ids" class="source">
+    <pre><code>def check_secondary_ids(main_df: pd.DataFrame, secondary_df: pd.DataFrame,
+                        secondary_key_col: str, primary_key_col: str,
+                        main_df_name: str, secondary_df_name: str,
+                        reporting_instance: Reporting,
+                        reporting_item: ReportingItem,
+                        extra_text: str = None):
+    """
+    Checks whether the secondary ids used in the df are present as primary
+    ids for the primary df associated with these ids.
+
+    :param pd.DataFrame main_df: The data frame containing the secondary keys
+    that are subjected to the test
+    :param pd.DataFrame secondary_df: THe data frame in which the secondary
+    keys of main_df are employed a primary ids
+    :param str secondary_key_col: The constant associated with the
+    secondary ids
+    :param str primary_key_col: The constant associated with the primary ids
+    :param str main_df_name: The name of the main data frame (e.g. ELEN, MEME)
+    :param secondary_df_name: The name of the secondary data frame (e.g.
+    ELEN, MEME)
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str extra_text: An additional (optional) explanatory message to
+    be included in the .md report
+    """
+    secondary_keys_from_secondary_df = [i for sublist in secondary_df[secondary_key_col].str.split(';', expand=False).values for i in sublist]
+
+    # Apply mapping (in some cases, key names change, e.g. party_id vs party_ids)
+    if secondary_df_name in c.KEY_MAPPINGS.PRIMARY_KEYS.keys():
+        mapping = c.KEY_MAPPINGS.PRIMARY_KEYS[secondary_key_col]
+        if secondary_key_col in mapping.keys():
+            secondary_key_col = mapping[secondary_key_col]
+
+    wrong_ids = set(main_df[secondary_key_col]) - set(secondary_keys_from_secondary_df)
+
+    primary_keys = []
+    for i in wrong_ids:
+        primary_keys.append(main_df[main_df[secondary_key_col] == i][
+                                primary_key_col].values.tolist())
+
+    wrong_ids_df = pd.DataFrame(
+                                    {
+                                        primary_key_col: primary_keys,
+                                        secondary_key_col: list(wrong_ids)
+                                    },
+                                index=range(len(primary_keys))
+                                )
+
+    reporting_item.entry_md_text += reporting_instance.add_header(level=3,
+                                                                  header_text=(
+                                                                              check_secondary_ids.__name__ +
+                                                                              ' ({})'.format(
+                                                                                  secondary_key_col))
+                                                                  )
+
+    if extra_text is not None:
+        reporting_item.entry_md_text += extra_text
+
+    if len(wrong_ids) > 0:
+        reporting_item.entry_md_text += (
+            c.REP.SECONDARY_KEY_ERROR.format(
+                len(primary_keys),
+                secondary_key_col,
+                main_df_name,
+                secondary_df_name,
+            )
+        )
+        reporting_item.entry_md_text += '\n'
+        reporting_item.entry_md_text += reporting_instance.add_table(wrong_ids_df)
+
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    #
+    reporting_item.error_dict.update({check_secondary_ids.__name__: len(wrong_ids)})
+    reporting_item.n_errors += len(wrong_ids)
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.membership_length">
+    <p>def <span class="ident">membership_length</span>(</p><p>df, var_name, primary_id, reporting_instance, reporting_item, separation_id, outlier_threshold=0.99, rareness=0.01)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Checks the length of membership of MPs in days. Suspicious values are
+reported in the .md validation report.</p>
+<p>Suspicious values are defined as values that are in the ith or 1-ith
+percentile, where i is defined by :param float outlier_threshold:, AND
+which only represent p proportion of all uniquely occurring tenure values
+in the dataset (where p is defined by :param float rareness:).</p>
+<p>All results are analysed and suspicious values are defined at the level
+specified by :param str separation_id:</p>
+<p>:param pd.DataFrame df: The data frame containing the membership data
+:param str var_name: The name to be used for the variable representing
+the length of MPs' tenure in days
+:param str primary_id: The primary ID (needs to be specified to ensure
+it is retained in the summary report that is written out to the
+validation report
+:param Reporting reporting_instance: The reporting instance associated
+with the validation class
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class
+:param str separation_id: The id on which the dataframes need to be
+divided
+:param float outlier_threshold: The threshold for outliers, representing
+the upper percentile (both outlier_threshold and 1-outlier_threshold
+are taken to identify outlying values). Needs to be a float value
+between 0 and 1. Defaults to 0.99
+:param float rareness: Value for how rare an individual tenure value
+(e.g. 5 days, 5000 days) needs to be across the dataset for it to be
+included as an error. The condition is applied in
+conjunction with outlier_threshold</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.membership_length', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.membership_length" class="source">
+    <pre><code>def membership_length(df: pd.DataFrame,
+                      var_name: str,
+                      primary_id: str,
+                      reporting_instance: Reporting,
+                      reporting_item: ReportingItem,
+                      separation_id: str,
+                      outlier_threshold: float = 0.99,
+                      rareness: float = 0.01
+                      ):
+    """
+    Checks the length of membership of MPs in days. Suspicious values are
+    reported in the .md validation report.
+
+    Suspicious values are defined as values that are in the ith or 1-ith
+    percentile, where i is defined by :param float outlier_threshold:, AND
+    which only represent p proportion of all uniquely occurring tenure values
+    in the dataset (where p is defined by :param float rareness:).
+
+    All results are analysed and suspicious values are defined at the level
+    specified by :param str separation_id:
+
+    :param pd.DataFrame df: The data frame containing the membership data
+    :param str var_name: The name to be used for the variable representing
+    the length of MPs' tenure in days
+    :param str primary_id: The primary ID (needs to be specified to ensure
+    it is retained in the summary report that is written out to the
+    validation report
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param str separation_id: The id on which the dataframes need to be
+    divided
+    :param float outlier_threshold: The threshold for outliers, representing
+    the upper percentile (both outlier_threshold and 1-outlier_threshold
+    are taken to identify outlying values). Needs to be a float value
+    between 0 and 1. Defaults to 0.99
+    :param float rareness: Value for how rare an individual tenure value
+    (e.g. 5 days, 5000 days) needs to be across the dataset for it to be
+    included as an error. The condition is applied in
+    conjunction with outlier_threshold
+    """
+    assert outlier_threshold < 1 and outlier_threshold > 0, \
+        ('{} is an invalid parameter for calculating a percentile. '
+         'Please specify a float value between 0 and 1.'
+         ).format(outlier_threshold)
+
+    dfs = [rows for _, rows in df.groupby(separation_id)]
+
+    suspicious_entries = []
+    message = 'Running membership length checks at level {}.'.format(primary_id)
+    pb_bar = pyprind.ProgBar(len(dfs), stream=sys.stdout, title=message)
+
+    for idx in range(len(dfs)):
+        df = dfs[idx]
+
+        df.loc[:, var_name] = (
+            [
+                abs(datetime.datetime.strptime(i1, '%d%b%Y') -
+                    datetime.datetime.strptime(i2, '%d%b%Y')).days for i1, i2
+                in
+                zip(df[c.MEME.MEMEP_STARTDATE].values,
+                    df[c.MEME.MEMEP_ENDDATE].values)
+            ]
+        )
+
+        # Sum by primary id
+        if separation_id == c.MEME.PERS_ID:
+            df = df[[primary_id, separation_id, var_name]
+            ].groupby([primary_id, separation_id]
+                      ).sum().reset_index()
+
+        # Identify outliers (99th vs 1st percentile, and only occurring
+        # in x cases)
+        occurrences = df[var_name].value_counts(
+            normalize=True).reset_index().rename(columns={var_name: 'n'})
+
+        df = pd.merge(df, occurrences, left_on=var_name, right_on='index')
+
+        thresholds = df[var_name].quantile(
+                                [outlier_threshold, 1 - outlier_threshold],
+                                interpolation='midpoint'
+                                )
+
+        condition = (((df[var_name] >= thresholds.values[0]) | (
+                    df[var_name] <= thresholds.values[1])) & (
+                                 df['n'] <= rareness))
+
+        unlikely_vals_df = df[condition][
+            [separation_id, primary_id, var_name]].drop_duplicates()
+
+        suspicious_entries.append(unlikely_vals_df)
+
+        pb_bar.update()
+
+    suspicious_entries_df = pd.concat(suspicious_entries)
+
+    # Escape character for vertical bar to ensure
+    suspicious_entries_df.loc[:,primary_id] = replace_vertical_bar(suspicious_entries_df, primary_id)
+
+    # Add explanatory text
+    reporting_item.entry_md_text += (
+        '\n The following {} suspicious entries were identified at '
+        'the {} level: \n'.format(len(suspicious_entries_df.index), primary_id))
+
+    # Add table
+    reporting_item.entry_md_text += reporting_instance.add_table(suspicious_entries_df)
+
+    reporting_item.error_dict.update({membership_length.__name__: len(suspicious_entries_df.index)})
+
+    reporting_item.n_errors += len(suspicious_entries_df.index)
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.replace_vertical_bar">
+    <p>def <span class="ident">replace_vertical_bar</span>(</p><p>df, var_name)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Replaces the vertical bar in variable values to make them compatible
+with md table formatting.</p>
+<p>:param pd.DataFrame df: The data frame in which values need to be cleaned
+:param str var_name: The variable identifying the column where vertical
+bars are present
+:return: List[str]: Variable values with vertical bar replaced by
+appropriate html code</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.replace_vertical_bar', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.replace_vertical_bar" class="source">
+    <pre><code>def replace_vertical_bar(df: pd.DataFrame, var_name: str):
+    """
+    Replaces the vertical bar in variable values to make them compatible
+    with md table formatting.
+
+    :param pd.DataFrame df: The data frame in which values need to be cleaned
+    :param str var_name: The variable identifying the column where vertical
+    bars are present
+    :return: List[str]: Variable values with vertical bar replaced by
+    appropriate html code
+    """
+    var = df[var_name].str.replace('|', '<code>&#124;</code>')
+
+    return var
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.tfidf_cos">
+    <p>def <span class="ident">tfidf_cos</span>(</p><p>df, var_names, primary_key, reporting_item, reporting_instance, perc=0.999)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Applies the TFIDF-COS method, i.e. take the average cosine distance
+between each value and the entire corpus of variable values as a
+measure of "outlierness"</p>
+<p>:param pd.DataFrame df: A data frame containing the variable values that
+need to be analysed
+:param List[str] var_names: The names of the variables that will be
+analysed
+:param str primary_key: The primary ID (needs to be specified to ensure
+it is retained in the summary report that is written out to the
+validation report
+:param Reporting reporting_instance: The reporting instance associated
+with the validation class
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class
+:param float perc: The percentile that we take as the cutoff for
+identifying anomalies (default = 0.999)</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.tfidf_cos', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.tfidf_cos" class="source">
+    <pre><code>def tfidf_cos(df: pd.DataFrame, var_names: List[str],
+              primary_key: str,
+              reporting_item: ReportingItem,
+              reporting_instance: Reporting,
+              perc: float = 0.999):
+    """
+    Applies the TFIDF-COS method, i.e. take the average cosine distance
+    between each value and the entire corpus of variable values as a
+    measure of "outlierness"
+
+    :param pd.DataFrame df: A data frame containing the variable values that
+    need to be analysed
+    :param List[str] var_names: The names of the variables that will be
+    analysed
+    :param str primary_key: The primary ID (needs to be specified to ensure
+    it is retained in the summary report that is written out to the
+    validation report
+    :param Reporting reporting_instance: The reporting instance associated
+    with the validation class
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    :param float perc: The percentile that we take as the cutoff for
+    identifying anomalies (default = 0.999)
+    """
+
+    dfs = []
+    for var_name in var_names:
+        # Take unique non-na values only
+        tmp_df = df.dropna(subset=[var_name]).drop_duplicates(subset=var_name)
+        print('Running TFIDF-COS analysis for variable {}.'.format(var_name))
+
+        results_df = anomaly_detector.execute_tfidf_cos_multi_threaded_job(tmp_df, var_name, primary_key)
+        tmp_df = pd.merge(tmp_df, results_df, on=primary_key)
+
+        threshold = tmp_df['tfidf_cos_val'].quantile(perc, interpolation='midpoint')
+        errors_df = tmp_df[tmp_df['tfidf_cos_val'] > threshold]
+
+        print(('{} analysis completed for {}; {} errors identified.'
+               ).format(tfidf_cos.__name__, var_name, len(errors_df)))
+
+        if len(errors_df.index):
+            reshaped_df = errors_df[[var_name, 'tfidf_cos_val']]
+
+            # Add primary key
+            reshaped_df.loc[:, 'primary_key'] = errors_df[primary_key]
+
+            reshaped_df = reshaped_df[['primary_key', var_name, 'tfidf_cos_val']]
+
+            reshaped_df.loc[:, 'variable'] = [var_name for i in range(len(reshaped_df.index))]
+
+            reshaped_df.rename(columns={
+                                        'primary_key': 'primary key',
+                                        'variable': 'affected variable value name',
+                                        var_name: 'affected value',
+                                        'tfidf_cos_val': 'anomaly score',
+                                        },
+                                inplace=True)
+
+            reshaped_df.loc[:, 'primary key'] = replace_vertical_bar(reshaped_df, 'primary key')
+            reshaped_df.loc[:, 'affected value'] = replace_vertical_bar(reshaped_df, 'affected value')
+
+            dfs.append(reshaped_df)
+
+    error_dfs = pd.concat(dfs)
+
+    # Add explanatory text
+    reporting_item.entry_md_text += (
+        '\n The following variables were analysed with tfidf-cos anomaly detection: \n')
+
+    for x in var_names:
+        reporting_item.entry_md_text += '* {}\n'.format(x)
+
+    if len(error_dfs.index) > 0:
+        reporting_item.entry_md_text += (
+            '\n The following {} suspicious entries were identified: \n'.format(len(error_dfs.index)))
+
+        # Add table
+        reporting_item.entry_md_text += reporting_instance.add_table(
+            error_dfs)
+    else:
+        reporting_item.entry_md_text += c.REP.PASS
+
+    reporting_item.error_dict.update({tfidf_cos.__name__: len(error_dfs.index)})
+    reporting_item.n_errors += len(error_dfs.index)
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="pcc_validation.validation_utils.validate_parl_membership">
+    <p>def <span class="ident">validate_parl_membership</span>(</p><p>data_path, reporting_item)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Runs tests to validate the number of members in each assembly. The
+following tests are performed:
+<em>  Checks the length of membership of MPs in days. Suspicious values are
+defined as values that are in the $i^{th}$ or $1-i^{th}$ percentile,
+with $i$ set to $0.99$, and a parameter $p$, which is the proportion of
+all uniquely occurring tenure values in the dataset (where the default
+value for $p$ is $0.01$). The test is evaluated at two levels: at
+the member episode level (number of days per episode), and at the total
+tenure level (i.e. total days in office).
+</em> For every day and for every legislative assembly in the dataset reports
+the number of members that on that day have a seat in the assembly.
+hese numbers are reported as line graphs.</p>
+<p>:param str data_path: The path where the .csv versions of the PCC data
+frames are located
+:param ReportingItem reporting_item: The object in which all validation
+test results are stored for the class</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.validate_parl_membership', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.validation_utils.validate_parl_membership" class="source">
+    <pre><code>def validate_parl_membership(data_path: str,
+                             reporting_item: ReportingItem):
+    """
+    Runs tests to validate the number of members in each assembly. The
+    following tests are performed:
+    *  Checks the length of membership of MPs in days. Suspicious values are
+    defined as values that are in the $i^{th}$ or $1-i^{th}$ percentile,
+    with $i$ set to $0.99$, and a parameter $p$, which is the proportion of
+    all uniquely occurring tenure values in the dataset (where the default
+    value for $p$ is $0.01$). The test is evaluated at two levels: at
+    the member episode level (number of days per episode), and at the total
+    tenure level (i.e. total days in office).
+    * For every day and for every legislative assembly in the dataset reports
+    the number of members that on that day have a seat in the assembly.
+    hese numbers are reported as line graphs.
+
+    :param str data_path: The path where the .csv versions of the PCC data
+    frames are located
+    :param ReportingItem reporting_item: The object in which all validation
+    test results are stored for the class
+    """
+
+    # MEME - memep_id, pers_id, memep_startdate, memep_enddate
+    meme_df = pd.read_csv(os.path.join(data_path, c.DFN.MEME + '.csv'),
+                          header=0,
+                          usecols=[
+                                    c.MEME.MEMEP_ID,
+                                    c.MEME.PERS_ID,
+                                    c.MEME.MEMEP_STARTDATE,
+                                    c.MEME.MEMEP_ENDDATE
+                                ]
+                          )
+
+    # PARE - parliament_id, pers_id, member_ofthisparliament_atsomepoint
+    pare_df = pd.read_csv(os.path.join(data_path, c.DFN.PARE + '.csv'),
+                          header=0,
+                          usecols=[
+                                    c.PARE.PARLIAMENT_ID,
+                                    c.PARE.PERS_ID,
+                                    c.PARE.MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT
+                                ]
+                          )
+
+    # PARL - parliament_id, leg_period_start, leg_period_end
+    parl_df = pd.read_csv(os.path.join(data_path, c.DFN.PARL + '.csv'),
+                          header=0,
+                          usecols=[
+                                    c.PARL.PARLIAMENT_ID,
+                                    c.PARL.LEG_PERIOD_START,
+                                    c.PARL.LEG_PERIOD_START
+                                ]
+                          )
+
+    # Get all parl_ids from PARE, and collapse so we have an array of
+    # pers_ids for each parl_df
+    condition = pare_df[c.PARE.MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT] == 'yes'
+    pare_df = pare_df[condition]
+
+    # Merge such that we have the leg_period_start and leg_period_end
+    # from PARL and the memep_enddate and memep_startdate from PARE
+    meme_pare_df = pd.merge(pare_df, meme_df, on=c.MEME.PERS_ID)
+    parl_meme_pare_df = pd.merge(meme_pare_df, parl_df, on=c.PARL.PARLIAMENT_ID)
+
+    # Add split id
+    parl_meme_pare_df.loc[:, 'parl'] = [''.join(i for i in s if not i.isdigit())[:-1]
+     for s in parl_meme_pare_df[c.PARE.PARLIAMENT_ID].values]
+
+    # Analyse membership per day
+    dfs = [rows for _, rows in parl_meme_pare_df.groupby('parl')]
+
+    # TODO: Multi-threading
+    membership_data = {}
+    for df in dfs:
+        start_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].min(), '%d%b%Y')
+        end_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].max(), '%d%b%Y')
+
+        delta = end_date - start_date
+
+        date_stamps = [start_date + datetime.timedelta(days=i) for i in range(delta.days + 1)]
+
+        # Convert dates
+        df.loc[:, c.MEME.MEMEP_STARTDATE] = [datetime.datetime.strptime(i, '%d%b%Y') for i in df[c.MEME.MEMEP_STARTDATE].values]
+        df.loc[:, c.MEME.MEMEP_ENDDATE] = [datetime.datetime.strptime(i, '%d%b%Y') for i in df[c.MEME.MEMEP_ENDDATE].values]
+
+        n_members = []
+        dates = []
+        parl = df['parl'].unique()[0]
+        total = len(date_stamps)
+        pb_bar = pyprind.ProgBar(total, stream=sys.stdout,
+                                 title='Analysing day-by-day membership for parliament {}'.format(parl))
+
+        for date_idx in range(len(date_stamps)):
+
+            date = date_stamps[date_idx]
+            mask = (date >= df[c.MEME.MEMEP_STARTDATE]) & (date <= df[c.MEME.MEMEP_ENDDATE])
+            n = len(df.loc[mask].index)
+            dates.append(date)
+            n_members.append(n)
+            pb_bar.update()
+
+        membership_data[parl] = [{'dates': dates}, {'n_members': n_members}]
+
+    for key, dat in membership_data.items():
+        visualization_utils.gen_line_graph(
+                                            path=data_path,
+                                            fig_name='membership_{}'.format(key),
+                                            y_vals=dat[1]['n_members'],
+                                            x_vals=dat[0]['dates'],
+                                            y_lab='Membership',
+                                            x_lab='Date',
+                                            plt_title='Historical membership {}'.format(key),
+                                            reporting_item=reporting_item
+                                           )
+</code></pre>
+  </div>
+</div>
+
+  </div>
+  
+
+
+  </section>
+
+    </article>
+  <div class="clear"> </div>
+  <footer id="footer">
+    <p>
+      Documentation generated by
+      <a href="https://github.com/BurntSushi/pdoc">pdoc 0.3.2</a>
+    </p>
+
+    <p>pdoc is in the public domain with the
+      <a href="http://unlicense.org">UNLICENSE</a></p>
+
+    <p>Design by <a href="http://nadh.in">Kailash Nadh</a></p>
+  </footer>
+</div>
+</body>
+</html>

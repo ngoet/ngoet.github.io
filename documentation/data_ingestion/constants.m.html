@@ -1,0 +1,4723 @@
+<!doctype html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+    <title>data_ingestion.constants API documentation</title>
+    <meta name="description" content="data_ingestion.constants
+~~~~~~~~~~~~~
+Constants for unit tests.
+
+:copyright: © 2019 Niels Goet @ PC..." />
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
+  
+  <style type="text/css">
+  
+* {
+  box-sizing: border-box;
+}
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-size: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 4 */
+    -ms-text-size-adjust: 100%; /* 4 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+  </style>
+
+  <style type="text/css">
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+  body {
+    background: #fff;
+    font-family: "Source Sans Pro", "Helvetica Neueue", Helvetica, sans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  #content {
+    width: 70%;
+    max-width: 850px;
+    float: left;
+    padding: 30px 60px;
+    border-left: 1px solid #ddd;
+  }
+  #sidebar {
+    width: 25%;
+    float: left;
+    padding: 30px;
+    overflow: hidden;
+  }
+  #nav {
+    font-size: 130%;
+    margin: 0 0 15px 0;
+  }
+
+  #top {
+    display: block;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    font-size: .85em;
+    text-transform: uppercase;
+  }
+
+  #footer {
+    font-size: .75em;
+    padding: 5px 30px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+  }
+    #footer p {
+      margin: 0 0 0 30px;
+      display: inline-block;
+    }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 300;
+  }
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin: 0 0 .50em 0;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin: 1em 0 .50em 0;
+  }
+
+  h3 {
+    margin: 25px 0 10px 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 105%;
+  }
+
+  a {
+    color: #058;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+  }
+
+  a:hover {
+    color: #e08524;
+    transition: color .3s ease-in-out;
+  }
+
+  pre, code, .mono, .name {
+    font-family: "Ubuntu Mono", "Cousine", "DejaVu Sans Mono", monospace;
+  }
+
+  .title .name {
+    font-weight: bold;
+  }
+  .section-title {
+    margin-top: 2em;
+  }
+  .ident {
+    color: #900;
+  }
+
+  code {
+    background: #f9f9f9;
+  } 
+
+  pre {
+    background: #fefefe;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 0 #f3f3f3;
+    margin: 0 30px;
+    padding: 15px 30px;
+  }
+
+  .codehilite {
+    margin: 0 30px 10px 30px;
+  }
+
+    .codehilite pre {
+      margin: 0;
+    }
+    .codehilite .err { background: #ff3300; color: #fff !important; } 
+
+  table#module-list {
+    font-size: 110%;
+  }
+
+    table#module-list tr td:first-child {
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+    table#module-list td {
+      vertical-align: top;
+      padding-bottom: 8px;
+    }
+
+      table#module-list td p {
+        margin: 0 0 7px 0;
+      }
+
+  .def {
+    display: table;
+  }
+
+    .def p {
+      display: table-cell;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .def p:first-child {
+      white-space: nowrap;
+    }
+
+    .def p:last-child {
+      width: 100%;
+    }
+
+
+  #index {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+    ul#index .class_name {
+      /* font-size: 110%; */
+      font-weight: bold;
+    }
+    #index ul {
+      margin: 0;
+    }
+
+  .item {
+    margin: 0 0 15px 0;
+  }
+
+    .item .class {
+      margin: 0 0 25px 30px;
+    }
+
+      .item .class ul.class_list {
+        margin: 0 0 20px 0;
+      }
+
+    .item .name {
+      background: #fafafa;
+      margin: 0;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      min-width: 40%;
+    }
+      .item .name:hover {
+        background: #f6f6f6;
+      }
+
+    .item .empty_desc {
+      margin: 0 0 5px 0;
+      padding: 0;
+    }
+
+    .item .inheritance {
+      margin: 3px 0 0 30px;
+    }
+
+    .item .inherited {
+      color: #666;
+    }
+
+    .item .desc {
+      padding: 0 8px;
+      margin: 0;
+    }
+
+      .item .desc p {
+        margin: 0 0 10px 0;
+      }
+
+    .source_cont {
+      margin: 0;
+      padding: 0;
+    }
+
+    .source_link a {
+      background: #ffc300;
+      font-weight: 400;
+      font-size: .75em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 1px 1px 0 #f4b700;
+      
+      padding: 3px 8px;
+      border-radius: 2px;
+      transition: background .3s ease-in-out;
+    }
+      .source_link a:hover {
+        background: #FF7200;
+        text-shadow: none;
+        transition: background .3s ease-in-out;
+      }
+
+    .source {
+      display: none;
+      max-height: 600px;
+      overflow-y: scroll;
+      margin-bottom: 15px;
+    }
+
+      .source .codehilite {
+        margin: 0;
+      }
+
+  .desc h1, .desc h2, .desc h3 {
+    font-size: 100% !important;
+  }
+  .clear {
+    clear: both;
+  }
+
+  @media all and (max-width: 950px) {
+    #sidebar {
+      width: 35%;
+    }
+    #content {
+      width: 65%;
+    }
+  }
+  @media all and (max-width: 650px) {
+    #top {
+      display: none;
+    }
+    #sidebar {
+      float: none;
+      width: auto;
+    }
+    #content {
+      float: none;
+      width: auto;
+      padding: 30px;
+    }
+
+    #index ul {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    #index ul li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+    #footer {
+      text-align: left;
+    }
+    #footer p {
+      display: block;
+      margin: inherit;
+    }
+  }
+
+  /*****************************/
+
+  </style>
+
+
+  <style type="text/css">
+  
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+  </style>
+
+  <script type="text/javascript">
+  function toggle(id, $link) {
+    $node = document.getElementById(id);
+    if (!$node)
+    return;
+    if (!$node.style.display || $node.style.display == 'none') {
+    $node.style.display = 'block';
+    $link.innerHTML = 'Hide source &nequiv;';
+    } else {
+    $node.style.display = 'none';
+    $link.innerHTML = 'Show source &equiv;';
+    }
+  }
+  </script>
+</head>
+<body>
+<a href="#" id="top">Top</a>
+
+<div id="container">
+    
+  
+  <div id="sidebar">
+    <h1>Index</h1>
+    <ul id="index">
+
+
+    <li class="set"><h3><a href="#header-classes">Classes</a></h3>
+      <ul>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.ALID">ALID</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.COMM">COMM</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.COUNTRIES">COUNTRIES</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.DEPS">DEPS</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.DFN">DFN</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.ELDI">ELDI</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.ELEN">ELEN</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.ELLI">ELLI</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.FACT">FACT</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.FIGS">FIGS</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.KEY_MAPPINGS">KEY_MAPPINGS</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.LOGM">LOGM</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.MEME">MEME</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.MINE">MINE</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.ORGS">ORGS</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.PARE">PARE</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.PARL">PARL</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.PART">PART</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.POLI">POLI</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.QUOT">QUOT</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.REP">REP</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.RESE">RESE</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.RUNM">RUNM</a></span>
+        
+        </li>
+        <li class="mono">
+        <span class="class_name"><a href="#data_ingestion.constants.TFIDF_COS">TFIDF_COS</a></span>
+        
+        </li>
+      </ul>
+    </li>
+
+    </ul>
+  </div>
+
+    <article id="content">
+      
+  
+
+  
+
+
+  <header id="section-intro">
+  <h1 class="title"><span class="name">data_ingestion.constants</span> module</h1>
+  <p>data_ingestion.constants
+~~~~~~~~~~~~~
+Constants for unit tests.</p>
+<p>:copyright: © 2019 Niels Goet @ PCC project</p>
+  
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants" class="source">
+    <pre><code>#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+    data_ingestion.constants
+    ~~~~~~~~~~~~~
+    Constants for unit tests.
+
+    :copyright: © 2019 Niels Goet @ PCC project
+"""
+
+class DFN:
+    """
+    DFN: Constants for tmp frame names
+    """
+    ALID = 'ALID' #TODO No data available yet
+    COMM = 'COMM'
+    ELDI = 'ELDI'
+    ELEN = 'ELEN'
+    ELLI = 'ELLI'
+    FACT = 'FACT'
+    MEME = 'MEME'
+    MINE = 'MINE'
+    ORGS = 'ORGS'
+    PARE = 'PARE'
+    PARL = 'PARL'
+    PART = 'PART'
+    QUOT = 'QUOT'
+    POLI = 'POLI'
+    RESE = 'RESE'
+
+
+class ALID:
+    """
+    ALID: Constants for the ... (ALID) df
+    """
+
+class ORGS:
+    """
+    ORGS: Constants for the ... (ORGS) df
+    """
+    ORG_ID = 'org_id'
+    ORG_NAME = 'org_name'
+    LEGAL_FORM = 'legal_form'
+    POLACTIVE_START_DATE = 'polactive_start_date'
+    POLACTIVE_END_DATE = 'polactive_end_date'
+    SEAT_LOCATION = 'seat_location'
+    ZIPCODE = 'zipcode'
+    REGION_ABB = 'region_abb'
+    COUNTRY_ABB = 'country_abb'
+    LONGITUDE = 'longitude'
+    LATITUDE = 'latitude'
+    IG_TYPE = 'ig_type'
+    GAVA_ASSOC_ID = 'GAVA_assoc_id'
+    GAVA_ASSOC_NAME = 'GAVA_assoc_name'
+    GAVA_ASSOC_AGGREGATE_NAME = 'GAVA_assoc_aggregate_name'
+    GAVA_ASSOC_LEGAL_FORM = 'GAVA_assoc_legal_form'
+    GAVA_ASSOC_GENERAL = 'GAVA_assoc_general'
+    GAVA_ASSOC_IG_TYPE = 'GAVA_assoc_ig_type'
+    GAVA_ASSOC_IG_TYPE_NAME = 'GAVA_assoc_ig_type_name'
+    GAVA_ASSOC_IG_CODE = 'GAVA_assoc_ig_code'
+    GAVA_ASSOC_IG_CODE_NAME = 'GAVA_assoc_ig_code_name'
+    GAVA_LEVEL = 'GAVA_level'
+    GAVA_CATEGORY = 'GAVA_category'
+    GAVA_TOPIC = 'GAVA_topic'
+    GAVA_TOPIC_BUSINESS = 'GAVA_topic_business'
+    NCCR_NQID = 'NCCR_nqid'
+    NCCR_A4 = 'NCCR_A4'
+    ORGANISATION = 'NCCR_A4 Organisation'
+    GK_INTEREST_GROUP = 'GK_interest_group'
+    GK_CANTON_IG_RAW = 'GK_canton_ig_raw'
+    GK_TYPE = 'GK_type'
+    GK_POLICY_CODE = 'GK_policy_code'
+
+
+class POLI:
+    """
+    POLI: Constants for the ... () df
+    """
+    PERS_ID = 'pers_id'
+    ID_NL_POLCA = 'id_nl_polca'
+    ID_NL_PDC = 'id_nl_pdc'
+    ID_DE_MANOW = 'id_de_manow'
+    ID_DE_PARLIAMENT = 'id_de_parliament'
+    ID_CH_PARLIAMENT = 'id_ch_parliament'
+    ID_IE_PARLIAMENT = 'id_ie_parliament'
+    LAST_NAME = 'last_name'
+    FIRST_NAME = 'first_name'
+    OTHER_NAME = 'other_name'
+    GENDER = 'gender'
+    BIRTH_DATE = 'birth_date'
+    DEATH_DATE = 'death_date'
+    BIRTH_PLACE_RAW = 'birth_place_raw'
+    CITIZENSHIP_CANTON = 'citizenship_canton'
+    HOMETOWN_RAW = 'hometown_raw'
+    TITLE_RAW = 'title_raw'
+    MILITARY_RAW = 'military_raw'
+    INITIALS = 'initials'
+    TWITTER_SCREEN_NAME = 'twitter_screen_name'
+    TWITTER_ID = 'twitter_id'
+    TEMP = 'temp'
+
+
+class PARE:
+    """
+    PARE: Constants for the ... () df
+    """
+    PARL_EPISODE_ID = 'parl_episode_id'
+    PERS_ID = 'pers_id'
+    PARLIAMENT_ID = 'parliament_id'
+    MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT = 'member_ofthisparliament_atsomepoint'
+    RESIDENCE_PLACE_RAW = 'residence_place_raw'
+    RESIDENCE_ADRESS = 'residence_adress'
+    RESIDENCE_ADDRESS_LONGI = 'residence_address_longi'
+    RESIDENCE_ADDRESS_LATI = 'residence_address_lati'
+    FAMILY_STATUS_RAW = 'family_status_raw'
+    MARRIED = 'married'
+    NR_CHILDREN = 'nr_children'
+    RELIGION = 'religion'
+
+
+class RESE:
+    """
+    RESE: Constants for the ... () df
+    """
+    RES_ENTRY_ID = 'res_entry_id'
+    PERS_ID = 'pers_id'
+    COUNTRY = 'country'
+    RES_ENTRY_TYPE = 'res_entry_type'
+    RES_ENTRY_INDEX = 'res_entry_index'
+    RES_ENTRY_START = 'res_entry_start'
+    RES_ENTRY_END = 'res_entry_end'
+    RES_ENTRY_AT = 'res_entry_at'
+    RES_ENTRY_RAW = 'res_entry_raw'
+    POLITICAL_FUNCTION = 'political_function'
+    POLITICAL_FUNCTION_LEVEL1 = 'political_function_level1'
+    POLITICAL_FUNCTION_LEVEL2 = 'political_function_level2'
+    POLITICAL_FUNCTION_LEVEL3 = 'political_function_level3'
+    POLITICAL_FUNCTION_LEVEL4 = 'political_function_level4'
+    POLITICAL_FUNCTION_LEVEL5 = 'political_function_level5'
+    PARLIAMENT_ID = 'parliament_id'
+    FACTION_ID_CORE = 'faction_id_core'
+    COMM_ID = 'comm_id'
+    PROF_FIELD = 'prof_field'
+    ISCO08 = 'isco08'
+    TOMAS_CODE = 'tomas_code'
+    EDUC_LEVEL_ISCED2011 = 'educ_level_isced2011'
+    EDUC_FIELD_ISCED2013 = 'educ_field_isced2013'
+    ORG_ID = 'org_id'
+    RES_ENTRY_SOURCE = 'res_entry_source'
+
+
+class MEME:
+    """
+    MEME: Constants for the ... () df
+    """
+    MEMEP_ID = 'memep_id'
+    PERS_ID = 'pers_id'
+    PARTY_ID = 'party_id'
+    MEMEP_STARTDATE = 'memep_startdate'
+    MEMEP_ENDDATE = 'memep_enddate'
+    MEMEP_TYPE_RAW = 'memep_type_raw'
+
+
+class PART:
+    """
+    PART: Constants for the ... () df
+    """
+    PARTY_ID = 'party_id'
+    PARTY_LEVEL = 'party_level'
+    REGION_ABB = 'region_abb'
+    ANCESTOR_PARTY_ID = 'ancestor_party_id'
+    MOTHER_PARTY_ID = 'mother_party_id'
+    PARTY_ABB = 'party_abb'
+    PARTY_NAME = 'party_name'
+    PARTY_PARLGOV_ID = 'party_parlgov_id'
+    CLEA_PARTY_ID = 'clea_party_id'
+    RGB = 'RGB'
+    PART_FAM = 'part_fam'
+    OLD_PARTY_NAME = 'old_party_name'
+    OLD_PARTY_ABB = 'old_party_abb'
+    EPISODE_START = 'episode_start'
+    EPISODE_END = 'episode_end'
+
+
+class FACT:
+    """
+    FACT: Constants for the ... () df
+    """
+    FACTION_ID_CORE = 'faction_id_core'
+    FACTION_ID = 'faction_id'
+    FACTION_NAME = 'faction_name '
+    PARTY_IDS = 'party_ids'
+    PARLIAMENT_ID = 'parliament_id'
+    SEATS = 'seats'
+    FACTION_START = 'faction_start'
+    FACTION_END = 'faction_end'
+
+
+class QUOT:
+    """
+    QUOTA: Constants for the ... () df
+    """
+    QUOT_EP_ID = 'quot_ep_id'
+    PARTY_ID = 'party_id'
+    QUOT_EP_STARTDATE = 'quot_ep_startdate'
+    QUOT_EP_ENDDATE = 'quot_ep_enddate'
+    QUOTA_BIN = 'quota_bin'
+    QUOTA_PERCENTAGE = 'quota_percentage'
+    QUOTA_ZIPPER = 'quota_zipper'
+    QUOTA_SOFT = 'quota_soft'
+    QUOTA_EXECUTION = 'quota_execution'
+
+class ELDI:
+    """
+    ELDI: Constants for the Electoral District Data Frame (ELDI) df
+    """
+    DISTRICT_ID = 'district_id'
+    PARLIAMENT_ID = 'parliament_id'
+    COUNTRY_ABB = 'country_abb'
+    REGION_ABB = 'region_abb'
+    DISTRICT_ALIASES = 'district_aliases'
+    CONSTITUENCY_NAME = 'constituency_name'
+    CONSTITUENCY_CODE_CLEA = 'constituency_code_CLEA'
+    CONSTITUENCY_NAME_CLEA = 'constituency_name_CLEA'
+    DIST_MAGNITUDE = 'dist_magnitude'
+    DIST_LIST_VOTESHARE = 'dist_list_voteshare'
+    DISTRICT_VOTES_TOTAL = 'district_votes_total'
+
+
+class ELLI:
+    """
+    ELLI: Constants for the ... () df
+    """
+    LIST_ID = 'list_id'
+    LIST_NAME = 'list_name'
+    PARLIAMENT_ID = 'parliament_id'
+    DISTRICT_ID = 'district_id'
+    LIST_LEVEL = 'list_level'
+    LIST_NUMBER = 'list_number'
+    PARTY_ID = 'party_id'
+    LIST_LENGTH = 'list_length'
+    LIST_VOTES_TOTAL_SOURCE = 'list_votes_total_[source]'
+    LIST_TYPE = 'list_type'
+
+
+class ELEN:
+    """
+    ELEN: Constants for the ... () df
+    """
+    ELEC_ENTRY_ID = 'elec_entry_id'
+    LIST_ID = 'list_id'
+    PERS_ID = 'pers_id'
+    LISTPLACE = 'listplace'
+    ELECTED_BUNDESBLATT = 'elected_bundesblatt'
+    CANDIDATURE_TYPE = 'candidature_type'
+    SEAT_TYPE = 'seat_type'
+    CANDIDATE_VOTES = 'candidate_votes'
+    DISTRICT_ID = 'district_id'
+
+
+class COMM:
+    """
+    COMM: Constants for the ... () df
+    """
+    COMM_ID = 'comm_id'
+    PARLIAMENT_ID = 'parliament_id'
+    COMM_NAME = 'comm_name'
+    COMM_MAINTYPE = 'comm_maintype'
+    COMM_SUBTYPE = 'comm_subtype'
+    COMM_MAINTYPE_ABB = 'comm_maintype_abb'
+    COMM_SUBTYPE_ABB = 'comm_subtype_abb'
+    SEATS = 'seats'
+    COMM_START = 'comm_start'
+    COMM_END = 'comm_end'
+
+
+class MINE:
+    """
+    MINE: Constants for the ... () df
+    """
+    MIN_EPISODE_ID = 'min_episode_id'
+    PERS_ID = 'pers_id'
+    PARLIAMENT_ID = 'parliament_id'
+
+
+class PARL:
+    """
+    PARL: Constants for the Parliament Data Frame (PARL)
+    """
+    PARLIAMENT_ID = 'parliament_id'
+    LEG_PERIOD_START = 'leg_period_start'
+    LEG_PERIOD_END = 'leg_period_end'
+    LEVEL = 'level'
+    COUNTRY_ABB = 'country_abb'
+    REGION_ABB = 'region_abb'
+    LEG_PERIOD = 'leg_period'
+    ELECTION_DATE = 'election_date'
+    ASSEMBLY_NAME = 'assembly_name'
+    ASSEMBLY_ABB = 'assembly_abb'
+    ELECTION_TYPE = 'election_type'
+    COALITION_PARTIES = 'coalition_parties'
+    PREVIOUS_PARLIAMENT = 'previous_parliament'
+    NEXT_PARLIAMENT = 'next_parliament'
+
+
+class DEPS:
+    """
+    DEPS: Constants for installation dependencies.
+    """
+    DEPENDENCIES = ['xlrd', 'pandas', 'numpy', 'unittest', 'sklearn',
+                    'tabulate', 'pyprind', 'markdown2pdf', 'weasyprint',
+                    'markdown2']
+
+
+class COUNTRIES:
+    """
+    COUNTRIES: Constants for supported countries
+    """
+    UK = 'en'
+    GERMANY = 'de'
+    IRELAND = 'ie'
+    NETHERLANDS = 'nl'
+    SWITZERLAND = 'ch'
+    FRANCE = 'fr'
+    BELGIUM = 'be'
+    LUXEMBOURG = 'lu'
+    AUSTRIA = 'at'
+    DENMARK = 'dn'
+    NORWAY = 'no'
+    SWEDEN = 'se'
+    ITALY = 'it'
+
+
+class REP:
+    """
+    REP: Constants for reporting messages
+    """
+    PRIMARY_KEY_ERROR = '\nDuplicates found for the following {} primary keys:'
+    SECONDARY_KEY_ERROR = '\nThe following {} {} are present as secondary keys in {} but not as primary ids in {}:'
+    GENDER_MISSING = '\nGender labels are missing for {} entries. Only reporting {} cases for which a label could be predicted with high probability (p >= {}). Please review the following cases:\n'
+    GENDER_CLASSIFIER = '\nThe classifier has identified {} names that potentially have an incorrect gender label. Please review the following cases:\n'
+    DATE_FORMATS = '\nThe following {} incorrect or incomplete date formats were found: \n'
+    PASS = '\nNo problems identified.'
+    INTRO_TEXT =(
+            '# PCC Validation Report\n' +
+            'Tests performed at: {}\n' +
+            '\n`pccval` is a Python package that runs a series of validation tests for the Parliamentary Careers in Comparison dataset (PCC). General tests are introduced to validate the integrity of the complete dataset. This is complemented with specific tests for individual data frames, and an anomaly detection module.\n'
+                 )
+    LEGISLATIVE_PERIOD_IDS = '\nLegislative period identifiers not consecutive for the following {} observations, affecting {} parliaments: \n'
+    GENERIC = '\n{} errors identified: \n'
+    NO_OBS = '\nNo observations for {}. No validation tests performed.\n'
+
+
+class LOGM:
+    """
+    LOGM: Constants for log messages
+    """
+    DF_RUN_MESSAGE = '\nRunning validation tests for the {} data frame\n' \
+                     '================================================'
+
+class RUNM:
+    """
+    RUNM: Constants for runtime errors
+    """
+    FLAG = 'Flag {} not supported, please use one of the accepted flags for this function: {}'
+
+class FIGS:
+    """
+    FIGS: Constants for supported figure types
+    """
+    SUPPORTED = ['line_chart', 'bar_chart']
+
+class TFIDF_COS:
+    VARS = {
+        DFN.ALID: [],
+        DFN.COMM: [COMM.COMM_ID, COMM.COMM_NAME],
+        DFN.ELDI: [],
+        DFN.ELEN: [ELEN.ELEC_ENTRY_ID],
+        DFN.ELLI: [ELLI.LIST_ID, ELLI.LIST_NAME, ELLI.LIST_LEVEL],
+        DFN.FACT: [FACT.FACTION_ID, FACT.FACTION_ID_CORE, FACT.FACTION_NAME],
+        DFN.MEME: [MEME.MEMEP_ID],
+        DFN.MINE: [MINE.MIN_EPISODE_ID],
+        DFN.ORGS: [ORGS.ORG_ID, ORGS.ORG_NAME, ORGS.SEAT_LOCATION],
+        DFN.PARE: [PARE.PARL_EPISODE_ID, PARE.RESIDENCE_PLACE_RAW],
+        DFN.PARL: [PARL.PARLIAMENT_ID, PARL.ASSEMBLY_NAME],
+        DFN.PART: [PART.PARTY_ID, PART.PARTY_NAME, PART.PARTY_ABB],
+        DFN.POLI: [POLI.PERS_ID, POLI.BIRTH_PLACE_RAW, POLI.HOMETOWN_RAW,
+                   POLI.TITLE_RAW, POLI.MILITARY_RAW, POLI.LAST_NAME,
+                   POLI.FIRST_NAME],
+        DFN.QUOT: [QUOT.QUOT_EP_ID]
+            }
+
+class KEY_MAPPINGS:
+    """
+    KEY_MAPPINGS: Dictionary for mapping of primary to secondary keys
+    """
+    PRIMARY_KEYS = {
+        DFN.FACT: {PART.PARTY_ID: FACT.PARTY_IDS}
+    }
+</code></pre>
+  </div>
+
+  </header>
+
+  <section id="section-items">
+
+
+    <h2 class="section-title" id="header-classes">Classes</h2>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.ALID" class="name">class <span class="ident">ALID</span></p>
+      
+  
+    <div class="desc"><p>ALID: Constants for the ... (ALID) df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.ALID', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.ALID" class="source">
+    <pre><code>class ALID:
+    """
+    ALID: Constants for the ... (ALID) df
+    """
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.ALID">ALID</a></li>
+          <li>builtins.object</li>
+          </ul>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.COMM" class="name">class <span class="ident">COMM</span></p>
+      
+  
+    <div class="desc"><p>COMM: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.COMM', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.COMM" class="source">
+    <pre><code>class COMM:
+    """
+    COMM: Constants for the ... () df
+    """
+    COMM_ID = 'comm_id'
+    PARLIAMENT_ID = 'parliament_id'
+    COMM_NAME = 'comm_name'
+    COMM_MAINTYPE = 'comm_maintype'
+    COMM_SUBTYPE = 'comm_subtype'
+    COMM_MAINTYPE_ABB = 'comm_maintype_abb'
+    COMM_SUBTYPE_ABB = 'comm_subtype_abb'
+    SEATS = 'seats'
+    COMM_START = 'comm_start'
+    COMM_END = 'comm_end'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.COMM">COMM</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_END" class="name">var <span class="ident">COMM_END</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_ID" class="name">var <span class="ident">COMM_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_MAINTYPE" class="name">var <span class="ident">COMM_MAINTYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_MAINTYPE_ABB" class="name">var <span class="ident">COMM_MAINTYPE_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_NAME" class="name">var <span class="ident">COMM_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_START" class="name">var <span class="ident">COMM_START</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_SUBTYPE" class="name">var <span class="ident">COMM_SUBTYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.COMM_SUBTYPE_ABB" class="name">var <span class="ident">COMM_SUBTYPE_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COMM.SEATS" class="name">var <span class="ident">SEATS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.COUNTRIES" class="name">class <span class="ident">COUNTRIES</span></p>
+      
+  
+    <div class="desc"><p>COUNTRIES: Constants for supported countries</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.COUNTRIES', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.COUNTRIES" class="source">
+    <pre><code>class COUNTRIES:
+    """
+    COUNTRIES: Constants for supported countries
+    """
+    UK = 'en'
+    GERMANY = 'de'
+    IRELAND = 'ie'
+    NETHERLANDS = 'nl'
+    SWITZERLAND = 'ch'
+    FRANCE = 'fr'
+    BELGIUM = 'be'
+    LUXEMBOURG = 'lu'
+    AUSTRIA = 'at'
+    DENMARK = 'dn'
+    NORWAY = 'no'
+    SWEDEN = 'se'
+    ITALY = 'it'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.COUNTRIES">COUNTRIES</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.AUSTRIA" class="name">var <span class="ident">AUSTRIA</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.BELGIUM" class="name">var <span class="ident">BELGIUM</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.DENMARK" class="name">var <span class="ident">DENMARK</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.FRANCE" class="name">var <span class="ident">FRANCE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.GERMANY" class="name">var <span class="ident">GERMANY</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.IRELAND" class="name">var <span class="ident">IRELAND</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.ITALY" class="name">var <span class="ident">ITALY</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.LUXEMBOURG" class="name">var <span class="ident">LUXEMBOURG</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.NETHERLANDS" class="name">var <span class="ident">NETHERLANDS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.NORWAY" class="name">var <span class="ident">NORWAY</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.SWEDEN" class="name">var <span class="ident">SWEDEN</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.SWITZERLAND" class="name">var <span class="ident">SWITZERLAND</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.COUNTRIES.UK" class="name">var <span class="ident">UK</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.DEPS" class="name">class <span class="ident">DEPS</span></p>
+      
+  
+    <div class="desc"><p>DEPS: Constants for installation dependencies.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.DEPS', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.DEPS" class="source">
+    <pre><code>class DEPS:
+    """
+    DEPS: Constants for installation dependencies.
+    """
+    DEPENDENCIES = ['xlrd', 'pandas', 'numpy', 'unittest', 'sklearn',
+                    'tabulate', 'pyprind', 'markdown2pdf', 'weasyprint',
+                    'markdown2']
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.DEPS">DEPS</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.DEPS.DEPENDENCIES" class="name">var <span class="ident">DEPENDENCIES</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.DFN" class="name">class <span class="ident">DFN</span></p>
+      
+  
+    <div class="desc"><p>DFN: Constants for tmp frame names</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.DFN', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.DFN" class="source">
+    <pre><code>class DFN:
+    """
+    DFN: Constants for tmp frame names
+    """
+    ALID = 'ALID' #TODO No data available yet
+    COMM = 'COMM'
+    ELDI = 'ELDI'
+    ELEN = 'ELEN'
+    ELLI = 'ELLI'
+    FACT = 'FACT'
+    MEME = 'MEME'
+    MINE = 'MINE'
+    ORGS = 'ORGS'
+    PARE = 'PARE'
+    PARL = 'PARL'
+    PART = 'PART'
+    QUOT = 'QUOT'
+    POLI = 'POLI'
+    RESE = 'RESE'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.DFN">DFN</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.ALID" class="name">var <span class="ident">ALID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.COMM" class="name">var <span class="ident">COMM</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.ELDI" class="name">var <span class="ident">ELDI</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.ELEN" class="name">var <span class="ident">ELEN</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.ELLI" class="name">var <span class="ident">ELLI</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.FACT" class="name">var <span class="ident">FACT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.MEME" class="name">var <span class="ident">MEME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.MINE" class="name">var <span class="ident">MINE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.ORGS" class="name">var <span class="ident">ORGS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.PARE" class="name">var <span class="ident">PARE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.PARL" class="name">var <span class="ident">PARL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.PART" class="name">var <span class="ident">PART</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.POLI" class="name">var <span class="ident">POLI</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.QUOT" class="name">var <span class="ident">QUOT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.DFN.RESE" class="name">var <span class="ident">RESE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.ELDI" class="name">class <span class="ident">ELDI</span></p>
+      
+  
+    <div class="desc"><p>ELDI: Constants for the Electoral District Data Frame (ELDI) df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.ELDI', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.ELDI" class="source">
+    <pre><code>class ELDI:
+    """
+    ELDI: Constants for the Electoral District Data Frame (ELDI) df
+    """
+    DISTRICT_ID = 'district_id'
+    PARLIAMENT_ID = 'parliament_id'
+    COUNTRY_ABB = 'country_abb'
+    REGION_ABB = 'region_abb'
+    DISTRICT_ALIASES = 'district_aliases'
+    CONSTITUENCY_NAME = 'constituency_name'
+    CONSTITUENCY_CODE_CLEA = 'constituency_code_CLEA'
+    CONSTITUENCY_NAME_CLEA = 'constituency_name_CLEA'
+    DIST_MAGNITUDE = 'dist_magnitude'
+    DIST_LIST_VOTESHARE = 'dist_list_voteshare'
+    DISTRICT_VOTES_TOTAL = 'district_votes_total'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.ELDI">ELDI</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.CONSTITUENCY_CODE_CLEA" class="name">var <span class="ident">CONSTITUENCY_CODE_CLEA</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.CONSTITUENCY_NAME" class="name">var <span class="ident">CONSTITUENCY_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.CONSTITUENCY_NAME_CLEA" class="name">var <span class="ident">CONSTITUENCY_NAME_CLEA</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.COUNTRY_ABB" class="name">var <span class="ident">COUNTRY_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.DISTRICT_ALIASES" class="name">var <span class="ident">DISTRICT_ALIASES</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.DISTRICT_ID" class="name">var <span class="ident">DISTRICT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.DISTRICT_VOTES_TOTAL" class="name">var <span class="ident">DISTRICT_VOTES_TOTAL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.DIST_LIST_VOTESHARE" class="name">var <span class="ident">DIST_LIST_VOTESHARE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.DIST_MAGNITUDE" class="name">var <span class="ident">DIST_MAGNITUDE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELDI.REGION_ABB" class="name">var <span class="ident">REGION_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.ELEN" class="name">class <span class="ident">ELEN</span></p>
+      
+  
+    <div class="desc"><p>ELEN: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.ELEN', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.ELEN" class="source">
+    <pre><code>class ELEN:
+    """
+    ELEN: Constants for the ... () df
+    """
+    ELEC_ENTRY_ID = 'elec_entry_id'
+    LIST_ID = 'list_id'
+    PERS_ID = 'pers_id'
+    LISTPLACE = 'listplace'
+    ELECTED_BUNDESBLATT = 'elected_bundesblatt'
+    CANDIDATURE_TYPE = 'candidature_type'
+    SEAT_TYPE = 'seat_type'
+    CANDIDATE_VOTES = 'candidate_votes'
+    DISTRICT_ID = 'district_id'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.ELEN">ELEN</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.CANDIDATE_VOTES" class="name">var <span class="ident">CANDIDATE_VOTES</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.CANDIDATURE_TYPE" class="name">var <span class="ident">CANDIDATURE_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.DISTRICT_ID" class="name">var <span class="ident">DISTRICT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.ELECTED_BUNDESBLATT" class="name">var <span class="ident">ELECTED_BUNDESBLATT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.ELEC_ENTRY_ID" class="name">var <span class="ident">ELEC_ENTRY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.LISTPLACE" class="name">var <span class="ident">LISTPLACE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.LIST_ID" class="name">var <span class="ident">LIST_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.PERS_ID" class="name">var <span class="ident">PERS_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELEN.SEAT_TYPE" class="name">var <span class="ident">SEAT_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.ELLI" class="name">class <span class="ident">ELLI</span></p>
+      
+  
+    <div class="desc"><p>ELLI: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.ELLI', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.ELLI" class="source">
+    <pre><code>class ELLI:
+    """
+    ELLI: Constants for the ... () df
+    """
+    LIST_ID = 'list_id'
+    LIST_NAME = 'list_name'
+    PARLIAMENT_ID = 'parliament_id'
+    DISTRICT_ID = 'district_id'
+    LIST_LEVEL = 'list_level'
+    LIST_NUMBER = 'list_number'
+    PARTY_ID = 'party_id'
+    LIST_LENGTH = 'list_length'
+    LIST_VOTES_TOTAL_SOURCE = 'list_votes_total_[source]'
+    LIST_TYPE = 'list_type'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.ELLI">ELLI</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.DISTRICT_ID" class="name">var <span class="ident">DISTRICT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_ID" class="name">var <span class="ident">LIST_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_LENGTH" class="name">var <span class="ident">LIST_LENGTH</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_LEVEL" class="name">var <span class="ident">LIST_LEVEL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_NAME" class="name">var <span class="ident">LIST_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_NUMBER" class="name">var <span class="ident">LIST_NUMBER</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_TYPE" class="name">var <span class="ident">LIST_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.LIST_VOTES_TOTAL_SOURCE" class="name">var <span class="ident">LIST_VOTES_TOTAL_SOURCE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ELLI.PARTY_ID" class="name">var <span class="ident">PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.FACT" class="name">class <span class="ident">FACT</span></p>
+      
+  
+    <div class="desc"><p>FACT: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.FACT', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.FACT" class="source">
+    <pre><code>class FACT:
+    """
+    FACT: Constants for the ... () df
+    """
+    FACTION_ID_CORE = 'faction_id_core'
+    FACTION_ID = 'faction_id'
+    FACTION_NAME = 'faction_name '
+    PARTY_IDS = 'party_ids'
+    PARLIAMENT_ID = 'parliament_id'
+    SEATS = 'seats'
+    FACTION_START = 'faction_start'
+    FACTION_END = 'faction_end'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.FACT">FACT</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.FACTION_END" class="name">var <span class="ident">FACTION_END</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.FACTION_ID" class="name">var <span class="ident">FACTION_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.FACTION_ID_CORE" class="name">var <span class="ident">FACTION_ID_CORE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.FACTION_NAME" class="name">var <span class="ident">FACTION_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.FACTION_START" class="name">var <span class="ident">FACTION_START</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.PARTY_IDS" class="name">var <span class="ident">PARTY_IDS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.FACT.SEATS" class="name">var <span class="ident">SEATS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.FIGS" class="name">class <span class="ident">FIGS</span></p>
+      
+  
+    <div class="desc"><p>FIGS: Constants for supported figure types</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.FIGS', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.FIGS" class="source">
+    <pre><code>class FIGS:
+    """
+    FIGS: Constants for supported figure types
+    """
+    SUPPORTED = ['line_chart', 'bar_chart']
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.FIGS">FIGS</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.FIGS.SUPPORTED" class="name">var <span class="ident">SUPPORTED</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.KEY_MAPPINGS" class="name">class <span class="ident">KEY_MAPPINGS</span></p>
+      
+  
+    <div class="desc"><p>KEY_MAPPINGS: Dictionary for mapping of primary to secondary keys</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.KEY_MAPPINGS', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.KEY_MAPPINGS" class="source">
+    <pre><code>class KEY_MAPPINGS:
+    """
+    KEY_MAPPINGS: Dictionary for mapping of primary to secondary keys
+    """
+    PRIMARY_KEYS = {
+        DFN.FACT: {PART.PARTY_ID: FACT.PARTY_IDS}
+    }
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.KEY_MAPPINGS">KEY_MAPPINGS</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.KEY_MAPPINGS.PRIMARY_KEYS" class="name">var <span class="ident">PRIMARY_KEYS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.LOGM" class="name">class <span class="ident">LOGM</span></p>
+      
+  
+    <div class="desc"><p>LOGM: Constants for log messages</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.LOGM', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.LOGM" class="source">
+    <pre><code>class LOGM:
+    """
+    LOGM: Constants for log messages
+    """
+    DF_RUN_MESSAGE = '\nRunning validation tests for the {} data frame\n' \
+                     '================================================'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.LOGM">LOGM</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.LOGM.DF_RUN_MESSAGE" class="name">var <span class="ident">DF_RUN_MESSAGE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.MEME" class="name">class <span class="ident">MEME</span></p>
+      
+  
+    <div class="desc"><p>MEME: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.MEME', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.MEME" class="source">
+    <pre><code>class MEME:
+    """
+    MEME: Constants for the ... () df
+    """
+    MEMEP_ID = 'memep_id'
+    PERS_ID = 'pers_id'
+    PARTY_ID = 'party_id'
+    MEMEP_STARTDATE = 'memep_startdate'
+    MEMEP_ENDDATE = 'memep_enddate'
+    MEMEP_TYPE_RAW = 'memep_type_raw'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.MEME">MEME</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.MEME.MEMEP_ENDDATE" class="name">var <span class="ident">MEMEP_ENDDATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MEME.MEMEP_ID" class="name">var <span class="ident">MEMEP_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MEME.MEMEP_STARTDATE" class="name">var <span class="ident">MEMEP_STARTDATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MEME.MEMEP_TYPE_RAW" class="name">var <span class="ident">MEMEP_TYPE_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MEME.PARTY_ID" class="name">var <span class="ident">PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MEME.PERS_ID" class="name">var <span class="ident">PERS_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.MINE" class="name">class <span class="ident">MINE</span></p>
+      
+  
+    <div class="desc"><p>MINE: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.MINE', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.MINE" class="source">
+    <pre><code>class MINE:
+    """
+    MINE: Constants for the ... () df
+    """
+    MIN_EPISODE_ID = 'min_episode_id'
+    PERS_ID = 'pers_id'
+    PARLIAMENT_ID = 'parliament_id'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.MINE">MINE</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.MINE.MIN_EPISODE_ID" class="name">var <span class="ident">MIN_EPISODE_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MINE.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.MINE.PERS_ID" class="name">var <span class="ident">PERS_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.ORGS" class="name">class <span class="ident">ORGS</span></p>
+      
+  
+    <div class="desc"><p>ORGS: Constants for the ... (ORGS) df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.ORGS', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.ORGS" class="source">
+    <pre><code>class ORGS:
+    """
+    ORGS: Constants for the ... (ORGS) df
+    """
+    ORG_ID = 'org_id'
+    ORG_NAME = 'org_name'
+    LEGAL_FORM = 'legal_form'
+    POLACTIVE_START_DATE = 'polactive_start_date'
+    POLACTIVE_END_DATE = 'polactive_end_date'
+    SEAT_LOCATION = 'seat_location'
+    ZIPCODE = 'zipcode'
+    REGION_ABB = 'region_abb'
+    COUNTRY_ABB = 'country_abb'
+    LONGITUDE = 'longitude'
+    LATITUDE = 'latitude'
+    IG_TYPE = 'ig_type'
+    GAVA_ASSOC_ID = 'GAVA_assoc_id'
+    GAVA_ASSOC_NAME = 'GAVA_assoc_name'
+    GAVA_ASSOC_AGGREGATE_NAME = 'GAVA_assoc_aggregate_name'
+    GAVA_ASSOC_LEGAL_FORM = 'GAVA_assoc_legal_form'
+    GAVA_ASSOC_GENERAL = 'GAVA_assoc_general'
+    GAVA_ASSOC_IG_TYPE = 'GAVA_assoc_ig_type'
+    GAVA_ASSOC_IG_TYPE_NAME = 'GAVA_assoc_ig_type_name'
+    GAVA_ASSOC_IG_CODE = 'GAVA_assoc_ig_code'
+    GAVA_ASSOC_IG_CODE_NAME = 'GAVA_assoc_ig_code_name'
+    GAVA_LEVEL = 'GAVA_level'
+    GAVA_CATEGORY = 'GAVA_category'
+    GAVA_TOPIC = 'GAVA_topic'
+    GAVA_TOPIC_BUSINESS = 'GAVA_topic_business'
+    NCCR_NQID = 'NCCR_nqid'
+    NCCR_A4 = 'NCCR_A4'
+    ORGANISATION = 'NCCR_A4 Organisation'
+    GK_INTEREST_GROUP = 'GK_interest_group'
+    GK_CANTON_IG_RAW = 'GK_canton_ig_raw'
+    GK_TYPE = 'GK_type'
+    GK_POLICY_CODE = 'GK_policy_code'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.ORGS">ORGS</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.COUNTRY_ABB" class="name">var <span class="ident">COUNTRY_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_AGGREGATE_NAME" class="name">var <span class="ident">GAVA_ASSOC_AGGREGATE_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_GENERAL" class="name">var <span class="ident">GAVA_ASSOC_GENERAL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_ID" class="name">var <span class="ident">GAVA_ASSOC_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_IG_CODE" class="name">var <span class="ident">GAVA_ASSOC_IG_CODE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_IG_CODE_NAME" class="name">var <span class="ident">GAVA_ASSOC_IG_CODE_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_IG_TYPE" class="name">var <span class="ident">GAVA_ASSOC_IG_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_IG_TYPE_NAME" class="name">var <span class="ident">GAVA_ASSOC_IG_TYPE_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_LEGAL_FORM" class="name">var <span class="ident">GAVA_ASSOC_LEGAL_FORM</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_ASSOC_NAME" class="name">var <span class="ident">GAVA_ASSOC_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_CATEGORY" class="name">var <span class="ident">GAVA_CATEGORY</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_LEVEL" class="name">var <span class="ident">GAVA_LEVEL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_TOPIC" class="name">var <span class="ident">GAVA_TOPIC</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GAVA_TOPIC_BUSINESS" class="name">var <span class="ident">GAVA_TOPIC_BUSINESS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GK_CANTON_IG_RAW" class="name">var <span class="ident">GK_CANTON_IG_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GK_INTEREST_GROUP" class="name">var <span class="ident">GK_INTEREST_GROUP</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GK_POLICY_CODE" class="name">var <span class="ident">GK_POLICY_CODE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.GK_TYPE" class="name">var <span class="ident">GK_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.IG_TYPE" class="name">var <span class="ident">IG_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.LATITUDE" class="name">var <span class="ident">LATITUDE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.LEGAL_FORM" class="name">var <span class="ident">LEGAL_FORM</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.LONGITUDE" class="name">var <span class="ident">LONGITUDE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.NCCR_A4" class="name">var <span class="ident">NCCR_A4</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.NCCR_NQID" class="name">var <span class="ident">NCCR_NQID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.ORGANISATION" class="name">var <span class="ident">ORGANISATION</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.ORG_ID" class="name">var <span class="ident">ORG_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.ORG_NAME" class="name">var <span class="ident">ORG_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.POLACTIVE_END_DATE" class="name">var <span class="ident">POLACTIVE_END_DATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.POLACTIVE_START_DATE" class="name">var <span class="ident">POLACTIVE_START_DATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.REGION_ABB" class="name">var <span class="ident">REGION_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.SEAT_LOCATION" class="name">var <span class="ident">SEAT_LOCATION</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.ORGS.ZIPCODE" class="name">var <span class="ident">ZIPCODE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.PARE" class="name">class <span class="ident">PARE</span></p>
+      
+  
+    <div class="desc"><p>PARE: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.PARE', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.PARE" class="source">
+    <pre><code>class PARE:
+    """
+    PARE: Constants for the ... () df
+    """
+    PARL_EPISODE_ID = 'parl_episode_id'
+    PERS_ID = 'pers_id'
+    PARLIAMENT_ID = 'parliament_id'
+    MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT = 'member_ofthisparliament_atsomepoint'
+    RESIDENCE_PLACE_RAW = 'residence_place_raw'
+    RESIDENCE_ADRESS = 'residence_adress'
+    RESIDENCE_ADDRESS_LONGI = 'residence_address_longi'
+    RESIDENCE_ADDRESS_LATI = 'residence_address_lati'
+    FAMILY_STATUS_RAW = 'family_status_raw'
+    MARRIED = 'married'
+    NR_CHILDREN = 'nr_children'
+    RELIGION = 'religion'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.PARE">PARE</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.FAMILY_STATUS_RAW" class="name">var <span class="ident">FAMILY_STATUS_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.MARRIED" class="name">var <span class="ident">MARRIED</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT" class="name">var <span class="ident">MEMBER_OFTHISPARLIAMENT_ATSOMEPOINT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.NR_CHILDREN" class="name">var <span class="ident">NR_CHILDREN</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.PARL_EPISODE_ID" class="name">var <span class="ident">PARL_EPISODE_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.PERS_ID" class="name">var <span class="ident">PERS_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.RELIGION" class="name">var <span class="ident">RELIGION</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.RESIDENCE_ADDRESS_LATI" class="name">var <span class="ident">RESIDENCE_ADDRESS_LATI</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.RESIDENCE_ADDRESS_LONGI" class="name">var <span class="ident">RESIDENCE_ADDRESS_LONGI</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.RESIDENCE_ADRESS" class="name">var <span class="ident">RESIDENCE_ADRESS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARE.RESIDENCE_PLACE_RAW" class="name">var <span class="ident">RESIDENCE_PLACE_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.PARL" class="name">class <span class="ident">PARL</span></p>
+      
+  
+    <div class="desc"><p>PARL: Constants for the Parliament Data Frame (PARL)</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.PARL', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.PARL" class="source">
+    <pre><code>class PARL:
+    """
+    PARL: Constants for the Parliament Data Frame (PARL)
+    """
+    PARLIAMENT_ID = 'parliament_id'
+    LEG_PERIOD_START = 'leg_period_start'
+    LEG_PERIOD_END = 'leg_period_end'
+    LEVEL = 'level'
+    COUNTRY_ABB = 'country_abb'
+    REGION_ABB = 'region_abb'
+    LEG_PERIOD = 'leg_period'
+    ELECTION_DATE = 'election_date'
+    ASSEMBLY_NAME = 'assembly_name'
+    ASSEMBLY_ABB = 'assembly_abb'
+    ELECTION_TYPE = 'election_type'
+    COALITION_PARTIES = 'coalition_parties'
+    PREVIOUS_PARLIAMENT = 'previous_parliament'
+    NEXT_PARLIAMENT = 'next_parliament'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.PARL">PARL</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.ASSEMBLY_ABB" class="name">var <span class="ident">ASSEMBLY_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.ASSEMBLY_NAME" class="name">var <span class="ident">ASSEMBLY_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.COALITION_PARTIES" class="name">var <span class="ident">COALITION_PARTIES</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.COUNTRY_ABB" class="name">var <span class="ident">COUNTRY_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.ELECTION_DATE" class="name">var <span class="ident">ELECTION_DATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.ELECTION_TYPE" class="name">var <span class="ident">ELECTION_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.LEG_PERIOD" class="name">var <span class="ident">LEG_PERIOD</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.LEG_PERIOD_END" class="name">var <span class="ident">LEG_PERIOD_END</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.LEG_PERIOD_START" class="name">var <span class="ident">LEG_PERIOD_START</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.LEVEL" class="name">var <span class="ident">LEVEL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.NEXT_PARLIAMENT" class="name">var <span class="ident">NEXT_PARLIAMENT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.PREVIOUS_PARLIAMENT" class="name">var <span class="ident">PREVIOUS_PARLIAMENT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PARL.REGION_ABB" class="name">var <span class="ident">REGION_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.PART" class="name">class <span class="ident">PART</span></p>
+      
+  
+    <div class="desc"><p>PART: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.PART', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.PART" class="source">
+    <pre><code>class PART:
+    """
+    PART: Constants for the ... () df
+    """
+    PARTY_ID = 'party_id'
+    PARTY_LEVEL = 'party_level'
+    REGION_ABB = 'region_abb'
+    ANCESTOR_PARTY_ID = 'ancestor_party_id'
+    MOTHER_PARTY_ID = 'mother_party_id'
+    PARTY_ABB = 'party_abb'
+    PARTY_NAME = 'party_name'
+    PARTY_PARLGOV_ID = 'party_parlgov_id'
+    CLEA_PARTY_ID = 'clea_party_id'
+    RGB = 'RGB'
+    PART_FAM = 'part_fam'
+    OLD_PARTY_NAME = 'old_party_name'
+    OLD_PARTY_ABB = 'old_party_abb'
+    EPISODE_START = 'episode_start'
+    EPISODE_END = 'episode_end'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.PART">PART</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.ANCESTOR_PARTY_ID" class="name">var <span class="ident">ANCESTOR_PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.CLEA_PARTY_ID" class="name">var <span class="ident">CLEA_PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.EPISODE_END" class="name">var <span class="ident">EPISODE_END</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.EPISODE_START" class="name">var <span class="ident">EPISODE_START</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.MOTHER_PARTY_ID" class="name">var <span class="ident">MOTHER_PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.OLD_PARTY_ABB" class="name">var <span class="ident">OLD_PARTY_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.OLD_PARTY_NAME" class="name">var <span class="ident">OLD_PARTY_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.PARTY_ABB" class="name">var <span class="ident">PARTY_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.PARTY_ID" class="name">var <span class="ident">PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.PARTY_LEVEL" class="name">var <span class="ident">PARTY_LEVEL</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.PARTY_NAME" class="name">var <span class="ident">PARTY_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.PARTY_PARLGOV_ID" class="name">var <span class="ident">PARTY_PARLGOV_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.PART_FAM" class="name">var <span class="ident">PART_FAM</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.REGION_ABB" class="name">var <span class="ident">REGION_ABB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.PART.RGB" class="name">var <span class="ident">RGB</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.POLI" class="name">class <span class="ident">POLI</span></p>
+      
+  
+    <div class="desc"><p>POLI: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.POLI', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.POLI" class="source">
+    <pre><code>class POLI:
+    """
+    POLI: Constants for the ... () df
+    """
+    PERS_ID = 'pers_id'
+    ID_NL_POLCA = 'id_nl_polca'
+    ID_NL_PDC = 'id_nl_pdc'
+    ID_DE_MANOW = 'id_de_manow'
+    ID_DE_PARLIAMENT = 'id_de_parliament'
+    ID_CH_PARLIAMENT = 'id_ch_parliament'
+    ID_IE_PARLIAMENT = 'id_ie_parliament'
+    LAST_NAME = 'last_name'
+    FIRST_NAME = 'first_name'
+    OTHER_NAME = 'other_name'
+    GENDER = 'gender'
+    BIRTH_DATE = 'birth_date'
+    DEATH_DATE = 'death_date'
+    BIRTH_PLACE_RAW = 'birth_place_raw'
+    CITIZENSHIP_CANTON = 'citizenship_canton'
+    HOMETOWN_RAW = 'hometown_raw'
+    TITLE_RAW = 'title_raw'
+    MILITARY_RAW = 'military_raw'
+    INITIALS = 'initials'
+    TWITTER_SCREEN_NAME = 'twitter_screen_name'
+    TWITTER_ID = 'twitter_id'
+    TEMP = 'temp'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.POLI">POLI</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.BIRTH_DATE" class="name">var <span class="ident">BIRTH_DATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.BIRTH_PLACE_RAW" class="name">var <span class="ident">BIRTH_PLACE_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.CITIZENSHIP_CANTON" class="name">var <span class="ident">CITIZENSHIP_CANTON</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.DEATH_DATE" class="name">var <span class="ident">DEATH_DATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.FIRST_NAME" class="name">var <span class="ident">FIRST_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.GENDER" class="name">var <span class="ident">GENDER</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.HOMETOWN_RAW" class="name">var <span class="ident">HOMETOWN_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.ID_CH_PARLIAMENT" class="name">var <span class="ident">ID_CH_PARLIAMENT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.ID_DE_MANOW" class="name">var <span class="ident">ID_DE_MANOW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.ID_DE_PARLIAMENT" class="name">var <span class="ident">ID_DE_PARLIAMENT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.ID_IE_PARLIAMENT" class="name">var <span class="ident">ID_IE_PARLIAMENT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.ID_NL_PDC" class="name">var <span class="ident">ID_NL_PDC</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.ID_NL_POLCA" class="name">var <span class="ident">ID_NL_POLCA</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.INITIALS" class="name">var <span class="ident">INITIALS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.LAST_NAME" class="name">var <span class="ident">LAST_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.MILITARY_RAW" class="name">var <span class="ident">MILITARY_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.OTHER_NAME" class="name">var <span class="ident">OTHER_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.PERS_ID" class="name">var <span class="ident">PERS_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.TEMP" class="name">var <span class="ident">TEMP</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.TITLE_RAW" class="name">var <span class="ident">TITLE_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.TWITTER_ID" class="name">var <span class="ident">TWITTER_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.POLI.TWITTER_SCREEN_NAME" class="name">var <span class="ident">TWITTER_SCREEN_NAME</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.QUOT" class="name">class <span class="ident">QUOT</span></p>
+      
+  
+    <div class="desc"><p>QUOTA: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.QUOT', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.QUOT" class="source">
+    <pre><code>class QUOT:
+    """
+    QUOTA: Constants for the ... () df
+    """
+    QUOT_EP_ID = 'quot_ep_id'
+    PARTY_ID = 'party_id'
+    QUOT_EP_STARTDATE = 'quot_ep_startdate'
+    QUOT_EP_ENDDATE = 'quot_ep_enddate'
+    QUOTA_BIN = 'quota_bin'
+    QUOTA_PERCENTAGE = 'quota_percentage'
+    QUOTA_ZIPPER = 'quota_zipper'
+    QUOTA_SOFT = 'quota_soft'
+    QUOTA_EXECUTION = 'quota_execution'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.QUOT">QUOT</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.PARTY_ID" class="name">var <span class="ident">PARTY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOTA_BIN" class="name">var <span class="ident">QUOTA_BIN</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOTA_EXECUTION" class="name">var <span class="ident">QUOTA_EXECUTION</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOTA_PERCENTAGE" class="name">var <span class="ident">QUOTA_PERCENTAGE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOTA_SOFT" class="name">var <span class="ident">QUOTA_SOFT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOTA_ZIPPER" class="name">var <span class="ident">QUOTA_ZIPPER</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOT_EP_ENDDATE" class="name">var <span class="ident">QUOT_EP_ENDDATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOT_EP_ID" class="name">var <span class="ident">QUOT_EP_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.QUOT.QUOT_EP_STARTDATE" class="name">var <span class="ident">QUOT_EP_STARTDATE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.REP" class="name">class <span class="ident">REP</span></p>
+      
+  
+    <div class="desc"><p>REP: Constants for reporting messages</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.REP', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.REP" class="source">
+    <pre><code>class REP:
+    """
+    REP: Constants for reporting messages
+    """
+    PRIMARY_KEY_ERROR = '\nDuplicates found for the following {} primary keys:'
+    SECONDARY_KEY_ERROR = '\nThe following {} {} are present as secondary keys in {} but not as primary ids in {}:'
+    GENDER_MISSING = '\nGender labels are missing for {} entries. Only reporting {} cases for which a label could be predicted with high probability (p >= {}). Please review the following cases:\n'
+    GENDER_CLASSIFIER = '\nThe classifier has identified {} names that potentially have an incorrect gender label. Please review the following cases:\n'
+    DATE_FORMATS = '\nThe following {} incorrect or incomplete date formats were found: \n'
+    PASS = '\nNo problems identified.'
+    INTRO_TEXT =(
+            '# PCC Validation Report\n' +
+            'Tests performed at: {}\n' +
+            '\n`pccval` is a Python package that runs a series of validation tests for the Parliamentary Careers in Comparison dataset (PCC). General tests are introduced to validate the integrity of the complete dataset. This is complemented with specific tests for individual data frames, and an anomaly detection module.\n'
+                 )
+    LEGISLATIVE_PERIOD_IDS = '\nLegislative period identifiers not consecutive for the following {} observations, affecting {} parliaments: \n'
+    GENERIC = '\n{} errors identified: \n'
+    NO_OBS = '\nNo observations for {}. No validation tests performed.\n'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.REP">REP</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.DATE_FORMATS" class="name">var <span class="ident">DATE_FORMATS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.GENDER_CLASSIFIER" class="name">var <span class="ident">GENDER_CLASSIFIER</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.GENDER_MISSING" class="name">var <span class="ident">GENDER_MISSING</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.GENERIC" class="name">var <span class="ident">GENERIC</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.INTRO_TEXT" class="name">var <span class="ident">INTRO_TEXT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.LEGISLATIVE_PERIOD_IDS" class="name">var <span class="ident">LEGISLATIVE_PERIOD_IDS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.NO_OBS" class="name">var <span class="ident">NO_OBS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.PASS" class="name">var <span class="ident">PASS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.PRIMARY_KEY_ERROR" class="name">var <span class="ident">PRIMARY_KEY_ERROR</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.REP.SECONDARY_KEY_ERROR" class="name">var <span class="ident">SECONDARY_KEY_ERROR</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.RESE" class="name">class <span class="ident">RESE</span></p>
+      
+  
+    <div class="desc"><p>RESE: Constants for the ... () df</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.RESE', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.RESE" class="source">
+    <pre><code>class RESE:
+    """
+    RESE: Constants for the ... () df
+    """
+    RES_ENTRY_ID = 'res_entry_id'
+    PERS_ID = 'pers_id'
+    COUNTRY = 'country'
+    RES_ENTRY_TYPE = 'res_entry_type'
+    RES_ENTRY_INDEX = 'res_entry_index'
+    RES_ENTRY_START = 'res_entry_start'
+    RES_ENTRY_END = 'res_entry_end'
+    RES_ENTRY_AT = 'res_entry_at'
+    RES_ENTRY_RAW = 'res_entry_raw'
+    POLITICAL_FUNCTION = 'political_function'
+    POLITICAL_FUNCTION_LEVEL1 = 'political_function_level1'
+    POLITICAL_FUNCTION_LEVEL2 = 'political_function_level2'
+    POLITICAL_FUNCTION_LEVEL3 = 'political_function_level3'
+    POLITICAL_FUNCTION_LEVEL4 = 'political_function_level4'
+    POLITICAL_FUNCTION_LEVEL5 = 'political_function_level5'
+    PARLIAMENT_ID = 'parliament_id'
+    FACTION_ID_CORE = 'faction_id_core'
+    COMM_ID = 'comm_id'
+    PROF_FIELD = 'prof_field'
+    ISCO08 = 'isco08'
+    TOMAS_CODE = 'tomas_code'
+    EDUC_LEVEL_ISCED2011 = 'educ_level_isced2011'
+    EDUC_FIELD_ISCED2013 = 'educ_field_isced2013'
+    ORG_ID = 'org_id'
+    RES_ENTRY_SOURCE = 'res_entry_source'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.RESE">RESE</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.COMM_ID" class="name">var <span class="ident">COMM_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.COUNTRY" class="name">var <span class="ident">COUNTRY</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.EDUC_FIELD_ISCED2013" class="name">var <span class="ident">EDUC_FIELD_ISCED2013</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.EDUC_LEVEL_ISCED2011" class="name">var <span class="ident">EDUC_LEVEL_ISCED2011</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.FACTION_ID_CORE" class="name">var <span class="ident">FACTION_ID_CORE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.ISCO08" class="name">var <span class="ident">ISCO08</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.ORG_ID" class="name">var <span class="ident">ORG_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.PARLIAMENT_ID" class="name">var <span class="ident">PARLIAMENT_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.PERS_ID" class="name">var <span class="ident">PERS_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.POLITICAL_FUNCTION" class="name">var <span class="ident">POLITICAL_FUNCTION</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.POLITICAL_FUNCTION_LEVEL1" class="name">var <span class="ident">POLITICAL_FUNCTION_LEVEL1</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.POLITICAL_FUNCTION_LEVEL2" class="name">var <span class="ident">POLITICAL_FUNCTION_LEVEL2</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.POLITICAL_FUNCTION_LEVEL3" class="name">var <span class="ident">POLITICAL_FUNCTION_LEVEL3</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.POLITICAL_FUNCTION_LEVEL4" class="name">var <span class="ident">POLITICAL_FUNCTION_LEVEL4</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.POLITICAL_FUNCTION_LEVEL5" class="name">var <span class="ident">POLITICAL_FUNCTION_LEVEL5</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.PROF_FIELD" class="name">var <span class="ident">PROF_FIELD</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_AT" class="name">var <span class="ident">RES_ENTRY_AT</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_END" class="name">var <span class="ident">RES_ENTRY_END</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_ID" class="name">var <span class="ident">RES_ENTRY_ID</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_INDEX" class="name">var <span class="ident">RES_ENTRY_INDEX</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_RAW" class="name">var <span class="ident">RES_ENTRY_RAW</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_SOURCE" class="name">var <span class="ident">RES_ENTRY_SOURCE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_START" class="name">var <span class="ident">RES_ENTRY_START</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.RES_ENTRY_TYPE" class="name">var <span class="ident">RES_ENTRY_TYPE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="data_ingestion.constants.RESE.TOMAS_CODE" class="name">var <span class="ident">TOMAS_CODE</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.RUNM" class="name">class <span class="ident">RUNM</span></p>
+      
+  
+    <div class="desc"><p>RUNM: Constants for runtime errors</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.RUNM', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.RUNM" class="source">
+    <pre><code>class RUNM:
+    """
+    RUNM: Constants for runtime errors
+    """
+    FLAG = 'Flag {} not supported, please use one of the accepted flags for this function: {}'
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.RUNM">RUNM</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.RUNM.FLAG" class="name">var <span class="ident">FLAG</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+      
+      <div class="item">
+      <p id="data_ingestion.constants.TFIDF_COS" class="name">class <span class="ident">TFIDF_COS</span></p>
+      
+  
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-data_ingestion.constants.TFIDF_COS', this);">Show source &equiv;</a></p>
+  <div id="source-data_ingestion.constants.TFIDF_COS" class="source">
+    <pre><code>class TFIDF_COS:
+    VARS = {
+        DFN.ALID: [],
+        DFN.COMM: [COMM.COMM_ID, COMM.COMM_NAME],
+        DFN.ELDI: [],
+        DFN.ELEN: [ELEN.ELEC_ENTRY_ID],
+        DFN.ELLI: [ELLI.LIST_ID, ELLI.LIST_NAME, ELLI.LIST_LEVEL],
+        DFN.FACT: [FACT.FACTION_ID, FACT.FACTION_ID_CORE, FACT.FACTION_NAME],
+        DFN.MEME: [MEME.MEMEP_ID],
+        DFN.MINE: [MINE.MIN_EPISODE_ID],
+        DFN.ORGS: [ORGS.ORG_ID, ORGS.ORG_NAME, ORGS.SEAT_LOCATION],
+        DFN.PARE: [PARE.PARL_EPISODE_ID, PARE.RESIDENCE_PLACE_RAW],
+        DFN.PARL: [PARL.PARLIAMENT_ID, PARL.ASSEMBLY_NAME],
+        DFN.PART: [PART.PARTY_ID, PART.PARTY_NAME, PART.PARTY_ABB],
+        DFN.POLI: [POLI.PERS_ID, POLI.BIRTH_PLACE_RAW, POLI.HOMETOWN_RAW,
+                   POLI.TITLE_RAW, POLI.MILITARY_RAW, POLI.LAST_NAME,
+                   POLI.FIRST_NAME],
+        DFN.QUOT: [QUOT.QUOT_EP_ID]
+            }
+</code></pre>
+  </div>
+</div>
+
+
+      <div class="class">
+          <h3>Ancestors (in MRO)</h3>
+          <ul class="class_list">
+          <li><a href="#data_ingestion.constants.TFIDF_COS">TFIDF_COS</a></li>
+          <li>builtins.object</li>
+          </ul>
+          <h3>Class variables</h3>
+            <div class="item">
+            <p id="data_ingestion.constants.TFIDF_COS.VARS" class="name">var <span class="ident">VARS</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+      </div>
+      </div>
+
+  </section>
+
+    </article>
+  <div class="clear"> </div>
+  <footer id="footer">
+    <p>
+      Documentation generated by
+      <a href="https://github.com/BurntSushi/pdoc">pdoc 0.3.2</a>
+    </p>
+
+    <p>pdoc is in the public domain with the
+      <a href="http://unlicense.org">UNLICENSE</a></p>
+
+    <p>Design by <a href="http://nadh.in">Kailash Nadh</a></p>
+  </footer>
+</div>
+</body>
+</html>
