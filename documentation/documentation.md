@@ -1,7 +1,7 @@
 ---
-layout: home
+layout: page
 title: pvvcal documentation
-permalink: /pcc_val_documentation/
+permalink: /pccval_documentation/
 ---
 
 * [pcc_validation](ngoet.com/pcc_validation/pcc_validation.html)
