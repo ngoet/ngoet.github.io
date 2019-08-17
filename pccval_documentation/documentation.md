@@ -1,5 +1,4 @@
 ---
-layout: page
 title: pvvcal documentation
 permalink: /pccval_documentation/
 ---
