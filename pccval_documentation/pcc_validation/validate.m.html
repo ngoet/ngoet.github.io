@@ -1022,7 +1022,6 @@ Class of functions for unit tests</p>
 import logging
 import os
 from typing import List
-
 import pandas as pd
 
 from data_ingestion import constants as c
@@ -1060,6 +1059,16 @@ class Validate:
         tmp_folder = os.path.join(self.outfolder, 'tmp')
         if not os.path.exists(tmp_folder):
             os.makedirs(tmp_folder)
+
+        # Generate figures folder
+        fig_folder = os.path.join(tmp_folder, 'figures')
+        if not os.path.exists(fig_folder):
+            os.makedirs(fig_folder)
+
+        # Generate tables folder
+        tab_folder = os.path.join(tmp_folder, 'tables')
+        if not os.path.exists(tab_folder):
+            os.makedirs(tab_folder)
 
         # Generate separate tmp frames
         if self.gen_option == 'Y':
@@ -1265,6 +1274,16 @@ class Validate:
         if not os.path.exists(tmp_folder):
             os.makedirs(tmp_folder)
 
+        # Generate figures folder
+        fig_folder = os.path.join(tmp_folder, 'figures')
+        if not os.path.exists(fig_folder):
+            os.makedirs(fig_folder)
+
+        # Generate tables folder
+        tab_folder = os.path.join(tmp_folder, 'tables')
+        if not os.path.exists(tab_folder):
+            os.makedirs(tab_folder)
+
         # Generate separate tmp frames
         if self.gen_option == 'Y':
             self.folder_path = data_utils.gen_csv_files(os.path.join(self.file_path,
@@ -1456,6 +1475,14 @@ class Validate:
     tmp_folder = os.path.join(self.outfolder, 'tmp')
     if not os.path.exists(tmp_folder):
         os.makedirs(tmp_folder)
+    # Generate figures folder
+    fig_folder = os.path.join(tmp_folder, 'figures')
+    if not os.path.exists(fig_folder):
+        os.makedirs(fig_folder)
+    # Generate tables folder
+    tab_folder = os.path.join(tmp_folder, 'tables')
+    if not os.path.exists(tab_folder):
+        os.makedirs(tab_folder)
     # Generate separate tmp frames
     if self.gen_option == 'Y':
         self.folder_path = data_utils.gen_csv_files(os.path.join(self.file_path,

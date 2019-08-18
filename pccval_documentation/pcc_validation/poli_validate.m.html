@@ -1024,11 +1024,10 @@ import sys
 import os
 import pandas as pd
 import numpy as np
-from sklearn.feature_extraction import DictVectorizer
+
 from ml_models.train_mods import TrainMods
 from data_ingestion import data_utils
 from pcc_validation import validation_utils
-from sklearn.externals import joblib
 from data_ingestion import constants as c
 from reporting import reporting_utils
 from reporting.reporting_utils import Reporting
@@ -1042,7 +1041,7 @@ class POLIValidate:
     """
     POLI Validate
 
-    Class that contains unit tests for the POLI df
+    Class that contains unit tests for the Politician Level Data Frame (POLI).
     """
     def __init__(self, data_path: str, reporting_instance: Reporting):
         self.reporting_instance = reporting_instance
@@ -1058,7 +1057,7 @@ class POLIValidate:
         self.features = np.vectorize(self.train_mods_instance.featurize_name)
         self.vectorizer = DictVectorizer()
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1172,7 +1171,7 @@ class POLIValidate:
         reporting_item.error_dict.update({self.validate_gender_labels.__name__: len(mismatched_df.index) + len(missing_df.index)})
         reporting_item.n_errors += (len(mismatched_df.index) + len(missing_df.index))
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1224,7 +1223,7 @@ class POLIValidate:
       
   
     <div class="desc"><p>POLI Validate</p>
-<p>Class that contains unit tests for the POLI df</p></div>
+<p>Class that contains unit tests for the Politician Level Data Frame (POLI).</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.poli_validate.POLIValidate', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.poli_validate.POLIValidate" class="source">
@@ -1232,7 +1231,7 @@ class POLIValidate:
     """
     POLI Validate
 
-    Class that contains unit tests for the POLI df
+    Class that contains unit tests for the Politician Level Data Frame (POLI).
     """
     def __init__(self, data_path: str, reporting_instance: Reporting):
         self.reporting_instance = reporting_instance
@@ -1248,7 +1247,7 @@ class POLIValidate:
         self.features = np.vectorize(self.train_mods_instance.featurize_name)
         self.vectorizer = DictVectorizer()
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1362,7 +1361,7 @@ class POLIValidate:
         reporting_item.error_dict.update({self.validate_gender_labels.__name__: len(mismatched_df.index) + len(missing_df.index)})
         reporting_item.n_errors += (len(mismatched_df.index) + len(missing_df.index))
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1464,7 +1463,7 @@ therefore warrants an extra check.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.poli_validate.POLIValidate.anomaly_detection', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.poli_validate.POLIValidate.anomaly_detection" class="source">
-    <pre><code>def anomaly_detection(self, reporting_item):
+    <pre><code>def anomaly_detection(self, reporting_item: ReportingItem):
     """
     Tests for anomalies using the TFIDF-COS method specified variables.
     The TFIDF-COS method takes the average cosine distance
@@ -1587,7 +1586,7 @@ therefore warrants an extra check.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.poli_validate.POLIValidate.validate_primary_keys', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.poli_validate.POLIValidate.validate_primary_keys" class="source">
-    <pre><code>def validate_primary_keys(self, reporting_item):
+    <pre><code>def validate_primary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether the primary ids are unique, i.e. non-repeating.
     """

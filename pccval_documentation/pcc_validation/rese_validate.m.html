@@ -1030,6 +1030,7 @@ from data_ingestion import constants as c
 from pcc_validation import validation_utils
 from reporting import reporting_utils
 from reporting.reporting_utils import Reporting
+from reporting.reporting_utils import ReportingItem
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
@@ -1069,7 +1070,7 @@ class RESEValidate:
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1081,7 +1082,7 @@ class RESEValidate:
                                             reporting_item=reporting_item
                                             )
 
-    def validate_secondary_keys(self, reporting_item):
+    def validate_secondary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether all secondary keys used in the df are present in other
         dfs.
@@ -1128,7 +1129,7 @@ class RESEValidate:
             reporting_item=reporting_item
         )
 
-    def validate_date_formats(self, reporting_item):
+    def validate_date_formats(self, reporting_item: ReportingItem):
         """
         Tests whether the date variables included in the tmp frame follow
         the specified format (%d%b%Y).
@@ -1143,7 +1144,7 @@ class RESEValidate:
             reporting_item=reporting_item
         )
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1230,7 +1231,7 @@ class RESEValidate:
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1242,7 +1243,7 @@ class RESEValidate:
                                             reporting_item=reporting_item
                                             )
 
-    def validate_secondary_keys(self, reporting_item):
+    def validate_secondary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether all secondary keys used in the df are present in other
         dfs.
@@ -1289,7 +1290,7 @@ class RESEValidate:
             reporting_item=reporting_item
         )
 
-    def validate_date_formats(self, reporting_item):
+    def validate_date_formats(self, reporting_item: ReportingItem):
         """
         Tests whether the date variables included in the tmp frame follow
         the specified format (%d%b%Y).
@@ -1304,7 +1305,7 @@ class RESEValidate:
             reporting_item=reporting_item
         )
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1413,7 +1414,7 @@ therefore warrants an extra check.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.rese_validate.RESEValidate.anomaly_detection', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.rese_validate.RESEValidate.anomaly_detection" class="source">
-    <pre><code>def anomaly_detection(self, reporting_item):
+    <pre><code>def anomaly_detection(self, reporting_item: ReportingItem):
     """
     Tests for anomalies using the TFIDF-COS method specified variables.
     The TFIDF-COS method takes the average cosine distance
@@ -1468,7 +1469,7 @@ the specified format (%d%b%Y).</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.rese_validate.RESEValidate.validate_date_formats', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.rese_validate.RESEValidate.validate_date_formats" class="source">
-    <pre><code>def validate_date_formats(self, reporting_item):
+    <pre><code>def validate_date_formats(self, reporting_item: ReportingItem):
     """
     Tests whether the date variables included in the tmp frame follow
     the specified format (%d%b%Y).
@@ -1501,7 +1502,7 @@ the specified format (%d%b%Y).</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.rese_validate.RESEValidate.validate_primary_keys', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.rese_validate.RESEValidate.validate_primary_keys" class="source">
-    <pre><code>def validate_primary_keys(self, reporting_item):
+    <pre><code>def validate_primary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether the primary ids are unique, i.e. non-repeating.
     """
@@ -1532,7 +1533,7 @@ dfs.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.rese_validate.RESEValidate.validate_secondary_keys', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.rese_validate.RESEValidate.validate_secondary_keys" class="source">
-    <pre><code>def validate_secondary_keys(self, reporting_item):
+    <pre><code>def validate_secondary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether all secondary keys used in the df are present in other
     dfs.

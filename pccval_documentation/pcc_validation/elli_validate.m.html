@@ -1021,18 +1021,18 @@ Class of functions to validate the ELLI df.</p>
     :copyright: © 2019 Niels Goet @ PCC Project
 """
 import os
-
 import pandas as pd
 import sys
+import logging
 
 from data_ingestion import constants as c
 from pcc_validation import validation_utils
 from reporting import reporting_utils
 from reporting.reporting_utils import Reporting
+from reporting.reporting_utils import ReportingItem
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
-import logging
 
 logging.basicConfig(filename='app.log', filemode='w',
                     format='%(name)s - %(levelname)s - %(message)s')
@@ -1042,7 +1042,7 @@ class ELLIValidate:
     """
     ELLI Validate
 
-    Class that contains unit tests for the Electoral District Data Frame (ELLI).
+    Class that contains unit tests for the Electoral List Data Frame (ELLI).
     """
 
     def __init__(self, data_path: str, reporting_instance: Reporting):
@@ -1069,7 +1069,7 @@ class ELLIValidate:
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1081,7 +1081,7 @@ class ELLIValidate:
                                             reporting_item=reporting_item
                                             )
 
-    def validate_secondary_keys(self, reporting_item):
+    def validate_secondary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether all secondary keys used in the df are present in other
         dfs.
@@ -1128,7 +1128,7 @@ class ELLIValidate:
             reporting_item=reporting_item
         )
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1183,7 +1183,7 @@ class ELLIValidate:
       
   
     <div class="desc"><p>ELLI Validate</p>
-<p>Class that contains unit tests for the Electoral District Data Frame (ELLI).</p></div>
+<p>Class that contains unit tests for the Electoral List Data Frame (ELLI).</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.elli_validate.ELLIValidate', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.elli_validate.ELLIValidate" class="source">
@@ -1191,7 +1191,7 @@ class ELLIValidate:
     """
     ELLI Validate
 
-    Class that contains unit tests for the Electoral District Data Frame (ELLI).
+    Class that contains unit tests for the Electoral List Data Frame (ELLI).
     """
 
     def __init__(self, data_path: str, reporting_instance: Reporting):
@@ -1218,7 +1218,7 @@ class ELLIValidate:
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1230,7 +1230,7 @@ class ELLIValidate:
                                             reporting_item=reporting_item
                                             )
 
-    def validate_secondary_keys(self, reporting_item):
+    def validate_secondary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether all secondary keys used in the df are present in other
         dfs.
@@ -1277,7 +1277,7 @@ class ELLIValidate:
             reporting_item=reporting_item
         )
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1387,7 +1387,7 @@ therefore warrants an extra check.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.elli_validate.ELLIValidate.anomaly_detection', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.elli_validate.ELLIValidate.anomaly_detection" class="source">
-    <pre><code>def anomaly_detection(self, reporting_item):
+    <pre><code>def anomaly_detection(self, reporting_item: ReportingItem):
     """
     Tests for anomalies using the TFIDF-COS method specified variables.
     The TFIDF-COS method takes the average cosine distance
@@ -1442,7 +1442,7 @@ therefore warrants an extra check.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.elli_validate.ELLIValidate.validate_primary_keys', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.elli_validate.ELLIValidate.validate_primary_keys" class="source">
-    <pre><code>def validate_primary_keys(self, reporting_item):
+    <pre><code>def validate_primary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether the primary ids are unique, i.e. non-repeating.
     """
@@ -1473,7 +1473,7 @@ dfs.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.elli_validate.ELLIValidate.validate_secondary_keys', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.elli_validate.ELLIValidate.validate_secondary_keys" class="source">
-    <pre><code>def validate_secondary_keys(self, reporting_item):
+    <pre><code>def validate_secondary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether all secondary keys used in the df are present in other
     dfs.

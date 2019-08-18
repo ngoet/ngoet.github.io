@@ -1022,19 +1022,23 @@ Class of functions to test the PARL df.</p>
 
     :copyright: © 2019 Niels Goet @ PCC Project
 """
-import datetime
-import sys
 import os
 import pandas as pd
+import sys
+import logging
 
-from data_ingestion import data_utils
 from data_ingestion import constants as c
 from pcc_validation import validation_utils
 from reporting import reporting_utils
-from reporting.reporting_utils import Reporting, ReportingItem
+from reporting.reporting_utils import Reporting
+from reporting.reporting_utils import ReportingItem
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
+
+logging.basicConfig(filename='app.log', filemode='w',
+                    format='%(name)s - %(levelname)s - %(message)s')
+
 
 class PARLValidate:
     """
@@ -1123,7 +1127,7 @@ class PARLValidate:
         reporting_item.error_dict.update({self.test_leg_period_ids.__name__: n_problems})
         reporting_item.n_errors += n_problems
 
-    def test_start_end_date(self, reporting_item):
+    def test_start_end_date(self, reporting_item: ReportingItem):
         """
         Check start and end date
 
@@ -1169,7 +1173,7 @@ class PARLValidate:
         reporting_item.error_dict.update({self.test_start_end_date.__name__: len(problem_cases.index)})
         reporting_item.n_errors += len(problem_cases.index)
 
-    def test_date_and_leg_ids(self, reporting_item):
+    def test_date_and_leg_ids(self, reporting_item: ReportingItem):
         """
         Checks whether the dates and legislative period identifiers correspond,
         i.e. if leg_period at t-1 vs t, then the leg_period_start at t-1 should
@@ -1263,7 +1267,7 @@ class PARLValidate:
         reporting_item.error_dict.update({self.test_date_and_leg_ids.__name__: len(incorrect_dates_df.index)})
         reporting_item.n_errors += len(incorrect_dates_df.index)
 
-    def validate_date_formats(self, reporting_item):
+    def validate_date_formats(self, reporting_item: ReportingItem):
         """
         Tests whether the date variables included in the tmp frame follow
         the specified format (%d%b%Y).
@@ -1383,7 +1387,7 @@ class PARLValidate:
         reporting_item.error_dict.update({self.test_leg_period_ids.__name__: n_problems})
         reporting_item.n_errors += n_problems
 
-    def test_start_end_date(self, reporting_item):
+    def test_start_end_date(self, reporting_item: ReportingItem):
         """
         Check start and end date
 
@@ -1429,7 +1433,7 @@ class PARLValidate:
         reporting_item.error_dict.update({self.test_start_end_date.__name__: len(problem_cases.index)})
         reporting_item.n_errors += len(problem_cases.index)
 
-    def test_date_and_leg_ids(self, reporting_item):
+    def test_date_and_leg_ids(self, reporting_item: ReportingItem):
         """
         Checks whether the dates and legislative period identifiers correspond,
         i.e. if leg_period at t-1 vs t, then the leg_period_start at t-1 should
@@ -1523,7 +1527,7 @@ class PARLValidate:
         reporting_item.error_dict.update({self.test_date_and_leg_ids.__name__: len(incorrect_dates_df.index)})
         reporting_item.n_errors += len(incorrect_dates_df.index)
 
-    def validate_date_formats(self, reporting_item):
+    def validate_date_formats(self, reporting_item: ReportingItem):
         """
         Tests whether the date variables included in the tmp frame follow
         the specified format (%d%b%Y).
@@ -1598,7 +1602,7 @@ also be smaller. Applies to both leg_period_start and leg_period_end.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.parl_validate.PARLValidate.test_date_and_leg_ids', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.parl_validate.PARLValidate.test_date_and_leg_ids" class="source">
-    <pre><code>def test_date_and_leg_ids(self, reporting_item):
+    <pre><code>def test_date_and_leg_ids(self, reporting_item: ReportingItem):
     """
     Checks whether the dates and legislative period identifiers correspond,
     i.e. if leg_period at t-1 vs t, then the leg_period_start at t-1 should
@@ -1766,7 +1770,7 @@ end date of the legislative period.</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.parl_validate.PARLValidate.test_start_end_date', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.parl_validate.PARLValidate.test_start_end_date" class="source">
-    <pre><code>def test_start_end_date(self, reporting_item):
+    <pre><code>def test_start_end_date(self, reporting_item: ReportingItem):
     """
     Check start and end date
     Checks if the start date of the legislative period lies before the
@@ -1822,7 +1826,7 @@ the specified format (%d%b%Y).</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.parl_validate.PARLValidate.validate_date_formats', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.parl_validate.PARLValidate.validate_date_formats" class="source">
-    <pre><code>def validate_date_formats(self, reporting_item):
+    <pre><code>def validate_date_formats(self, reporting_item: ReportingItem):
     """
     Tests whether the date variables included in the tmp frame follow
     the specified format (%d%b%Y).
