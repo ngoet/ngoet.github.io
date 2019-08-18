@@ -1024,6 +1024,10 @@ import sys
 import os
 import pandas as pd
 import numpy as np
+import logging
+
+from sklearn.externals import joblib
+from sklearn.feature_extraction import DictVectorizer
 
 from ml_models.train_mods import TrainMods
 from data_ingestion import data_utils
@@ -1031,10 +1035,13 @@ from pcc_validation import validation_utils
 from data_ingestion import constants as c
 from reporting import reporting_utils
 from reporting.reporting_utils import Reporting
-
+from reporting.reporting_utils import ReportingItem
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
+
+logging.basicConfig(filename='app.log', filemode='w',
+                    format='%(name)s - %(levelname)s - %(message)s')
 
 
 class POLIValidate:
@@ -1050,6 +1057,7 @@ class POLIValidate:
         self.test_file = pd.read_csv(os.path.join(self.data_path,
                                                   self.validation_level +
                                                   '.csv'), header=0)
+        self.primary_key = list(self.test_file.columns)[1]
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
@@ -1240,6 +1248,7 @@ class POLIValidate:
         self.test_file = pd.read_csv(os.path.join(self.data_path,
                                                   self.validation_level +
                                                   '.csv'), header=0)
+        self.primary_key = list(self.test_file.columns)[1]
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
@@ -1430,6 +1439,7 @@ class POLIValidate:
     self.test_file = pd.read_csv(os.path.join(self.data_path,
                                               self.validation_level +
                                               '.csv'), header=0)
+    self.primary_key = list(self.test_file.columns)[1]
     print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
     self.train_mods_instance = TrainMods()
     self.features = np.vectorize(self.train_mods_instance.featurize_name)
@@ -1616,6 +1626,16 @@ therefore warrants an extra check.</p></div>
             </div>
             <div class="item">
             <p id="pcc_validation.poli_validate.POLIValidate.features" class="name">var <span class="ident">features</span></p>
+            
+
+            
+  
+  <div class="source_cont">
+</div>
+
+            </div>
+            <div class="item">
+            <p id="pcc_validation.poli_validate.POLIValidate.primary_key" class="name">var <span class="ident">primary_key</span></p>
             
 
             
