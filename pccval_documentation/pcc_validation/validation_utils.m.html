@@ -1027,6 +1027,7 @@ from typing import List
 
 import pandas as pd
 import pyprind
+import numpy as np
 
 from data_ingestion import constants as c
 from ml_models import anomaly_detector
@@ -1132,21 +1133,22 @@ def check_dates(df: pd.DataFrame,
     faulty_dates = []
     primary_ids = []
     for col in date_columns:
-        for date, primary_id in zip(df[col].values,
-                                    df[primary_id_col].values):
+        df_tmp = df[[col, primary_id_col]].dropna()
+        for date, primary_id in zip(df_tmp[col].values,
+                                    df_tmp[primary_id_col].values):
+
+            date_temp = str(date).split('[[')
+            dt = date_temp[0]
+
             try:
-                date_temp = date.split('[[')
-                if len(date_temp) == 1:
-                    datetime.datetime.strptime(date_temp[0], '%d%b%Y')
-                elif len(date_temp) == 2:
-                    if date_temp[1] == 'rcen]]':
-                        datetime.datetime.strptime(date_temp[0], '%d%b%Y')
-                    else:
-                        faulty_dates.append({primary_id: date})
+                datetime.datetime.strptime(dt, '%d%b%Y')
             except:
-                faulty_dates.append(date)
-                primary_ids.append(primary_id)
-                pass
+                try:
+                    datetime.datetime.strptime(dt, '%Y')
+                except:
+                    faulty_dates.append(date)
+                    primary_ids.append(primary_id)
+                    pass
 
     reporting_item.entry_md_text += reporting_instance.add_header(level=3,
                                                                   header_text=(
@@ -1738,21 +1740,22 @@ be included in the .md report</p></div>
     faulty_dates = []
     primary_ids = []
     for col in date_columns:
-        for date, primary_id in zip(df[col].values,
-                                    df[primary_id_col].values):
+        df_tmp = df[[col, primary_id_col]].dropna()
+        for date, primary_id in zip(df_tmp[col].values,
+                                    df_tmp[primary_id_col].values):
+
+            date_temp = str(date).split('[[')
+            dt = date_temp[0]
+
             try:
-                date_temp = date.split('[[')
-                if len(date_temp) == 1:
-                    datetime.datetime.strptime(date_temp[0], '%d%b%Y')
-                elif len(date_temp) == 2:
-                    if date_temp[1] == 'rcen]]':
-                        datetime.datetime.strptime(date_temp[0], '%d%b%Y')
-                    else:
-                        faulty_dates.append({primary_id: date})
+                datetime.datetime.strptime(dt, '%d%b%Y')
             except:
-                faulty_dates.append(date)
-                primary_ids.append(primary_id)
-                pass
+                try:
+                    datetime.datetime.strptime(dt, '%Y')
+                except:
+                    faulty_dates.append(date)
+                    primary_ids.append(primary_id)
+                    pass
 
     reporting_item.entry_md_text += reporting_instance.add_header(level=3,
                                                                   header_text=(

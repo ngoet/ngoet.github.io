@@ -986,7 +986,6 @@ table {
     <li class="mono"><a href="#pcc_validation.part_validate.PARTValidate.anomaly_detection">anomaly_detection</a></li>
     <li class="mono"><a href="#pcc_validation.part_validate.PARTValidate.validate_date_formats">validate_date_formats</a></li>
     <li class="mono"><a href="#pcc_validation.part_validate.PARTValidate.validate_primary_keys">validate_primary_keys</a></li>
-    <li class="mono"><a href="#pcc_validation.part_validate.PARTValidate.validate_secondary_keys">validate_secondary_keys</a></li>
   </ul>
 
         </li>
@@ -1077,39 +1076,6 @@ class PARTValidate:
                                                     self.validate_primary_keys.__doc__))),
                                             reporting_item=reporting_item
                                             )
-
-    def validate_secondary_keys(self, reporting_item: ReportingItem):
-        """
-        Tests whether all secondary keys used in the df are present in other
-        dfs.
-        """
-        # Test whether PERS_ID is present
-        validation_utils.check_secondary_ids(
-            main_df=self.test_file,
-            secondary_df=self.poli_df,
-            primary_key_col=self.primary_key,
-            secondary_key_col=c.POLI.PERS_ID,
-            main_df_name=self.validation_level,
-            secondary_df_name=c.DFN.POLI,
-            reporting_instance=self.reporting_instance,
-            extra_text=(reporting_utils.italicize(
-                str(self.validate_secondary_keys.__doc__))),
-            reporting_item=reporting_item
-        )
-
-        # Test whether PARLIAMENT_ID is present
-        validation_utils.check_secondary_ids(
-            main_df=self.test_file,
-            secondary_df=self.parl_df,
-            primary_key_col=self.primary_key,
-            secondary_key_col=c.PARL.PARLIAMENT_ID,
-            main_df_name=self.validation_level,
-            secondary_df_name=c.DFN.PARL,
-            reporting_instance=self.reporting_instance,
-            extra_text=(reporting_utils.italicize(
-                str(self.validate_secondary_keys.__doc__))),
-            reporting_item=reporting_item
-        )
 
     def validate_date_formats(self, reporting_item: ReportingItem):
         """
@@ -1220,39 +1186,6 @@ class PARTValidate:
                                                     self.validate_primary_keys.__doc__))),
                                             reporting_item=reporting_item
                                             )
-
-    def validate_secondary_keys(self, reporting_item: ReportingItem):
-        """
-        Tests whether all secondary keys used in the df are present in other
-        dfs.
-        """
-        # Test whether PERS_ID is present
-        validation_utils.check_secondary_ids(
-            main_df=self.test_file,
-            secondary_df=self.poli_df,
-            primary_key_col=self.primary_key,
-            secondary_key_col=c.POLI.PERS_ID,
-            main_df_name=self.validation_level,
-            secondary_df_name=c.DFN.POLI,
-            reporting_instance=self.reporting_instance,
-            extra_text=(reporting_utils.italicize(
-                str(self.validate_secondary_keys.__doc__))),
-            reporting_item=reporting_item
-        )
-
-        # Test whether PARLIAMENT_ID is present
-        validation_utils.check_secondary_ids(
-            main_df=self.test_file,
-            secondary_df=self.parl_df,
-            primary_key_col=self.primary_key,
-            secondary_key_col=c.PARL.PARLIAMENT_ID,
-            main_df_name=self.validation_level,
-            secondary_df_name=c.DFN.PARL,
-            reporting_instance=self.reporting_instance,
-            extra_text=(reporting_utils.italicize(
-                str(self.validate_secondary_keys.__doc__))),
-            reporting_item=reporting_item
-        )
 
     def validate_date_formats(self, reporting_item: ReportingItem):
         """
@@ -1474,57 +1407,6 @@ the specified format (%d%b%Y).</p></div>
                                                 self.validate_primary_keys.__doc__))),
                                         reporting_item=reporting_item
                                         )
-</code></pre>
-  </div>
-</div>
-
-  </div>
-  
-            
-  <div class="item">
-    <div class="name def" id="pcc_validation.part_validate.PARTValidate.validate_secondary_keys">
-    <p>def <span class="ident">validate_secondary_keys</span>(</p><p>self, reporting_item)</p>
-    </div>
-    
-
-    
-  
-    <div class="desc"><p>Tests whether all secondary keys used in the df are present in other
-dfs.</p></div>
-  <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.part_validate.PARTValidate.validate_secondary_keys', this);">Show source &equiv;</a></p>
-  <div id="source-pcc_validation.part_validate.PARTValidate.validate_secondary_keys" class="source">
-    <pre><code>def validate_secondary_keys(self, reporting_item: ReportingItem):
-    """
-    Tests whether all secondary keys used in the df are present in other
-    dfs.
-    """
-    # Test whether PERS_ID is present
-    validation_utils.check_secondary_ids(
-        main_df=self.test_file,
-        secondary_df=self.poli_df,
-        primary_key_col=self.primary_key,
-        secondary_key_col=c.POLI.PERS_ID,
-        main_df_name=self.validation_level,
-        secondary_df_name=c.DFN.POLI,
-        reporting_instance=self.reporting_instance,
-        extra_text=(reporting_utils.italicize(
-            str(self.validate_secondary_keys.__doc__))),
-        reporting_item=reporting_item
-    )
-    # Test whether PARLIAMENT_ID is present
-    validation_utils.check_secondary_ids(
-        main_df=self.test_file,
-        secondary_df=self.parl_df,
-        primary_key_col=self.primary_key,
-        secondary_key_col=c.PARL.PARLIAMENT_ID,
-        main_df_name=self.validation_level,
-        secondary_df_name=c.DFN.PARL,
-        reporting_instance=self.reporting_instance,
-        extra_text=(reporting_utils.italicize(
-            str(self.validate_secondary_keys.__doc__))),
-        reporting_item=reporting_item
-    )
 </code></pre>
   </div>
 </div>
