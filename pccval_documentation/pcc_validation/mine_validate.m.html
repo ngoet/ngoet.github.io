@@ -978,14 +978,14 @@ table {
     <li class="set"><h3><a href="#header-classes">Classes</a></h3>
       <ul>
         <li class="mono">
-        <span class="class_name"><a href="#pcc_validation.mine_validate.FACTValidate">FACTValidate</a></span>
+        <span class="class_name"><a href="#pcc_validation.mine_validate.MINEValidate">MINEValidate</a></span>
         
           
   <ul>
-    <li class="mono"><a href="#pcc_validation.mine_validate.FACTValidate.__init__">__init__</a></li>
-    <li class="mono"><a href="#pcc_validation.mine_validate.FACTValidate.anomaly_detection">anomaly_detection</a></li>
-    <li class="mono"><a href="#pcc_validation.mine_validate.FACTValidate.validate_primary_keys">validate_primary_keys</a></li>
-    <li class="mono"><a href="#pcc_validation.mine_validate.FACTValidate.validate_secondary_keys">validate_secondary_keys</a></li>
+    <li class="mono"><a href="#pcc_validation.mine_validate.MINEValidate.__init__">__init__</a></li>
+    <li class="mono"><a href="#pcc_validation.mine_validate.MINEValidate.anomaly_detection">anomaly_detection</a></li>
+    <li class="mono"><a href="#pcc_validation.mine_validate.MINEValidate.validate_primary_keys">validate_primary_keys</a></li>
+    <li class="mono"><a href="#pcc_validation.mine_validate.MINEValidate.validate_secondary_keys">validate_secondary_keys</a></li>
   </ul>
 
         </li>
@@ -1021,34 +1021,34 @@ Class of functions to test the MINE df.</p>
     :copyright: © 2019 Niels Goet @ PCC Project
 """
 import os
-
 import pandas as pd
 import sys
+import logging
 
 from data_ingestion import constants as c
 from pcc_validation import validation_utils
 from reporting import reporting_utils
 from reporting.reporting_utils import Reporting
+from reporting.reporting_utils import ReportingItem
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
-import logging
 
 logging.basicConfig(filename='app.log', filemode='w',
                     format='%(name)s - %(levelname)s - %(message)s')
 
 
-class FACTValidate:
+class MINEValidate:
     """
-    FACT Validate
+    MINE Validate
 
-    Class that contains unit tests for the Faction Data Frame (FACT).
+    Class that contains unit tests for the Minister Episode Data Frame (MINE).
     """
 
     def __init__(self, data_path: str, reporting_instance: Reporting):
         self.reporting_instance = reporting_instance
         self.data_path = data_path
-        self.validation_level = c.DFN.FACT
+        self.validation_level = c.DFN.MINE
         self.test_file = pd.read_csv(os.path.join(self.data_path,
                                                   self.validation_level +
                                                   '.csv'), header=0)
@@ -1065,7 +1065,7 @@ class FACTValidate:
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1077,7 +1077,7 @@ class FACTValidate:
                                             reporting_item=reporting_item
                                             )
 
-    def validate_secondary_keys(self, reporting_item):
+    def validate_secondary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether all secondary keys used in the df are present in other
         dfs.
@@ -1110,7 +1110,7 @@ class FACTValidate:
             reporting_item=reporting_item
         )
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1158,25 +1158,25 @@ class FACTValidate:
     <h2 class="section-title" id="header-classes">Classes</h2>
       
       <div class="item">
-      <p id="pcc_validation.mine_validate.FACTValidate" class="name">class <span class="ident">FACTValidate</span></p>
+      <p id="pcc_validation.mine_validate.MINEValidate" class="name">class <span class="ident">MINEValidate</span></p>
       
   
-    <div class="desc"><p>FACT Validate</p>
-<p>Class that contains unit tests for the Faction Data Frame (FACT).</p></div>
+    <div class="desc"><p>MINE Validate</p>
+<p>Class that contains unit tests for the Minister Episode Data Frame (MINE).</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.FACTValidate', this);">Show source &equiv;</a></p>
-  <div id="source-pcc_validation.mine_validate.FACTValidate" class="source">
-    <pre><code>class FACTValidate:
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.MINEValidate', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.mine_validate.MINEValidate" class="source">
+    <pre><code>class MINEValidate:
     """
-    FACT Validate
+    MINE Validate
 
-    Class that contains unit tests for the Faction Data Frame (FACT).
+    Class that contains unit tests for the Minister Episode Data Frame (MINE).
     """
 
     def __init__(self, data_path: str, reporting_instance: Reporting):
         self.reporting_instance = reporting_instance
         self.data_path = data_path
-        self.validation_level = c.DFN.FACT
+        self.validation_level = c.DFN.MINE
         self.test_file = pd.read_csv(os.path.join(self.data_path,
                                                   self.validation_level +
                                                   '.csv'), header=0)
@@ -1193,7 +1193,7 @@ class FACTValidate:
 
         print(c.LOGM.DF_RUN_MESSAGE.format(self.validation_level))
 
-    def validate_primary_keys(self, reporting_item):
+    def validate_primary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether the primary ids are unique, i.e. non-repeating.
         """
@@ -1205,7 +1205,7 @@ class FACTValidate:
                                             reporting_item=reporting_item
                                             )
 
-    def validate_secondary_keys(self, reporting_item):
+    def validate_secondary_keys(self, reporting_item: ReportingItem):
         """
         Tests whether all secondary keys used in the df are present in other
         dfs.
@@ -1238,7 +1238,7 @@ class FACTValidate:
             reporting_item=reporting_item
         )
 
-    def anomaly_detection(self, reporting_item):
+    def anomaly_detection(self, reporting_item: ReportingItem):
         """
         Tests for anomalies using the TFIDF-COS method specified variables.
         The TFIDF-COS method takes the average cosine distance
@@ -1283,13 +1283,13 @@ class FACTValidate:
       <div class="class">
           <h3>Ancestors (in MRO)</h3>
           <ul class="class_list">
-          <li><a href="#pcc_validation.mine_validate.FACTValidate">FACTValidate</a></li>
+          <li><a href="#pcc_validation.mine_validate.MINEValidate">MINEValidate</a></li>
           <li>builtins.object</li>
           </ul>
           <h3>Static methods</h3>
             
   <div class="item">
-    <div class="name def" id="pcc_validation.mine_validate.FACTValidate.__init__">
+    <div class="name def" id="pcc_validation.mine_validate.MINEValidate.__init__">
     <p>def <span class="ident">__init__</span>(</p><p>self, data_path, reporting_instance)</p>
     </div>
     
@@ -1298,12 +1298,12 @@ class FACTValidate:
   
     <div class="desc"><p>Initialize self.  See help(type(self)) for accurate signature.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.FACTValidate.__init__', this);">Show source &equiv;</a></p>
-  <div id="source-pcc_validation.mine_validate.FACTValidate.__init__" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.MINEValidate.__init__', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.mine_validate.MINEValidate.__init__" class="source">
     <pre><code>def __init__(self, data_path: str, reporting_instance: Reporting):
     self.reporting_instance = reporting_instance
     self.data_path = data_path
-    self.validation_level = c.DFN.FACT
+    self.validation_level = c.DFN.MINE
     self.test_file = pd.read_csv(os.path.join(self.data_path,
                                               self.validation_level +
                                               '.csv'), header=0)
@@ -1323,7 +1323,7 @@ class FACTValidate:
   
             
   <div class="item">
-    <div class="name def" id="pcc_validation.mine_validate.FACTValidate.anomaly_detection">
+    <div class="name def" id="pcc_validation.mine_validate.MINEValidate.anomaly_detection">
     <p>def <span class="ident">anomaly_detection</span>(</p><p>self, reporting_item)</p>
     </div>
     
@@ -1342,9 +1342,9 @@ non-deterministic and that an anomaly does not necessarily means
 there is an error; it simply means the value is a-typical and
 therefore warrants an extra check.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.FACTValidate.anomaly_detection', this);">Show source &equiv;</a></p>
-  <div id="source-pcc_validation.mine_validate.FACTValidate.anomaly_detection" class="source">
-    <pre><code>def anomaly_detection(self, reporting_item):
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.MINEValidate.anomaly_detection', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.mine_validate.MINEValidate.anomaly_detection" class="source">
+    <pre><code>def anomaly_detection(self, reporting_item: ReportingItem):
     """
     Tests for anomalies using the TFIDF-COS method specified variables.
     The TFIDF-COS method takes the average cosine distance
@@ -1387,7 +1387,7 @@ therefore warrants an extra check.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="pcc_validation.mine_validate.FACTValidate.validate_primary_keys">
+    <div class="name def" id="pcc_validation.mine_validate.MINEValidate.validate_primary_keys">
     <p>def <span class="ident">validate_primary_keys</span>(</p><p>self, reporting_item)</p>
     </div>
     
@@ -1396,9 +1396,9 @@ therefore warrants an extra check.</p></div>
   
     <div class="desc"><p>Tests whether the primary ids are unique, i.e. non-repeating.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.FACTValidate.validate_primary_keys', this);">Show source &equiv;</a></p>
-  <div id="source-pcc_validation.mine_validate.FACTValidate.validate_primary_keys" class="source">
-    <pre><code>def validate_primary_keys(self, reporting_item):
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.MINEValidate.validate_primary_keys', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.mine_validate.MINEValidate.validate_primary_keys" class="source">
+    <pre><code>def validate_primary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether the primary ids are unique, i.e. non-repeating.
     """
@@ -1417,7 +1417,7 @@ therefore warrants an extra check.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="pcc_validation.mine_validate.FACTValidate.validate_secondary_keys">
+    <div class="name def" id="pcc_validation.mine_validate.MINEValidate.validate_secondary_keys">
     <p>def <span class="ident">validate_secondary_keys</span>(</p><p>self, reporting_item)</p>
     </div>
     
@@ -1427,9 +1427,9 @@ therefore warrants an extra check.</p></div>
     <div class="desc"><p>Tests whether all secondary keys used in the df are present in other
 dfs.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.FACTValidate.validate_secondary_keys', this);">Show source &equiv;</a></p>
-  <div id="source-pcc_validation.mine_validate.FACTValidate.validate_secondary_keys" class="source">
-    <pre><code>def validate_secondary_keys(self, reporting_item):
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.mine_validate.MINEValidate.validate_secondary_keys', this);">Show source &equiv;</a></p>
+  <div id="source-pcc_validation.mine_validate.MINEValidate.validate_secondary_keys" class="source">
+    <pre><code>def validate_secondary_keys(self, reporting_item: ReportingItem):
     """
     Tests whether all secondary keys used in the df are present in other
     dfs.
@@ -1468,7 +1468,7 @@ dfs.</p></div>
   
           <h3>Instance variables</h3>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.data_path" class="name">var <span class="ident">data_path</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.data_path" class="name">var <span class="ident">data_path</span></p>
             
 
             
@@ -1478,7 +1478,7 @@ dfs.</p></div>
 
             </div>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.parl_df" class="name">var <span class="ident">parl_df</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.parl_df" class="name">var <span class="ident">parl_df</span></p>
             
 
             
@@ -1488,7 +1488,7 @@ dfs.</p></div>
 
             </div>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.poli_df" class="name">var <span class="ident">poli_df</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.poli_df" class="name">var <span class="ident">poli_df</span></p>
             
 
             
@@ -1498,7 +1498,7 @@ dfs.</p></div>
 
             </div>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.primary_key" class="name">var <span class="ident">primary_key</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.primary_key" class="name">var <span class="ident">primary_key</span></p>
             
 
             
@@ -1508,7 +1508,7 @@ dfs.</p></div>
 
             </div>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.reporting_instance" class="name">var <span class="ident">reporting_instance</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.reporting_instance" class="name">var <span class="ident">reporting_instance</span></p>
             
 
             
@@ -1518,7 +1518,7 @@ dfs.</p></div>
 
             </div>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.test_file" class="name">var <span class="ident">test_file</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.test_file" class="name">var <span class="ident">test_file</span></p>
             
 
             
@@ -1528,7 +1528,7 @@ dfs.</p></div>
 
             </div>
             <div class="item">
-            <p id="pcc_validation.mine_validate.FACTValidate.validation_level" class="name">var <span class="ident">validation_level</span></p>
+            <p id="pcc_validation.mine_validate.MINEValidate.validation_level" class="name">var <span class="ident">validation_level</span></p>
             
 
             

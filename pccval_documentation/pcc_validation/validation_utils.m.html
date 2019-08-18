@@ -1022,18 +1022,16 @@ Class of functions for unit tests</p>
 import collections
 import datetime
 import os
+import sys
 from typing import List
 
 import pandas as pd
-import sys
+import pyprind
 
 from data_ingestion import constants as c
+from ml_models import anomaly_detector
 from reporting import visualization_utils
 from reporting.reporting_utils import Reporting, ReportingItem
-from ml_models import anomaly_detector
-import pyprind
-import progressbar as pb
-import numpy as np
 
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/./')
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + '/../')
@@ -1175,7 +1173,8 @@ def check_secondary_ids(main_df: pd.DataFrame, secondary_df: pd.DataFrame,
                         main_df_name: str, secondary_df_name: str,
                         reporting_instance: Reporting,
                         reporting_item: ReportingItem,
-                        extra_text: str = None):
+                        extra_text: str = None,
+                        primary_df_name: str = ''):
     """
     Checks whether the secondary ids used in the df are present as primary
     ids for the primary df associated with these ids.
@@ -1196,12 +1195,14 @@ def check_secondary_ids(main_df: pd.DataFrame, secondary_df: pd.DataFrame,
     test results are stored for the class
     :param str extra_text: An additional (optional) explanatory message to
     be included in the .md report
+    param secondary_df_name: The name of the primary data frame (e.g.
+    ELEN, MEME)
     """
     secondary_keys_from_secondary_df = [i for sublist in secondary_df[secondary_key_col].str.split(';', expand=False).values for i in sublist]
 
     # Apply mapping (in some cases, key names change, e.g. party_id vs party_ids)
-    if secondary_df_name in c.KEY_MAPPINGS.PRIMARY_KEYS.keys():
-        mapping = c.KEY_MAPPINGS.PRIMARY_KEYS[secondary_key_col]
+    if primary_df_name in list(c.KEY_MAPPINGS.PRIMARY_KEYS.keys()):
+        mapping = c.KEY_MAPPINGS.PRIMARY_KEYS[primary_df_name]
         if secondary_key_col in mapping.keys():
             secondary_key_col = mapping[secondary_key_col]
 
@@ -1348,7 +1349,7 @@ def membership_length(df: pd.DataFrame,
     suspicious_entries_df = pd.concat(suspicious_entries)
 
     # Escape character for vertical bar to ensure
-    suspicious_entries_df.loc[:,primary_id] = replace_vertical_bar(suspicious_entries_df, primary_id)
+    suspicious_entries_df.loc[:, primary_id] = replace_vertical_bar(suspicious_entries_df, primary_id)
 
     # Add explanatory text
     reporting_item.entry_md_text += (
@@ -1412,7 +1413,7 @@ def validate_parl_membership(data_path: str,
                           usecols=[
                                     c.PARL.PARLIAMENT_ID,
                                     c.PARL.LEG_PERIOD_START,
-                                    c.PARL.LEG_PERIOD_START
+                                    c.PARL.LEG_PERIOD_END
                                 ]
                           )
 
@@ -1437,7 +1438,7 @@ def validate_parl_membership(data_path: str,
     membership_data = {}
     for df in dfs:
         start_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].min(), '%d%b%Y')
-        end_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].max(), '%d%b%Y')
+        end_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_END].max(), '%d%b%Y')
 
         delta = end_date - start_date
 
@@ -1457,6 +1458,8 @@ def validate_parl_membership(data_path: str,
         for date_idx in range(len(date_stamps)):
 
             date = date_stamps[date_idx]
+
+            # The data needs to come on or after the start date and before the end date
             mask = (date >= df[c.MEME.MEMEP_STARTDATE]) & (date <= df[c.MEME.MEMEP_ENDDATE])
             n = len(df.loc[mask].index)
             dates.append(date)
@@ -1466,16 +1469,16 @@ def validate_parl_membership(data_path: str,
         membership_data[parl] = [{'dates': dates}, {'n_members': n_members}]
 
     for key, dat in membership_data.items():
-        visualization_utils.gen_line_graph(
+        fig_path = visualization_utils.gen_line_graph(
                                             path=data_path,
                                             fig_name='membership_{}'.format(key),
                                             y_vals=dat[1]['n_members'],
                                             x_vals=dat[0]['dates'],
                                             y_lab='Membership',
                                             x_lab='Date',
-                                            plt_title='Historical membership {}'.format(key),
-                                            reporting_item=reporting_item
+                                            plt_title='Historical membership {}'.format(key)
                                            )
+        reporting_item.entry_md_text += '\n![]({})\n'.format(fig_path)
 
 
 def tfidf_cos(df: pd.DataFrame, var_names: List[str],
@@ -1851,7 +1854,7 @@ be included in the .md report</p></div>
       
   <div class="item">
     <div class="name def" id="pcc_validation.validation_utils.check_secondary_ids">
-    <p>def <span class="ident">check_secondary_ids</span>(</p><p>main_df, secondary_df, secondary_key_col, primary_key_col, main_df_name, secondary_df_name, reporting_instance, reporting_item, extra_text=None)</p>
+    <p>def <span class="ident">check_secondary_ids</span>(</p><p>main_df, secondary_df, secondary_key_col, primary_key_col, main_df_name, secondary_df_name, reporting_instance, reporting_item, extra_text=None, primary_df_name=&#39;&#39;)</p>
     </div>
     
 
@@ -1874,7 +1877,9 @@ with the validation class
 :param ReportingItem reporting_item: The object in which all validation
 test results are stored for the class
 :param str extra_text: An additional (optional) explanatory message to
-be included in the .md report</p></div>
+be included in the .md report
+param secondary_df_name: The name of the primary data frame (e.g.
+ELEN, MEME)</p></div>
   <div class="source_cont">
   <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-pcc_validation.validation_utils.check_secondary_ids', this);">Show source &equiv;</a></p>
   <div id="source-pcc_validation.validation_utils.check_secondary_ids" class="source">
@@ -1883,7 +1888,8 @@ be included in the .md report</p></div>
                         main_df_name: str, secondary_df_name: str,
                         reporting_instance: Reporting,
                         reporting_item: ReportingItem,
-                        extra_text: str = None):
+                        extra_text: str = None,
+                        primary_df_name: str = ''):
     """
     Checks whether the secondary ids used in the df are present as primary
     ids for the primary df associated with these ids.
@@ -1904,12 +1910,14 @@ be included in the .md report</p></div>
     test results are stored for the class
     :param str extra_text: An additional (optional) explanatory message to
     be included in the .md report
+    param secondary_df_name: The name of the primary data frame (e.g.
+    ELEN, MEME)
     """
     secondary_keys_from_secondary_df = [i for sublist in secondary_df[secondary_key_col].str.split(';', expand=False).values for i in sublist]
 
     # Apply mapping (in some cases, key names change, e.g. party_id vs party_ids)
-    if secondary_df_name in c.KEY_MAPPINGS.PRIMARY_KEYS.keys():
-        mapping = c.KEY_MAPPINGS.PRIMARY_KEYS[secondary_key_col]
+    if primary_df_name in list(c.KEY_MAPPINGS.PRIMARY_KEYS.keys()):
+        mapping = c.KEY_MAPPINGS.PRIMARY_KEYS[primary_df_name]
         if secondary_key_col in mapping.keys():
             secondary_key_col = mapping[secondary_key_col]
 
@@ -2100,7 +2108,7 @@ conjunction with outlier_threshold</p></div>
     suspicious_entries_df = pd.concat(suspicious_entries)
 
     # Escape character for vertical bar to ensure
-    suspicious_entries_df.loc[:,primary_id] = replace_vertical_bar(suspicious_entries_df, primary_id)
+    suspicious_entries_df.loc[:, primary_id] = replace_vertical_bar(suspicious_entries_df, primary_id)
 
     # Add explanatory text
     reporting_item.entry_md_text += (
@@ -2353,7 +2361,7 @@ test results are stored for the class</p></div>
                           usecols=[
                                     c.PARL.PARLIAMENT_ID,
                                     c.PARL.LEG_PERIOD_START,
-                                    c.PARL.LEG_PERIOD_START
+                                    c.PARL.LEG_PERIOD_END
                                 ]
                           )
 
@@ -2378,7 +2386,7 @@ test results are stored for the class</p></div>
     membership_data = {}
     for df in dfs:
         start_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].min(), '%d%b%Y')
-        end_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_START].max(), '%d%b%Y')
+        end_date = datetime.datetime.strptime(df[c.PARL.LEG_PERIOD_END].max(), '%d%b%Y')
 
         delta = end_date - start_date
 
@@ -2398,6 +2406,8 @@ test results are stored for the class</p></div>
         for date_idx in range(len(date_stamps)):
 
             date = date_stamps[date_idx]
+
+            # The data needs to come on or after the start date and before the end date
             mask = (date >= df[c.MEME.MEMEP_STARTDATE]) & (date <= df[c.MEME.MEMEP_ENDDATE])
             n = len(df.loc[mask].index)
             dates.append(date)
@@ -2407,16 +2417,16 @@ test results are stored for the class</p></div>
         membership_data[parl] = [{'dates': dates}, {'n_members': n_members}]
 
     for key, dat in membership_data.items():
-        visualization_utils.gen_line_graph(
+        fig_path = visualization_utils.gen_line_graph(
                                             path=data_path,
                                             fig_name='membership_{}'.format(key),
                                             y_vals=dat[1]['n_members'],
                                             x_vals=dat[0]['dates'],
                                             y_lab='Membership',
                                             x_lab='Date',
-                                            plt_title='Historical membership {}'.format(key),
-                                            reporting_item=reporting_item
+                                            plt_title='Historical membership {}'.format(key)
                                            )
+        reporting_item.entry_md_text += '\n![]({})\n'.format(fig_path)
 </code></pre>
   </div>
 </div>

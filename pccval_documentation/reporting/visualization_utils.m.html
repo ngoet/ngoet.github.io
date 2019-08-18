@@ -1010,7 +1010,12 @@ Functions for generating visualizations for the PCC validation reports</p>
 
     :copyright: © 2019 Niels Goet @ PCC Project
 """
-from matplotlib import pyplot as plt
+import matplotlib
+try:
+    matplotlib.use('Qt5Agg')
+except:
+    pass
+
 from typing import List
 import os
 import logging
@@ -1023,8 +1028,7 @@ def gen_line_graph(path: str,
                    x_vals: List[any],
                    y_lab: str,
                    x_lab: str,
-                   plt_title: str,
-                   reporting_item):
+                   plt_title: str):
                    #log: logging.log):
     """
     Generates a line graph using matplotlib, saves the plot to the /tmp
@@ -1040,23 +1044,24 @@ def gen_line_graph(path: str,
     :param ReportingItem reporting_item: The object in which all validation
     test results are stored for the class
     """
+    fig = matplotlib.matplotlib.pyplot.new()
+    # matplotlib.pyplot.plot(x_vals, y_vals, 'ro')
+    matplotlib.matplotlib.pyplot.plot(x_vals, y_vals)
+    matplotlib.matplotlib.pyplot.xlabel(x_lab)
+    matplotlib.matplotlib.pyplot.ylabel(y_lab)
+    matplotlib.matplotlib.pyplot.title(plt_title)
 
-    plt.close()
-    plt.plot(x_vals, y_vals, 'ro')
-    #plt.plot(x_vals, y_vals)
-    plt.xlabel(x_lab)
-    plt.ylabel(y_lab)
-    plt.title(plt_title)
-
-    if os.path.exists(path):
-        fig_path = os.path.join(path, fig_name)
-        plt.savefig(fig_path)
-        reporting_item.entry_md_text += '\n![]({})\n'.format(fig_path)
-        plt.close()
+    figs_path = os.path.join(path, 'figures')
+    if os.path.exists(figs_path):
+        fig_path = os.path.join(figs_path, fig_name)
+        matplotlib.matplotlib.pyplot.savefig(fig_path)
+        matplotlib.matplotlib.pyplot.close(fig)
     else:
         # log.warn('Figure could not be generated because fig_path {} '
         #             'does not exist.'.format(fig_path))
         pass
+
+    return fig_path + '.png'
 
 
 def gen_bar_chart(path: str,
@@ -1083,7 +1088,7 @@ def gen_bar_chart(path: str,
 
     if os.path.exists(path):
         fig_path = os.path.join(path, fig_name)
-        plt.savefig(fig_path)
+        matplotlib.matplotlib.pyplot.savefig(fig_path)
 
     return fig_path
     # else:
@@ -1142,7 +1147,7 @@ plotted</p></div>
 
     if os.path.exists(path):
         fig_path = os.path.join(path, fig_name)
-        plt.savefig(fig_path)
+        matplotlib.matplotlib.pyplot.savefig(fig_path)
 
     return fig_path
 </code></pre>
@@ -1154,7 +1159,7 @@ plotted</p></div>
       
   <div class="item">
     <div class="name def" id="reporting.visualization_utils.gen_line_graph">
-    <p>def <span class="ident">gen_line_graph</span>(</p><p>path, fig_name, y_vals, x_vals, y_lab, x_lab, plt_title, reporting_item)</p>
+    <p>def <span class="ident">gen_line_graph</span>(</p><p>path, fig_name, y_vals, x_vals, y_lab, x_lab, plt_title)</p>
     </div>
     
 
@@ -1180,8 +1185,7 @@ test results are stored for the class</p></div>
                    x_vals: List[any],
                    y_lab: str,
                    x_lab: str,
-                   plt_title: str,
-                   reporting_item):
+                   plt_title: str):
                    #log: logging.log):
     """
     Generates a line graph using matplotlib, saves the plot to the /tmp
@@ -1197,23 +1201,24 @@ test results are stored for the class</p></div>
     :param ReportingItem reporting_item: The object in which all validation
     test results are stored for the class
     """
+    fig = matplotlib.matplotlib.pyplot.new()
+    # matplotlib.pyplot.plot(x_vals, y_vals, 'ro')
+    matplotlib.matplotlib.pyplot.plot(x_vals, y_vals)
+    matplotlib.matplotlib.pyplot.xlabel(x_lab)
+    matplotlib.matplotlib.pyplot.ylabel(y_lab)
+    matplotlib.matplotlib.pyplot.title(plt_title)
 
-    plt.close()
-    plt.plot(x_vals, y_vals, 'ro')
-    #plt.plot(x_vals, y_vals)
-    plt.xlabel(x_lab)
-    plt.ylabel(y_lab)
-    plt.title(plt_title)
-
-    if os.path.exists(path):
-        fig_path = os.path.join(path, fig_name)
-        plt.savefig(fig_path)
-        reporting_item.entry_md_text += '\n![]({})\n'.format(fig_path)
-        plt.close()
+    figs_path = os.path.join(path, 'figures')
+    if os.path.exists(figs_path):
+        fig_path = os.path.join(figs_path, fig_name)
+        matplotlib.matplotlib.pyplot.savefig(fig_path)
+        matplotlib.matplotlib.pyplot.close(fig)
     else:
         # log.warn('Figure could not be generated because fig_path {} '
         #             'does not exist.'.format(fig_path))
         pass
+
+    return fig_path + '.png'
 </code></pre>
   </div>
 </div>
