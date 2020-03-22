@@ -7,11 +7,11 @@ Welcome to my blog page. From time to time, I write on different topics related 
 <br/><br/>
 <br/><br/>
 
-<ul>
-	{% for post in site.posts %}
+<div class="posts">
+  {% for post in site.posts %}
   <div class="post">
     <h3 class="post-title">
-      <a href="{{ site.url }}/{{ blog }}/{{ post.url }}">
+      <a href="{{ site.url }}/{{ post.url }}">
         {{ post.title }}
       </a>
     </h3>
@@ -20,5 +20,4 @@ Welcome to my blog page. From time to time, I write on different topics related 
 
   </div>
   {% endfor %}
-
-</ul>
+</div>
