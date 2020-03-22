@@ -2,7 +2,8 @@
 title: Niels Goet | Data Scientist
 email: ndgoet [at] gmail.com
 description: >- 
-    Welcome to my personal website. I currently work as a data scientist at Inspera AS, an EdTech company based in Oslo, Norway. I use this website to blog about quantitative methods and programming, and to host sample code and data.
+    <b>Niels Goet</b> 
+    <p>Welcome to my personal website. I currently work as a data scientist at Inspera AS, an EdTech company based in Oslo, Norway. I use this website to blog about quantitative methods and programming, and to host sample code and data.</p>
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -16,6 +17,7 @@ theme: minima
 include: ['_pages']
 plugins:
   - jekyll-feed
+
 
 # Exclude from processing.
 # exclude:
