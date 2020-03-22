@@ -11,7 +11,7 @@ Welcome to my blog page. From time to time, I write on different topics related 
 	{% for post in site.posts %}
   <div class="post">
     <h3 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
+      <a href="{{ site.url }}/{{ blog }}/{{ post.url }}">
         {{ post.title }}
       </a>
     </h3>
