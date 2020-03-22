@@ -8,5 +8,5 @@ I currently work as a data scientist at [Inspera AS](http://www.inspera.com), an
 
 I use this website to blog about quantitative methods and programming, and to host sample code and data.
 
-Please visit my [GitHub](https://github.com/ngoet) and [Bitbucket](https://bitbucket.org/ndg90/) pages to learn more about my work.
+Please visit my [GitHub](https://github.com/ngoet) page to learn more about my work.
 
