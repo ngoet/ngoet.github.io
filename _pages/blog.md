@@ -3,7 +3,9 @@ layout: page
 title: Blog
 permalink: /blog/
 ---
-Welcome to my blog page. From time to time, I write on different topics related to data science and coding. You'll find my recent posts here. 
+Welcome to my blog page. From time to time, I write on different topics related to data science and coding. You'll find some of my old posts here. 
+
+For more recent blog posts, please visit (my profile on Medium)(https://medium.com/@ndgoet).
 <br/><br/>
 <br/><br/>
 
