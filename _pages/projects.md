@@ -9,9 +9,8 @@ This page gives an overview of my data science projects (current and past). For 
 ## ParlRulesData
 With [Tom Fleming](https://www.nuffield.ox.ac.uk/people/profiles/thomas-fleming/) (Oxford University) and [Radoslaw Zubek](https://radoslawzubek.com/) (Oxford University)
 
-[ParlRulesData.org](ParlRulesData.org) is an online database of parliamentary rules, containing the formal rules of procedure for various parliaments over time. The data currently covers the UK House of Commons (1811-2019) and the Irish Dáil (1926-2016).
+[ParlRulesData.org](www.ParlRulesData.org) is an online database of parliamentary rules, containing the formal rules of procedure for various parliaments over time. The data currently covers the UK House of Commons (1811-2019) and the Irish Dáil (1926-2016).
 
-A visualization tool for ParlRules is available via [this page](https://parlrules.ngoet.com).
 
 ## PhD research data
 As part of my PhD project on rules of debate and polarisation in the UK House of Commons, I gathered historical data covering the period 1811-2015. Some of of these data are available on this page (and more will be released soon).
