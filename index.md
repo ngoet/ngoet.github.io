@@ -2,9 +2,9 @@
 layout: page
 ---
 
-Welcome to my personal website.
+Welcome to my website.
 
-I currently work as a data scientist at [Inspera AS](http://www.inspera.com), an EdTech company based in Oslo, Norway.
+I am a data scientist at [Inspera AS](http://www.inspera.com), an EdTech company based in Oslo, Norway.
 
 I use this website to blog about quantitative methods and programming, and to host sample code and data.
 
