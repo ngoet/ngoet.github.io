@@ -1,12 +1,13 @@
 ---
 layout: page
 ---
+Hi there!
 
 Welcome to my website.
 
-I am a data scientist at [Inspera AS](http://www.inspera.com), an EdTech company based in Oslo, Norway.
+I am a data scientist at [Bane NOR](https://www.banenor.no/), and am based in Oslo, Norway.
 
-I use this website to blog about quantitative methods and programming, and to host sample code and data.
+I currently no longer actively maintain this website, but it contains some of my previous (academic) work. 
 
 Please visit my [GitHub](https://github.com/ngoet) page to learn more about my work.
 
