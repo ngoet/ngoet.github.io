@@ -6,7 +6,7 @@ description: >-
     <p>Welcome to my website. I am a data scientist at Inspera AS, an EdTech company based in Oslo, Norway. I use this website to blog about quantitative methods and programming, and to host sample code and data.</p>
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ngoet.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://ngoet.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: NielsGoet
 github_username:  ngoet
 linkedin_username: niels-goet
